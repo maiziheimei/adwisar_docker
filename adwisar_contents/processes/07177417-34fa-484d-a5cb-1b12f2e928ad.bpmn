@@ -1,0 +1,28 @@
+<?xml version="1.0"?> 
+<definitions xmlns='http://www.omg.org/spec/BPMN/20100524/MODEL' xmlns:bpmndi='http://www.omg.org/spec/BPMN/20100524/DI" ' xmlns:dc='http://www.omg.org/spec/DD/20100524/DC' xmlns:di='http://www.omg.org/spec/DD/20100524/DI' xmlns:tns='http://sourceforge.net/bpmn/definitions/_1448273017330' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:yaoqiang='http://bpmn.sourceforge.net' exporter='Glenns DLP Exporter' exporterVersion='0.1' expressionLanguage='http://www.w3.org/1999/XPath' id='07177417-34fa-484d-a5cb-1b12f2e928ad' name='Test 1' targetNamespace='http://sourceforge.net/bpmn/definitions/_1448273017330' typeLanguage='http://www.w3.org/2001/XMLSchema' xsi:schemaLocation='http://www.omg.org/spec/BPMN/20100524/MODEL http://bpmn.sourceforge.net/schemas/BPMN20.xsd'>
+  <process id='07177417-34fa-484d-a5cb-1b12f2e928ad' isClosed='false' isExecutable='true' processType='None'>
+    <extensionElements>
+      <localData  xmlns="appsist:bpmn:annotations">
+        <string key='id'>07177417-34fa-484d-a5cb-1b12f2e928ad</string>
+        <string key='processName'>Test 1</string>
+        <string key='processDescription'>Test 1</string>
+      </localData>
+    </extensionElements>
+    <startEvent id='_66649' isInterrupting='true' name='Start Event' parallelMultiple='false'>
+      <outgoing>_777215</outgoing>
+    </startEvent>
+    <sequenceFlow id='_777215' name='' sourceRef='_66649' targetRef='_215' />
+    <userTask completionQuantity='1' id='_215' implementation='##unspecified' isForCompensation='false' name='Step 1' startQuantity='1'>
+      <incoming>_777215</incoming>
+      <outgoing>_777216</outgoing>
+    </userTask>
+    <sequenceFlow id='_777216' name='' sourceRef='_215' targetRef='_216' />
+    <userTask completionQuantity='1' id='_216' implementation='##unspecified' isForCompensation='false' name='Step 2' startQuantity='1'>
+      <incoming>_777216</incoming>
+    </userTask>
+    <sequenceFlow id='_77749' name='' sourceRef='_216' targetRef='_99949' />
+    <endEvent id='_99949' name='End Event'>
+      <incoming>_77749</incoming>
+    </endEvent>
+  </process>
+</definitions>

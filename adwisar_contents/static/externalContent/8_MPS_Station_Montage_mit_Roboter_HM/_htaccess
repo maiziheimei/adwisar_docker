@@ -1,0 +1,10 @@
+AddType text/html             .ctl
+AddType application/json      .json
+AddType image/svg+xml         .svg .svgz
+AddType audio/mp4             .m4a
+AddType audio/ogg             .ogg
+AddType video/mp4             .mp4
+AddType video/webm            .webm
+AddType application/font-woff .woff
+
+AddEncoding gzip .svgz

@@ -1,0 +1,10 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Schubzylinder prüfen",
+       "info" : "Starten Sie den Prozessdurchlauf am Bedienpanel. Betätigen Sie hierzu die im Bild markierte Taste &quot;Start&quot;. Prüfen Sie dann, ob der Schubzylinder ausfährt",  
+		"endorsement" : "Wenn Sie den Schritt &quot;Schubzylinder prüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob der Zylinder korrekt ausfährt oder nicht.",
+		"arid" : "festo_400",
+		"version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

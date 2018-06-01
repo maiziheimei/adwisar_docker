@@ -1,0 +1,10 @@
+{
+       "main" : "deckelmagazin_pruefen.png",       
+       "mimeType" : "image/png",
+       "title" : "Deckelmagazin prüfen",
+       "info" : "Überprüfen Sie, ob das Deckelmagazin gefüllt ist.<br><br>Das Bild zeigt das Magazin mit Deckeln.",  
+		"endorsement" : "Wenn Sie den Schritt &quot;Deckelmagazin prüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob das Deckelmagazin gefüllt ist oder nicht.",       
+	   "arid" : "festo_200",
+	   "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

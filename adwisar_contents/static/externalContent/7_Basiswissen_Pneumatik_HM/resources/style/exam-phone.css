@@ -1,0 +1,403 @@
+/**
+ * -----------------------------------------------------------------------------
+ * This file is part of IMC Author.
+ * (c) 2013 imc GmbH. All rights reserved.
+ * -----------------------------------------------------------------------------
+ * This stylesheet defines the visual properties of exams exclusively.
+ * No other styles can be found or should ever be defined in here.
+ * -----------------------------------------------------------------------------
+ * ATTENTION:
+ * NEVER forget to prefix all styles with the correct content type class,
+ * otherwise styles for different content types may interfere with each other!
+ * -----------------------------------------------------------------------------
+*/
+
+/* --- Start Page --- */
+body.imc-devicefamily-phone
+.imc-exam-start {
+    font-family        : "Source Sans Pro";
+    position           : absolute;
+    left               : 40px;
+    right              : 40px;
+    top                : 50%;
+    width              : auto;
+    height             : auto;
+    background-color   : #FFF;
+    padding            : 0;
+    -webkit-transform  : translateY(-50%);
+    -moz-transform     : translateY(-50%);
+    -ms-transform      : translateY(-50%);
+    transform          : translateY(-50%);
+}
+
+body.imc-devicefamily-phone
+.imc-exam-start h2 {
+    font-family         : "Source Sans Pro";
+    font-size           : 24px;
+    color               : #FFF;
+    height              : 40px;
+    background-color    : #688E9F;
+    padding-top         : 10px;
+    padding-left        : 65px;
+    padding-right       : 16px;
+    background-image    : url(images/exam-icon-message-header.svg);
+    background-position : 20px 10px;
+    background-repeat   : no-repeat;
+    white-space         : nowrap;
+    overflow            : hidden;
+    text-overflow       : ellipsis;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-start table {
+    width      : 100%;
+    margin-top : 5px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-start td {
+    font-size : 15px;
+    color     : #678D9F;
+    padding   : 2px 16px 2px 16px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-start tr td:nth-of-type(2) {
+    text-align : right;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-start .buttons {
+    position   : relative;
+    text-align : right;
+    padding    : 0 16px 20px;
+    top        : 5px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-start .imc-button {
+    display     : inline-block;
+    padding     : 5px 10px 5px 10px;
+    color       : #FFF;
+    margin-left : 5px;
+    width       : auto !important;
+    height      : auto !important;
+    opacity     : .8;
+}
+body.imc-devicefamily-phone
+.imc-exam-start .imc-button:hover {
+    opacity     : 1;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-start .result.disabled {
+    display : none;
+}
+
+/* ---             --- */
+/* --- Result View --- */
+/* ---             --- */
+
+body.imc-devicefamily-phone
+.imc-exam-resultview {
+    position           : absolute;
+    top                : 0px;
+    bottom             : 0px;
+    left               : 40px;
+    width              : auto;
+    right              : 40px;
+    background-color   : #FFF;
+    z-index            : 30000;
+    /*-webkit-box-shadow : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+    box-shadow         : 0px 0px 6px 2px rgba(0, 0, 0, .2);   */
+    -webkit-transform  : none;
+    -moz-transform     : none;
+    -ms-transform     : none;
+    transform         : none;
+    -webkit-transition : -webkit-transform .4s;
+    -moz-transition    : -moz-transform .4s;
+    transition         : transform .4s;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview.hidden {
+    -webkit-transform : translateY(110%);
+    -moz-transform    : translateY(110%);
+    -ms-transform     : translateY(110%);
+    transform         : translateY(110%);
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .view-panel {
+    width  : 100%;
+    height : 100%;
+    background-size: 70px 70px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview.passed .view-panel {
+    background-image    : url(images/exam-result-passed.svg);
+    background-repeat   : no-repeat;
+    background-position : top left;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview.failed .view-panel {
+    background-image    : url(images/exam-result-failed.svg);
+    background-repeat   : no-repeat;
+    background-position : top left;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview p {
+    font-family : "Source Sans Pro";
+    font-size   : 24px;
+    color       : #527079;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview  .message {
+    position : absolute;
+    left     : 55px;
+    top      : 20px;
+	font-size: 16px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .result {
+    position : absolute;
+    left     : 55px;
+    top      : 37px;
+	font-size: 16px;
+}
+
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .value {
+    font-family : "Source Sans Pro";
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .view-list {
+    position : absolute;
+    top      : 100px;
+    left     : 30px;
+    right    : 30px;
+    bottom   : 0px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview.hide-result .view-list {
+    position : absolute;
+    top      : 70px;
+    left     : 30px;
+    right    : 30px;
+    bottom   : 0px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .view-item {
+    font-family   : "Source Sans Pro";
+    font-size     : 15px;
+    color         : #8B8B8B;
+    height        : 35px;
+    line-height   : 35px;
+    border-bottom : solid 1px #F1F5F7;
+    position      : relative;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .view-list>li:first-of-type .view-item {
+    border-top : solid 1px #F1F5F7;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .item-index {
+    display  : inline-block;
+    position : absolute;
+    left     : 25px;
+    top      : 0px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .item-title {
+    display       : inline-block;
+    position      : absolute;
+    left          : 55px;
+    top           : 0px;
+    right         : 110px;
+    white-space   : nowrap;
+    overflow      : hidden;
+    text-overflow : ellipsis;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .item-result {
+    display             : inline-block;
+    position            : absolute;
+    top                 : 0px;
+    right               : 0px;
+    width               : 100px;
+    padding-left        : 24px;
+    background-repeat   : no-repeat;
+    background-position : 0px 6px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .view-item.result-correct .item-result {
+    color : #528BA3;
+    background-image : url(images/status-completed.svg);
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .view-item.result-incorrect {
+    color : #8B0000;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-resultview .view-item.result-incorrect .item-result {
+    background-image : url(images/status-failed.svg);
+}
+
+/* --- Overview --- */
+body.imc-devicefamily-phone
+.imc-exam-overview {
+    position           : absolute;
+    width              : auto;
+    top                : 0px;
+    right              : 0px;
+    bottom             : 0px;
+    left               : 0px;
+    background-color   : #FFF;
+    z-index            : 30100;
+    -webkit-transition : -webkit-transform .4s;
+    -moz-transition    : -moz-transform .4s;
+    transition         : transform .4s;
+    -webkit-box-shadow : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+    box-shadow         : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+    -webkit-transform  : translateX(50px);
+    -moz-transform     : translateX(50px);
+    -ms-transform      : translateX(50px);
+    transform          : translateX(50px);
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview ul{
+  margin-right: 50px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview.hidden {
+    -webkit-transform  : translateX(100%);
+    -moz-transform     : translateX(100%);
+    -ms-transform      : translateX(100%);
+    transform          : translateX(100%);
+    -webkit-box-shadow : none;
+    box-shadow         : none;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .show-overview {
+    position   : absolute;
+    top        : 50%;
+    right      : 100%;
+    margin-top : 22px;
+}
+body.imc-devicefamily-phone
+.imc-exam-overview .show-overview .icon{
+  position:absolute;
+  left:-5px;
+  top:-5px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview h2.title {
+    font-family : "Source Sans Pro";
+    font-size   : 24px;
+    color       : #52707A;
+    position    : absolute;
+    top         : 25px;
+    left        : 25px;
+    right       : 140px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;  
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .time {
+    font-family       : "Source Sans Pro";
+    font-size         : 15px;
+    color             : #3F6779;
+    position          : absolute;
+    top               : 8px;
+    right             : 60px;
+    line-height       : 35px;
+    padding-top       : 19px;
+    background-image  : url(images/exam-stats-time-large.svg);
+    background-repeat : no-repeat;
+    background-size   : 24px 24px;
+    background-position: center top;
+    
+    
+}
+
+body.imc-devicefamily-phone
+.imc-exam.time-unlimited .imc-exam-overview .time {
+    display : none;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .item-view {
+    position : absolute;
+    top      : 60px;
+    left     : 0px;
+    right    : 0px;
+    bottom   : 10px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .item-view .view-item {
+    font-family   : "Source Sans Pro";
+    font-size     : 15px;
+    color         : #8B8B8B;
+    border-bottom : solid 1px #F1F5F7;
+    height        : 35px;
+    line-height   : 35px;
+    position      : relative;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .item-view>li:first-of-type .view-item {
+    border-top : solid 1px #F1F5F7;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .item-view .view-item.selected {
+    background-color : #9DB8C3;
+    color            : #FFF;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .item-view .view-item span {
+    display : inline-block;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .item-view .item-index {
+    position : absolute;
+    left     : 25px;
+    top      : 0px;
+    width    : 35px;
+}
+
+body.imc-devicefamily-phone
+.imc-exam-overview .item-view .item-title {
+    position      : absolute;
+    left          : 70px;
+    top           : 0px;
+    right         : 80px;
+    white-space   : nowrap;
+    overflow      : hidden;
+    text-overflow : ellipsis;
+}

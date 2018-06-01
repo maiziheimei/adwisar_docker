@@ -1,0 +1,176 @@
+@import url(messages-phone.css);
+
+#imc-lockmessage,
+#imc-jumpmessage {
+   width              : 400px;
+   position           : absolute;
+   background-color   : #688E9F;
+   z-index            : 40000;
+   -webkit-box-shadow : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+   box-shadow         : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+ }
+ 
+#imc-jumpmessage h2.header,
+#imc-lockmessage h2.header {
+    font-family  : "Source Sans Pro";
+    font-size    : 24px;
+    color        : #FFF;
+    height       : 35px;
+    line-height  : 35px;
+    padding-left : 30px;
+    margin       : 23px;
+}
+
+#imc-lockmessage p.message,
+#imc-jumpmessage p.message {
+    font-size : 15px;
+    color     : #FFF;
+    margin    : 23px;
+}
+
+/* --- Locked message --- */
+
+#imc-lockmessage {
+/*general message style*/  
+   top               : 50%;
+   left              : 50%;
+   margin-left       : -200px;
+   -webkit-transform : translateY(-50%);
+    -moz-transform   : translateY(-50%);
+    -ms-transform    : translateY(-50%);
+    transform        : translateY(-50%); 
+}
+
+#imc-lockmessage h2.header {
+    background : url(images/msg-content-locked.svg) no-repeat;
+}
+
+#imc-lockmessage .buttons {
+    background-color : #FFF;
+    padding          : 12px 14px 15px 14px;
+    text-align       : right;
+}
+
+@-webkit-keyframes show-lockmessage {
+    to {
+        opacity : 1;
+    }
+    from {
+        opacity : 0;
+    }
+}
+
+@-moz-keyframes show-lockmessage {
+    to {
+        opacity : 1;
+    }
+    from {
+        opacity : 0;
+    }
+}
+
+@keyframes show-lockmessage {
+    to {
+        opacity : 1;
+    }
+    from {
+        opacity : 0;
+    }
+}
+
+@-webkit-keyframes hide-lockmessage {
+    from {
+        opacity : 1;
+    }
+    to {
+        opacity : 0;
+    }
+}
+
+@-moz-keyframes hide-lockmessage {
+    from {
+        opacity : 1;
+    }
+    to {
+        opacity : 0;
+    }
+}
+
+@keyframes hide-lockmessage {
+    from {
+        opacity : 1;
+    }
+    to {
+        opacity : 0;
+    }
+}
+
+/* --- Jump Message --- */
+#imc-jumpmessage {
+    top   : 25px;
+    right : 25px;
+}
+
+#imc-jumpmessage h2.header {
+    padding-left : 38px;
+    background   : url(images/msg-skip-content.svg) no-repeat 0px 6px;
+    margin       : 23px;
+}
+
+@-webkit-keyframes show-jumpmessage {
+    to {
+        -webkit-transform : none;
+    }
+    from {
+        -webkit-transform : translateX(600px);
+    }
+}
+
+@-moz-keyframes show-jumpmessage {
+    to {
+        -moz-transform : none;
+    }
+    from {
+        -moz-transform : translateX(600px);
+    }
+}
+
+@keyframes show-jumpmessage {
+    to {
+        -ms-transform : none;
+        transform     : none;
+    }
+    from {
+        -ms-transform : translateX(600px);
+        transform     : translateX(600px);
+    }
+}
+
+@-webkit-keyframes hide-jumpmessage {
+    from {
+        -webkit-transform : none;
+    }
+    to {
+        -webkit-transform : translateX(600px);
+    }
+}
+
+@-moz-keyframes hide-jumpmessage {
+    from {
+        -moz-transform : none;
+    }
+    to {
+        -moz-transform : translateX(600px);
+    }
+}
+
+@keyframes hide-jumpmessage {
+    from {
+        -ms-transform : none;
+        transform     : none;
+    }
+    to {
+        -ms-transform : translateX(600px);
+        transform     : translateX(600px);
+    }
+}

@@ -1,0 +1,9 @@
+{
+       "main" : "hauptabsperrhahn_ueberpruefen.png",       
+       "mimeType" : "image/png",
+       "title" : "Hauptabsperrhahn überprüfen",
+       "info" : "Überprüfen Sie den Hauptabsperrhahn. Dieser muss geöffnet sein!",  
+		"endorsement" : "Wenn Sie den Schritt &quot;Hauptabsperrhahn überprüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob der Hauptabsperrhahn geschlossen ist oder nicht.",       
+	   "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

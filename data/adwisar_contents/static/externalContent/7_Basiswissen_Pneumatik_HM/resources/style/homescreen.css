@@ -1,0 +1,555 @@
+@import url(homescreen-phone.css);
+
+div#imc-homescreen {
+    color   : #3F687A;
+    z-index : 3;
+}
+
+h1#imc-homescreen-title {
+    position      : absolute;
+    left          : 20px;
+    top           : 15px;
+    right         : 20px;
+    height        : 50px;
+    font-family   : "Source Sans Pro";
+    font-size     : 20px;
+    font-weight   : bold;
+    color         : #333;
+    white-space   : nowrap;
+    overflow      : hidden;
+    text-overflow : ellipsis; 
+    right         : 280px; /*right column + some pixels*/
+}
+
+#imc-homescreen-progress {
+    position : absolute;
+    top      : 16px;
+    right    : 284px;
+}
+
+#imc-homescreen-progress-label {
+    display       : inline-block;
+    font-family   : "Source Sans Pro";
+    font-size     : 22px;
+    color         : #333;
+    width         : 205px;
+    position      : absolute;
+    right         : 60px;
+    top           : 20px;
+    text-align    : left;
+    overflow      : hidden;
+    white-space   : nowrap;
+    text-overflow : ellipsis;
+}
+
+div#imc-homescreen-controls {
+    width            : 100%;
+    height           : 100%;
+    overflow         : hidden;
+    background-color : transparent;
+}
+
+div#imc-homescreen-content {
+    width            : 100%;
+    position         : absolute;
+    top              : 0px;
+    left             : 0px;
+    bottom           : 0px;
+    overflow         : hidden;
+    background-color : #e3e6e8; /* #F8F8F8;*/
+}
+
+body.imc-devicefamily-desktop
+div#imc-homescreen-content {
+    width            : 100%;  /*75%*/
+    min-width        : 630px;   
+}
+
+div#imc-homescreen-buttons {
+    position         : absolute;
+    bottom           : 0px;
+    left             : 0px;
+    right            : 0px;
+    height           : 80px;
+    background-color : #FFF;
+}
+
+body.imc-devicefamily-tablet
+div#imc-homescreen-buttons {
+    height : 50px;
+}
+
+#imc-homescreen-close-button {
+    position    : relative; /*absolute;*/
+    top         : 0px;
+    left        : 0px;
+}
+
+#imc-homescreen-close-button .icon {
+    background-image : url(images/overview-close.png);
+}
+
+#imc-homescreen-tabbar {
+/*    position : absolute;*/
+    top      : 0px;
+    left     : 40px;
+}
+
+body.imc-devicefamily-tablet
+#imc-homescreen-tabbar {
+    left : 50px;
+}
+
+#imc-homescreen-tileview-tab {
+    display: none;
+    visibility: hidden;
+}
+
+#imc-homescreen-tileview-tab .icon-on,
+#imc-homescreen-tileview-tab .icon-off {
+    background-image : url(images/overview.svg);
+}
+#imc-homescreen-tileview-tab .icon-on:hover,
+#imc-homescreen-tileview-tab .icon-off:hover {
+    background-image : url(images/overview_a.svg);
+}
+
+
+#imc-homescreen-treeview-tab .icon-on,
+#imc-homescreen-treeview-tab .icon-off {
+    background-image : url(images/overview-tree.svg);
+}
+#imc-homescreen-treeview-tab .icon-on:hover,
+#imc-homescreen-treeview-tab .icon-off:hover {
+    background-image : url(images/overview-tree_a.svg);
+}
+
+/* --- Audio Toggle --- */
+#toggle-audio-homescreen {
+    position : absolute;
+    right    : 40px;
+    bottom   : 0px;
+}
+
+#toggle-audio-homescreen .icon-on {
+    background-image : url(images/audio-off.svg);
+}
+
+#toggle-audio-homescreen.icon-off {
+    background-image : url(images/audio-on.svg);
+}
+
+/* --- Subtitle Toggle --- */
+#toggle-subtitles-homescreen {
+    position : absolute;
+    right    : 0px;
+    bottom   : 0px;
+}
+
+#toggle-subtitles-homescreen .icon-on {
+    background-image : url(images/subtitles-on.svg);
+}
+
+#toggle-subtitles-homescreen .icon-off {
+    background-image : url(images/subtitles-off.svg);
+}
+
+div#imc-homescreen .imc-tileview {
+    position      : absolute;
+    left          : 0px;
+    top           : 70px;
+    right         : 0px;
+    bottom        : 60px;
+    padding-left  : 14px;
+    padding-right : 14px;
+}
+
+div#imc-homescreen .imc-tileview-item {
+    width              : 194px;
+    margin             : 2px;
+    position           : relative;
+    text-align         : center;
+    background-color   : #e3e6e8; /*#F8F8F8;*/
+    -webkit-transition : background-color .3s, color .3s;
+    -moz-transition    : background-color .3s, color .3s;
+    transition         : background-color .3s, color .3s;
+}
+
+div#imc-homescreen .imc-tileview-item:hover{
+    background-color: #ADB6BB; /*rgba(0, 0, 0, 0.05);*/
+}
+div#imc-homescreen .imc-tileview-item.selected {
+    background-color : #0095DB; /*#D8D8D8;*/
+}
+
+div#imc-homescreen .tile-decoration {
+    display  : inline-block;
+    position : relative;
+}
+
+div#imc-homescreen .tile-image {
+    max-width  : 178px;
+    max-height : 134px;
+    outline    : 1px solid rgba(0,0,0,0.1);
+    margin     : 8px auto;
+    display    : block;
+}
+
+div#imc-homescreen .tile-decoration:after {
+    position  : absolute;
+    bottom    : 8px;
+    left      : 0px;
+    height    : 24px;
+    background: rgba(255,255,255,0.4);
+}
+
+div#imc-homescreen
+.imc-tileview-item.status-not-attempted .tile-decoration:after {
+    content : url(images/status-not-attempted.svg);
+}
+
+div#imc-homescreen
+.imc-tileview-item.status-completed .tile-decoration:after {
+    content : url(images/status-completed.svg);
+}
+
+div#imc-homescreen
+.imc-tileview-item.status-failed .tile-decoration:after {
+    content : url(images/status-failed.svg);
+}
+
+div#imc-homescreen
+.imc-tileview-item.status-optional .tile-decoration:after {
+    content : url(images/status-optional.svg);
+}
+
+div#imc-homescreen
+.imc-tileview-item.status-unknown .tile-decoration:after {
+    content : url(images/status-unknown.svg);
+}
+
+div#imc-homescreen
+.imc-tileview-item.status-incomplete .tile-decoration:after {
+    content : url(images/status-incomplete.svg);
+}
+
+div#imc-homescreen
+.imc-tileview-item.status-locked .tile-decoration:after {
+    content : url(images/status-locked.svg);
+}
+
+div#imc-homescreen .tile-label {
+    color         : #555555;
+    font-size     : 13px;
+    font-family   : "Source Sans Pro";
+    display       : block;
+    text-overflow : ellipsis;
+    overflow      : hidden;
+    width         : 156px;
+    height        : 36px;
+    position      : relative;
+    bottom        : 8px;
+    left          : 8px;
+    text-align    : left;
+}
+
+div#imc-homescreen .imc-tileview-item.selected .tile-label {
+    color : #FFF;
+}
+
+#imc-homescreen-treeview {
+    position   : absolute;
+    left       : 0px;
+    top        : 65px;
+    right      : 0px;
+    bottom     : 60px;
+    border-top : solid 1px #EBF0F2;
+}
+
+#imc-homescreen-treeview .imc-treeview-element {
+    font-family     : "Source Sans Pro";
+    font-size       : 15px;
+    list-style-type : none;
+    margin          : 0px;
+    padding         : 0px;
+}
+
+#imc-homescreen-treeview .imc-treeview-item {
+    line-height        : 35px;
+    height             : 35px;
+    color              : #666666;
+    border-bottom      : solid 1px rgba(164, 164, 164, 0.15);
+    position           : relative;
+    overflow           : visible;
+    -webkit-transition : height .3s, opacity .3s;
+    -moz-transition    : height .3s, opacity .3s;
+    transition         : height .3s, opacity .3s;
+}
+
+/*indent for list view items*/
+#imc-homescreen-treeview .imc-treelevel-1 .item-label,
+#imc-homescreen-treeview .imc-treelevel-1 .item-branch {margin-left:0px;}
+#imc-homescreen-treeview .imc-treelevel-2 .item-label,
+#imc-homescreen-treeview .imc-treelevel-2 .item-branch{margin-left:20px;}
+#imc-homescreen-treeview .imc-treelevel-3 .item-label,
+#imc-homescreen-treeview .imc-treelevel-3 .item-branch{margin-left:40px;}
+#imc-homescreen-treeview .imc-treelevel-4 .item-label,
+#imc-homescreen-treeview .imc-treelevel-4 .item-branch{margin-left:60px;}
+#imc-homescreen-treeview .imc-treelevel-5 .item-label,
+#imc-homescreen-treeview .imc-treelevel-5 .item-branch{margin-left:80px;}
+#imc-homescreen-treeview .imc-treelevel-6 .item-label,
+#imc-homescreen-treeview .imc-treelevel-6 .item-branch{margin-left:100px;}
+#imc-homescreen-treeview .imc-treelevel-7 .item-label,
+#imc-homescreen-treeview .imc-treelevel-7 .item-branch{margin-left:120px;}
+
+#imc-homescreen-treeview .imc-treeview-item:hover {
+    background-color : rgba(0, 0, 0, 0.05);
+    border-color     : transparent;
+}
+
+#imc-homescreen-treeview .imc-treeview-item.selected {
+    /*color            : #FFF;*/
+    background-color : #D8D8D8;
+}
+
+#imc-homescreen-treeview .item-branch {
+    height:inherit;
+}
+
+#imc-homescreen-treeview
+.imc-treeview-item.aggregate>.item-branch {
+    background-image    : url(images/tree-collapse.svg);
+    background-repeat   : no-repeat;
+    background-position : 4px 4px;
+}
+
+#imc-homescreen-treeview
+.imc-treeview-element.collapsed>.imc-treeview-item.aggregate>.item-branch {
+    background-image : url(images/tree-expand.svg);
+}
+
+#imc-homescreen-treeview .item-label {
+    padding-left        : 40px;
+    background-repeat   : no-repeat;
+    background-position : 0px 2px;
+    display             : inline-block;
+    height              : 100%;
+    overflow            : hidden;
+    white-space          : nowrap;
+    text-overflow       : ellipsis;
+    position            : absolute;
+    left                : 40px;
+    right               : 257px; /*space of right column + 25px*/
+}
+
+
+#imc-homescreen-treeview .type-animation .item-label {
+    background-image : url(images/type-animation.svg);
+}
+
+#imc-homescreen-treeview .type-video .item-label {
+    background-image : url(images/type-video.svg);
+}
+
+#imc-homescreen-treeview .type-animation.selected .item-label {
+}
+
+#imc-homescreen-treeview .type-interaction .item-label {
+    background-image : url(images/type-interaction.svg);
+}
+#imc-homescreen-treeview .type-interaction.selected .item-label {
+}
+
+#imc-homescreen-treeview .type-glossary .item-label {
+    background-image : url(images/type-glossary.svg);
+}
+#imc-homescreen-treeview .type-glossary.selected .item-label {
+}
+
+#imc-homescreen-treeview .type-certificate .item-label {
+    background-image : url(images/type-certificate.svg);
+}
+#imc-homescreen-treeview .type-certificate.selected .item-label {
+}
+
+#imc-homescreen-treeview .type-external .item-label {
+    background-image : url(images/type-external.svg);
+}
+#imc-homescreen-treeview .type-external.selected .item-label {
+}
+
+#imc-homescreen-treeview .type-exam .item-label {
+    background-image : url(images/type-exam.svg);
+}
+#imc-homescreen-treeview .type-exam.selected .item-label {
+}
+
+#imc-homescreen-treeview .type-folder .item-label {
+    background-image : url(images/type-folder-open.svg);
+}
+
+#imc-homescreen-treeview .imc-treeview-element.collapsed .type-folder .item-label {
+    background-image : url(images/type-folder-closed.svg);
+}
+
+#imc-homescreen-treeview .item-statustext {
+    position  : absolute;
+    top       : 0px;
+    right     : 0px;
+    width     : 225px;
+    font-size : 13px;
+    color     : #666;
+    overflow      : hidden;
+    white-space   : nowrap;
+    text-overflow : ellipsis;
+}
+
+/*selected element status*/
+#imc-homescreen-treeview .imc-treeview-item.selected .item-statustext{
+}
+
+#imc-homescreen-treeview .item-statusimage {
+    position : absolute;
+    top      : 6px;
+    right    : 232px;
+    width    : 24px;
+    height   : 24px;
+}
+
+#imc-homescreen-treeview .item-progress {
+    position : absolute;
+    top      : 7px;
+    right    : 235px;
+    display  : none;
+}
+
+#imc-homescreen-treeview .type-folder .item-progress {
+    display : inline-block;
+}
+
+#imc-homescreen-treeview .type-folder .item-statusimage {
+    display : none;
+}
+
+#imc-homescreen-treeview .state-notattempted {
+    color : #8B8B8B;
+}
+
+/* Tree animation */
+html.csstransitions #imc-homescreen-treeview
+.imc-treeview-element.collapsed>ul {
+    display : block;
+}
+
+html.csstransitions #imc-homescreen-treeview
+.imc-treeview-element.collapsed ul .imc-treeview-item {
+    height       : 0px;
+    border-width : 0px;
+    opacity      : 0;
+}
+
+#imc-homescreen-treeview {
+    -webkit-transform  : translate3d(100%, 0, 0);
+    -moz-transform     : translate3d(100%, 0, 0);
+    -ms-transform     : translate3d(100%, 0, 0);
+    transform         : translate3d(100%, 0, 0);
+    -webkit-transition : -webkit-transform .5s;
+    -moz-transition    : -moz-transform .5s;
+    transition         : transform .5s;
+}
+
+#imc-homescreen-tileview {
+    -webkit-transform  : translate3d(-100%, 0, 0);
+    -moz-transform     : translate3d(-100%, 0, 0);
+    -ms-transform     : translate3d(-100%, 0, 0);
+    transform         : translate3d(-100%, 0, 0);
+    -webkit-transition : -webkit-transform .5s;
+    -moz-transition    : -moz-transform .5s;
+    transition         : transform .5s;
+}
+
+#imc-homescreen-controls.treeview #imc-homescreen-treeview {
+    -webkit-transform : translate3d(0, 0, 0);
+    -moz-transform    : translate3d(0, 0, 0);
+    -ms-transform     : translate3d(0, 0, 0);
+    transform         : translate3d(0, 0, 0);
+}
+
+#imc-homescreen-controls.tileview #imc-homescreen-tileview {
+    -webkit-transform : translate3d(0, 0, 0);
+    -moz-transform    : translate3d(0, 0, 0);
+    -ms-transform     : translate3d(0, 0, 0);
+    transform         : translate3d(0, 0, 0);
+}
+
+/* --- Fallback --- */
+html.no-csstransforms3d
+#imc-homescreen-treeview {
+    display : none;
+}
+
+html.no-csstransforms3d
+#imc-homescreen-tileview {
+    display : none;
+}
+
+html.no-csstransforms3d
+#imc-homescreen-controls.treeview #imc-homescreen-treeview {
+    display : block;
+}
+
+html.no-csstransforms3d
+#imc-homescreen-controls.tileview #imc-homescreen-tileview {
+    display : block;
+}
+
+/*general styles for medium sizes*/
+@media screen and (max-width: 600px) {
+  #imc-homescreen-progress-label{
+    font-family: "Source Sans Pro";
+    font-size:15px;
+    top: 22px;
+    width:108px;
+  }
+  #imc-homescreen-progress{ right:125px; }
+    
+  #imc-homescreen-treeview .item-progress{ right:135px; }
+  #imc-homescreen-treeview .item-statusimage{ right:133px; }
+  #imc-homescreen-treeview .item-statustext{ width:130px; }
+  
+  
+  /*right indent*/
+  h1#imc-homescreen-title { right:170px; }
+  #imc-homescreen-treeview .item-label{ right:155px; }
+}
+
+/*general styles for small sizes*/
+@media screen and (max-width: 400px) {
+  #imc-homescreen-progress-label{
+    display:none;
+  }
+  #imc-homescreen-progress{ right:7px; }
+    
+  #imc-homescreen-treeview .item-progress{ right:16px; }
+  #imc-homescreen-treeview .item-statusimage{ right:14px; }
+  #imc-homescreen-treeview .item-statustext{ display:none; }
+  
+  
+  /*right indent*/
+  h1#imc-homescreen-title { right:50px; }
+  #imc-homescreen-treeview .item-label{ right:40px; }
+}
+
+/* --- Controls centered--- */
+#imc-homescreen-buttons-center {
+    height    : 40px;
+    font-size : 0;
+    margin    : 0 auto;
+    width     : 40px;
+    margin-top: 20px;
+}
+
+#imc-homescreen-buttons-center > * {
+    display : inline-block;
+}
+

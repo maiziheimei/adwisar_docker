@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MIDConfig xmlns:ns2="de.appsist.service.mid.rules">
+    <instanceVersion>1.0</instanceVersion>
+    <protocolVersion>1.0</protocolVersion>
+    <rules>
+        <entry>
+            <key>
+                <machineID>Maschine1</machineID>
+                <stationID>Anlage1</stationID>
+            </key>
+            <value>
+                <MachineIdentifier>
+                    <machineID>Maschine1</machineID>
+                    <stationID>Anlage1</stationID>
+                </MachineIdentifier>
+                <rules>
+                    <condition>
+                        <value>
+                            <caption></caption>
+                            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="asString">
+<value>no_part</value>
+                            </value>
+                        </value>
+                        <variable>
+                            <caption>errorDescription</caption>
+                            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="asString">
+<value></value>
+                            </value>
+                        </variable>
+                        <vergleich>EQ</vergleich>
+                    </condition>
+                    <action>Error</action>
+                    <mode>ALL</mode>
+                    <name>Bauteil fehlt</name>
+                    <tag>FehlendesBauteil</tag>
+                </rules>
+	
+            </value>
+        </entry>
+        <entry>
+            <key>
+                <machineID>Maschine20</machineID>
+                <stationID>Anlage1</stationID>
+            </key>
+            <value>
+                <MachineIdentifier>
+                    <machineID>Maschine20</machineID>
+                    <stationID>Anlage1</stationID>
+                </MachineIdentifier>
+                <rules>
+                    <condition>
+                        <value>
+                            <caption></caption>
+                            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="asLong">
+<value>13</value>
+                            </value>
+                        </value>
+                        <variable>
+                            <caption>errorCode</caption>
+                            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="asLong">
+<value>0</value>
+                            </value>
+                        </variable>
+                        <vergleich>EQ</vergleich>
+                    </condition>
+                    <action>Error</action>
+                    <mode>ALL</mode>
+                    <name>error13</name>
+                    <tag>Teileposition fehlerhaft!</tag>
+                </rules>
+                <rules>
+                    <condition>
+                        <value>
+                            <caption></caption>
+                            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="asBoolean">
+<value>false</value>
+                            </value>
+                        </value>
+                        <variable>
+                            <caption>switch</caption>
+                            <value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="asBoolean">
+<value>false</value>
+                            </value>
+                        </variable>
+                        <vergleich>EQ</vergleich>
+                    </condition>
+                    <action>Warning</action>
+                    <mode>ALL</mode>
+                    <name>Schalter offen</name>
+                    <tag>tuer offen!</tag>
+                </rules>
+            </value>
+        </entry>
+    </rules>
+</MIDConfig>

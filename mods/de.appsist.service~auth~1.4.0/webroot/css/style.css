@@ -1,0 +1,121 @@
+@font-face {
+    font-family: fira-sans;
+    src: url(fonts/firasans-medium-webfont.woff);
+}
+
+body {
+	font-family: fira-sans;
+	font-size: 15px;
+  margin: 0px;
+  background-color: #E5E5E5;
+}
+
+h1 {
+	font-size: 15px;
+}
+
+div.header {
+  width: 100%;
+  height: 40px;
+  padding: 8px 0px 0px 50px;
+  background: url(../images/user.png) no-repeat left 10px center;
+  background-color: #103A66;
+  color: #8fadcc;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+div.panel {
+  padding: 10px 10px 0px;
+}
+
+div.panel h2 {
+  margin: 0px;
+  font-size: 20px;
+}
+
+div.field {
+  margin: 0px 20px 10px 0px;
+}
+
+div.field.multiple {
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.field > label {
+  font-size: 12px;
+  color: #103A66;
+}
+
+div.field > div.hint {
+  font-size: 12px;
+  color: #ff0000;
+  margin-left: 10px;
+  display: none;
+}
+
+div.field.error > label {
+  color: #ff0000;
+}
+
+div.field.error > div.hint {
+  display: inline;
+}
+
+div.message-panel {
+  padding: 10px 10px 0px;
+  font-size: 12px;
+  font-style: italic;
+  display: none;
+}
+
+div.message-panel.error {
+  color: red;
+}
+
+table {
+	width: 100%;
+}
+
+table > thead {
+	background-color: #aaa;
+	font-weight: bold;
+}
+
+td {
+	border: dotted 1px;
+	padding: 5px;
+}
+
+label {
+	font-size: 10px;
+	display: block;
+}
+
+.errorMessage {
+	width: 100%;
+	border: solid red 1px;
+	padding: 10px;
+	font-weight: bold;
+	background-color: #ffcccc;
+}
+
+.buttonBar {
+	margin-top: 10px;
+}
+
+.buttonBar button {
+	padding: 10px 15px;
+	margin: 5px 0px 5px 10px;
+	background-color: #103A66;
+  font-family: fira-sans;
+	font-size: 15px;
+	color: #ffffff;
+  min-width: 150px;
+	border: none;
+}
+
+.buttonBar button:disabled {
+	background-color: #bbbbbb;
+}

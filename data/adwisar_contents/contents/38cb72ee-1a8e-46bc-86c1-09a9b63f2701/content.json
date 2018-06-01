@@ -1,0 +1,8 @@
+{
+       "main" : "teilabsperrhahn_oeffnen.png",       
+       "mimeType" : "image/png",
+       "title" : "Teilabsperrhahn öffnen",
+       "info" : "Öffnen Sie den Teilabsperrhahn wie im Bild angezeigt.",  
+		"version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

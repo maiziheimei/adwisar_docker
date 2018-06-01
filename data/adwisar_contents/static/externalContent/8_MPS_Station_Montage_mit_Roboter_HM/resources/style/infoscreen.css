@@ -1,0 +1,195 @@
+/*
+ * Stylesheet for home screen
+*/
+
+div#imc-infoscreen {
+    background-color : #FFF;
+    color            : #555555;
+    font-family      : "Source Sans Pro";
+    cursor           : default;
+    z-index          : 2;
+}
+
+div#imc-infoscreen-controls {
+    width  : 100%;
+    height : 100%;
+}
+
+#imc-infoscreen-overview {
+    position : absolute;
+    left     : 0px;
+    bottom   : 0px;
+}
+
+#imc-infoscreen-overview .icon {
+    background-image : url(images/overview.svg);
+}
+
+#toggle-subtitles-infoscreen {
+    width      : 50px;
+    height     : 50px;
+    position   : absolute;
+    right      : 0px;
+    bottom     : 0px;
+}
+
+#toggle-subtitles-infoscreen .icon-on {
+    background-image : url(images/subtitles-on.svg);
+}
+
+#toggle-subtitles-infoscreen .icon-off {
+    background-image : url(images/subtitles-off.svg);
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top {
+    height   : 50%;
+    width    : 100%;
+    position : absolute;
+    top      : 0px;
+    left     : 0px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top .imc-breadcrumb {
+    padding-left  : 20px;
+    padding-right : 20px;
+    font-size     : 30px;
+    margin-top    : 16px;
+    text-overflow : ellipsis;
+    white-space   : nowrap;
+    overflow      : hidden;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top .imc-breadcrumb-root {
+    font-size : 42px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top .imc-breadcrumb-separator {
+    margin-left  : 10px;
+    margin-right : 10px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top .imc-breadcrumb-separator:after {
+    content : '|';
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-progress {
+    position    : absolute;
+    left        : 20px;
+    top         : 80px;
+    text-align  : left;
+    font-size   : 24px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-progress .imc-progress {
+    vertical-align : -17px;
+    margin-right   : 6px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top .imc-infoscreen-contentinfo {
+    position : absolute;
+    bottom   : 40px;
+    left     : 0px;
+    width    : 100%;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top div#imc-infoscreen-defaultinfo {
+    text-align : center;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-top div#imc-infoscreen-defaultinfo p {
+    font-size : 50px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-bottom {
+    position         : absolute;
+    height           : 50%;
+    width            : 100%;
+    bottom           : 0px;
+    left             : 0px;
+    background-color : #EEE;
+    text-align       : center;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-rotateinfo {
+    position : absolute;
+    top      : 40px;
+    left     : 0px;
+    width    : 100%;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-rotateinfo p {
+    font-size : 28px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-rotateinfo span.label {
+    font-size  : 18px;
+    text-align : left;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-bottom .imc-button .icon {
+    width  : 50px;
+    height : 50px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-bottom #overview-hint {
+    position : absolute;
+    left     : 110px;
+    bottom   : 48px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-bottom #overview-hint-arrow {
+    position : absolute;
+    left     : 55px;
+    bottom   : 32px;
+}
+
+body.imc-devicefamily-tablet
+div#imc-infoscreen-bottom #subtitles-hint {
+    position : absolute;
+    right    : 60px;
+    bottom   : 62px;
+}
+
+body.imc-devicefamily-tablet
+#subtitles-hint-arrow {
+    position : absolute;
+    right    : 57px;
+    bottom   : 17px;
+}
+
+body.imc-devicefamily-phone
+div#imc-infoscreen-top {
+    display : none;
+}
+
+body.imc-devicefamily-phone
+div#imc-infoscreen-bottom {
+    width       : 100%;
+    height      : 100%;
+    text-align  : center;
+    padding-top : 50px;
+}
+
+body.imc-devicefamily-phone
+div#imc-infoscreen-bottom > span,
+body.imc-devicefamily-phone
+div#imc-infoscreen-bottom > img {
+    display : none;
+}

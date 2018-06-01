@@ -1,0 +1,23 @@
+div.imc-animation {
+    
+}
+
+div.imc-animation .imc-video-playbutton {
+    position: absolute;
+    left     : 50%;
+    top      : 50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%); /* IE 9 */
+    -webkit-transform:translate(-50%, -50%); /* Safari and Chrome */
+    width: 100px;
+    height: 100px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url('images/tap-to-play_n.svg');
+    z-index : 100;
+}
+
+div.imc-animation .imc-video-playbutton:hover,
+div.imc-animation .imc-video-playbutton.pressed {
+    background-image:url('images/tap-to-play_h.svg');
+}

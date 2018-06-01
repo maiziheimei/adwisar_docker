@@ -1,0 +1,8 @@
+{
+       "main" : "federmagazin.png",       
+       "mimeType" : "image/png",
+       "title" : "Funktionsbeschreibung des Federmagazins",
+       "info" : "Durch das Modul <b>Federmagazin</b> werden die Rückstellfedern für den zu montierenden einfachwirkenden Pneumatikzylinder bereitgestellt. Mit einem doppelwirkenden Zylinder wird ein Schieber betätigt, der die Rückstellfeder zum Übergabepunkt bewegt. An der Übergabestelle wird die Feder durch einen elektrischen Grenztaster nachgewiesen. Die Endlagen des doppelwirkenden Zylinders werden durch Sensoren überwacht. Der Füllstand des Federmagazins wird nicht kontrolliert.<br><br> Das Modell des Zylinders Springstack.PushCylinder besitzt folgende Ein- und Ausgänge: <br><table border=\"4\"><tr><th>Typ</th><th>Name</th><th>Kommentar</th></tr><tr><th>Eingang</th><th>MoveOut</th><th>Ausfahren des Zylinders: verbunden mit einem Ausgang der Robotersteuerung</th></tr> <tr><th>Eingang</th><th>MoveIn</th><th>Einfahren des Zylinders: verbunden mit einem Ausgang der Robotersteuerung</th></tr><tr><th>Ausgang</th><th>IsMoveOut</th><th>Sensorsignale: Zylinder ist ausgefahren/ verbunden mit Eingang der Robotersteuerung</th></tr><tr><th>Ausgang</th><th>IsMoveIn</th><th>Sensorsignale:Zylinder ist eingefahren/ verbunden mit Eingang Robotersteuerung</th></tr></table>",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

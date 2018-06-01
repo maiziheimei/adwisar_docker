@@ -1,0 +1,245 @@
+/* === VideoScreen Controls === */
+
+div#imc-videoscreen {
+    background-color : rgba(0, 0, 0, 0.5);
+    color            : #3F687A;
+    z-index          : 10;
+    
+    -webkit-transition : width .3s, height .3s;
+    -moz-transition    : width .3s, height .3s;
+    -ms-transition     : width .3s, height .3s;
+    -o-transition      : width .3s, height .3s;
+    transition         : width .3s, height .3s;
+}
+
+div#imc-videoscreen .imc-video-playbutton {
+    position: absolute;
+    left     : 50%;
+    top      : 50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%); /* IE 9 */
+    -webkit-transform:translate(-50%, -50%); /* Safari and Chrome */
+    width: 200px;
+    height: 200px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url('images/tap-to-play_n.svg');
+    z-index : 100;
+}
+
+div#imc-videoscreen .imc-video-playbutton:hover {
+    background-image:url('images/tap-to-play_h.svg');
+}
+
+div#imc-videoscreen > video{
+    position          : absolute;
+    left              : 50%;
+    top               : 50%;
+    transform         : translate(-50%, -50%);
+    -ms-transform     : translate(-50%, -50%); /* IE 9 */
+    -webkit-transform : translate(-50%, -50%); /* Safari and Chrome */  
+}
+
+/* --- Video controls --- */
+div#imc-videoscreen .imc-videoscreen-controls {
+    position          : absolute;
+    z-index           : 12;
+    left              : 50%;
+    top               : 50%;
+    transform         : translate(-50%, -50%);
+    -ms-transform     : translate(-50%, -50%); /* IE 9 */
+    -webkit-transform : translate(-50%, -50%); /* Safari and Chrome */
+    overflow: hidden;
+    z-index: 1;
+    /*IE need a rbga background color to accept a tap*/
+    background-color : rgba(0, 0, 0, 0);
+}
+
+div#imc-videoscreen #imc-videoscreen-controlbar {
+    position         : absolute;
+    left             : 0%;
+    bottom           : 0%;
+    width            : 100%;
+    height           : 50px;
+    background-color : rgba(255, 255, 255, 0.7);
+    -webkit-transform  : translate(0px, 100%);
+    -moz-transform     : translate(0px, 100%);
+    -ms-transform      : translate(0px, 100%);
+    transform          : translate(0px, 100%);
+    
+    -webkit-transition : transform .3s;
+    -moz-transition    : transform .3s;
+    -ms-transition     : transform .3s;
+    -o-transition      : transform .3s;
+    transition         : transform .3s;
+}
+
+.imc-toggle#imc-videoscreen-pause {
+    position          : absolute;
+    left              : 0%;
+    bottom            : 0%;
+    width             : 50px;
+    height            : 50px;
+    transform         : translate(-0%, -0%);
+    -ms-transform     : translate(-0%, -0%); /* IE 9 */
+    -webkit-transform : translate(-0%, -0%); /* Safari and Chrome */
+}
+
+
+.imc-toggle#imc-videoscreen-pause.on .icon-on,
+.imc-toggle#imc-videoscreen-pause .icon-off {
+    height            : 36px;
+    width             : 36px;
+    position          : absolute;
+    left              : 8px;
+    top               : 8px;
+    opacity           : 1.0;
+	background-image: url('images/play.svg');
+}
+
+.imc-toggle#imc-videoscreen-pause .icon-off {
+background-image: url('images/pause.svg');
+}
+
+#imc-videoscreen-progress {
+    position         : absolute;
+    bottom           : 1px;
+    left             : 72px;
+    right            : 60px;
+    height           : 50px;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    /*transition       : top .2s, height .2s;*/
+}
+
+
+#imc-videoscreen-progress .imc-timeslider-panel {
+    position          : absolute;
+    top               : 50%;
+    transform         :translate(-0%, -50%);
+    -ms-transform     :translate(-0%, -50%); /* IE 9 */
+    -webkit-transform :translate(-0%, -50%); /* Safari and Chrome */
+    height            : 9px;
+    background-color  : rgba(0, 0, 0, 0.15);
+    width             : 100%;
+}
+
+
+#imc-videoscreen-progress .imc-timeslider-bar {
+    background-color : rgba(0, 0, 0, 0.25);
+}
+
+
+#imc-videoscreen-progress .imc-timeslider-handle {
+    width              : 32px;
+    height             : 32px;
+    top                : -8px;
+    background         : url(images/timeslider-handle-large.svg) no-repeat;
+    -webkit-transform  : translate(16px, -2px);
+    -moz-transform     : translate(16px, -2px);
+    -ms-transform      : translate(16px, -2px);
+    transform          : translate(16px, -2px);
+      
+    -webkit-transition : opacity .2s, -webkit-transform .2s;
+    -moz-transition    : opacity .2s, -moz-transform .2s;
+    transition         : opacity .2s, transform .2s;
+}
+
+body.imc-devicefamily-desktop
+ #imc-videoscreen-progress .imc-timeslider-handle {
+    opacity: 0.0;
+    -webkit-transform  : translate(16px, -2px), scale(.1, .1);
+    -moz-transform     : translate(16px, -2px), scale(.1, .1);
+    -ms-transform      : translate(16px, -2px), scale(.1, .1);
+    transform          : translate(16px, -2px), scale(.1, .1);
+    
+    -webkit-transition : scale .5s;
+    -moz-transition    : scale .5s;
+    -ms-transition     : scale .5s;
+    -o-transition      : scale .5s;
+    transition         : scale .5s;
+    
+ }
+ 
+body.imc-devicefamily-desktop #imc-videoscreen-progress:hover .imc-timeslider-handle {
+    opacity: 1.0;
+    -webkit-transform  : translate(16px, -2px), ;
+    -moz-transform     : translate(16px, -2px), ;
+    -ms-transform      : translate(16px, -2px), ;
+    transform          : translate(16px, -2px), ;
+ }
+
+/*
+div#imc-videoscreen
+#imc-video-controls:hover #imc-video-progress .imc-timeslider-handle {
+    opacity           : 1.0;
+    -webkit-transform : translate(6px, -2px);
+    -moz-transform    : translate(6px, -2px);
+    -ms-transform     : translate(6px, -2px);
+    transform         : translate(6px, -2px);
+}
+*/
+
+.imc-toggle#imc-toggle-videoscreen-muted {
+    position         : absolute;
+    right            : 0%;
+    bottom           : 0%;
+    width            : 50px;
+    height           : 50px;
+    background-color : transparent;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+.imc-toggle#imc-toggle-videoscreen-muted img {
+    width    : 50px;
+    height   : 50px;
+    left     : 0px;
+    top      : 0px;
+}
+
+div#imc-videoscreen 
+.imc-button#imc-close-videoscreen {
+    position : absolute;
+    right    : 5px;
+    top      : 5px;
+    width    : 45px;
+    height   : 45px;
+    background-color: transparent;
+    
+    -webkit-transform  : translate(0px, -125%);
+    -moz-transform     : translate(0px, -125%);
+    -ms-transform      : translate(0px, -125%);
+    transform          : translate(0px, -125%);
+    
+    -webkit-transition : transform .3s;
+    -moz-transition    : transform .3s;
+    -ms-transition     : transform .3s;
+    -o-transition      : transform .3s;
+    transition         : transform .3s;
+}
+
+div#imc-videoscreen 
+.imc-button#imc-close-videoscreen {
+    background-image: url(images/overlay-close-n.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#imc-videoscreen 
+.imc-button#imc-close-videoscreen.pressed,
+div#imc-videoscreen 
+.imc-button#imc-close-videoscreen:hover {
+    background-image: url(images/overlay-close-h.svg);
+}
+
+
+/* --- VideoScreenControllsAvtive --- */
+
+div#imc-videoscreen .imc-videoscreen-controls.active 
+ #imc-videoscreen-controlbar,
+div#imc-videoscreen .imc-videoscreen-controls.active 
+ #imc-close-videoscreen{
+    -webkit-transform  : translate(0px, 0px);
+    -moz-transform     : translate(0px, 0px);
+    -ms-transform      : translate(0px, 0px);
+    transform          : translate(0px, 0px);
+ }

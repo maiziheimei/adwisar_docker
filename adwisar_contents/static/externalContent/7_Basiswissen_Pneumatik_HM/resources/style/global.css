@@ -1,0 +1,50 @@
+/* === Global design settings === */
+
+body {
+    font-family : "Source Sans Pro", sans-serif;
+    font-size : 12px;
+}
+
+/* --- Style Classes --- */
+.control-button {
+    height             : 40px;
+    width              : 40px;
+    background-color   : white;
+    overflow           : hidden;
+    -webkit-transition : background-color .2s;
+    -moz-transition    : background-color .2s;
+    transition         : background-color .2s;
+}
+
+body.imc-devicefamily-tablet
+.control-button {
+    width              : 50px;
+    height             : 50px;
+}
+
+body.imc-devicefamily-phone
+.control-button {
+    -webkit-transition : -webkit-transform .2s, background-color .2s, margin-top .2s;
+    -moz-transition    : -moz-transform .2s, background-color .2s, margin-top .2s;
+    transition         : transform .2s, background-color .2s, margin-top .2s;
+}
+
+/*.control-button.pressed,
+.control-button.selected {
+    background-color : #CCC !important;
+}*/
+
+.text-button {
+    display          : inline-block;
+    padding          : 5px 10px 5px 10px;
+    color            : #FFF;
+    margin-left      : 5px;
+    opacity          : .8;
+    background-color : #688E9F;
+}
+
+body.imc-devicefamily-desktop
+.text-button:hover,
+.text-button.pressed {
+    opacity : 1;
+}

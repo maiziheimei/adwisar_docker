@@ -1,0 +1,30 @@
+/* --- Locked message --- */
+
+body.imc-devicefamily-phone
+#imc-lockmessage {
+    width              : auto;
+    max-width          : none;
+    left               : 20px;
+    right              : 20px;
+    margin             : 0;
+}
+
+/* --- Jump Message --- */
+
+body.imc-devicefamily-phone
+#imc-jumpmessage {
+    width              : 300px;
+    top                : 5px;
+    right              : 5px;
+}
+  
+body.imc-devicefamily-phone
+#imc-jumpmessage h2.header {
+    font-size : 22px;
+    margin    : 10px 23px ;
+}
+body.imc-devicefamily-phone
+#imc-jumpmessage p.message {
+    margin: 23px;
+    margin-top:0px;
+}

@@ -1,0 +1,8 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Fehlerursache in Verpackungsstation beheben",
+       "info" : "Beheben Sie die Fehlerursache. <br><br>Führen Sie dazu folgende Schritte durch: <br>1. Sensorausrichtung prüfen <br>2.  Ggf. Sensor ausrichten <br>3.  Verbindung des Sensors prüfen <br>4.  Ggf. Sensor verbinden",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

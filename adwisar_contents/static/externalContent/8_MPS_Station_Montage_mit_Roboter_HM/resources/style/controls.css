@@ -1,0 +1,195 @@
+/* Styled Scrollbar */
+::-webkit-scrollbar{width:15px;height:15px;}
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment{display:block;height:0px;width:0px;background-color:#fff;}
+::-webkit-scrollbar-track-piece{background-color:#ddd;-webkit-border-radius:0;}
+::-webkit-scrollbar-thumb:vertical{height:50px;}
+::-webkit-scrollbar-thumb:horizontal{width:50px;}
+::-webkit-scrollbar-track {
+                    background:#FBFBFB;
+                    box-shadow: 3px 3px 10px rgba(0,0,0,.25) inset;
+                }
+::-webkit-scrollbar-thumb {
+                    background: #d9dadc; /*light grey*/
+                    border-radius: 1px;
+                    border:1px solid rgba(0,0,0,0.3);
+                    box-shadow: -3px -3px 6px #f5f5f5 inset,3px 3px 3px #c0c0c4 inset;
+                }
+
+
+/**
+ * Common properties of UI controls
+*/
+
+#imc-audio-enabler {
+    background-color    : rgb(255, 255, 255);
+    background-image    : url(images/tap-to-play_n.svg);
+    background-position : center center;
+    background-repeat   : no-repeat;
+}
+
+#imc-audio-enabler.active {
+    background-image : url(images/tap-to-play_h.svg);
+}
+
+div.imc-button.disabled .icon,
+div.imc-toggle.disabled .icon-on,
+div.imc-toggle.disabled .icon-off {
+    cursor  : default;
+    opacity : 0.3;
+}
+
+body.imc-devicefamily-tablet
+.imc-toggle img,
+body.imc-devicefamily-tablet
+.imc-toggle img {
+    -webkit-transition : -webkit-transform .2s, opacity .2s;
+    -moz-transition    : -moz-transform .2s, opacity .2s;
+    transition         : transform .2s, opacity .2s;
+}
+
+body.imc-devicefamily-tablet
+.imc-toggle img {
+    display : block !important;
+}
+
+body.imc-devicefamily-tablet
+.imc-toggle .icon-on {
+    opacity           : 0.0;
+    -webkit-transform : scale(.1);
+    -moz-transform    : scale(.1);
+    -ms-transform     : scale(.1);
+    transform         : scale(.1);
+}
+
+body.imc-devicefamily-tablet
+.imc-toggle.on .icon-off {
+    opacity           : 0.0;
+    -webkit-transform : scale(.1);
+    -moz-transform    : scale(.1);
+    -ms-transform     : scale(.1);
+    transform         : scale(.1);
+}
+
+body.imc-devicefamily-tablet
+.imc-toggle .icon-off {
+    opacity           : 1.0;
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+body.imc-devicefamily-tablet
+.imc-toggle.on .icon-on {
+    opacity           : 1.0;
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+.imc-scrollable-both {
+    overflow : auto;
+}
+
+.imc-scrollable-vertical {
+    overflow-y : auto;
+}
+
+.imc-scrollable-horizontal {
+    overflow-x : auto;
+}
+
+.touch-enabled.imc-scrollable-vertical,
+.touch-enabled.imc-scrollable-horizontal {
+    overflow : hidden;
+}
+
+.imc-scrollindicator-vertical {
+    width              : 8px;
+    opacity            : 0.0;
+    margin-right       : 4px;
+    -webkit-transition : opacity .7s;
+    -moz-transition    : opacity .7s;
+    -ms-transition     : opacity .7s;
+    -o-transition      : opacity .7s;
+    transition         : opacity .7s;
+}
+
+.imc-scrollindicator-vertical.active {
+    opacity : 1.0;
+}
+
+.imc-scrollindicator-vertical .handle {
+    min-height         : 20px;
+    background-color   : #999;
+    margin             : 2px;
+    margin-right       : 1px;
+    border-radius      : 4px;
+}
+
+.imc-timeslider {
+    cursor : pointer;
+}
+
+.imc-listview-item.locked,
+.imc-treeview-item.locked,
+.imc-tileview-item.locked {
+    cursor : default;
+}
+
+/* --- Tree View --- */
+.imc-treeview-node {
+    padding-left : 30px;
+    position     : relative;
+    overflow     : hidden;
+    margin       : 0px;
+}
+
+.imc-treeview-item {
+    height   : 35px;
+    overflow : hidden;
+}
+
+.imc-treeview-collapsehandle {
+    width               : 35px;
+    height              : 35px;
+    position            : absolute;
+    top                 : 0px;
+    background-image    : url(images/tree-collapse.svg);
+    background-repeat   : no-repeat;
+    background-position : center center;
+}
+
+.imc-treeview-node.collapsed>.imc-treeview-collapsehandle {
+    background-image : url(images/tree-expand.svg);
+}
+
+.imc-treeview-node.collapsed ul .imc-treeview-collapsehandle {
+    display : none;
+}
+
+.imc-treeview-node.collapsed>ul {
+    display : none;
+}
+
+/* --- Tab Bar --- */
+.imc-tabbar {
+    font-size : 0;
+}
+
+.imc-tabbar-tab .icon-on {
+    display : none;
+}
+
+.imc-tabbar-tab .icon-off {
+    display : block;
+}
+
+.imc-tabbar-tab.selected .icon-on {
+    display : block;
+}
+
+.imc-tabbar-tab.selected .icon-off {
+    display : none;
+}

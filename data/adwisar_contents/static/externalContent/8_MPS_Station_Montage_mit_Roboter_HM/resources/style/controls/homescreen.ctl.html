@@ -1,0 +1,30 @@
+<div id="imc-homescreen-controls" xmlns:imc="http://im-c.de/xml/player">
+    <imc:panel id="imc-homescreen-content">
+        <h1 id="imc-homescreen-title"></h1>
+        <imc:progress id="imc-homescreen-progress"
+            size="38" fillcolor="#0095DB" strokecolor="#ADB6BB"
+            basecolor="#ADB6BB" strokewidth="0"
+            value="watch($_P, progress)" />
+        <imc:progresslabel id="imc-homescreen-progress-label"
+            postfix=" Completed" value="watch($_P, progress)"/>
+        <imc:tileview id="imc-homescreen-tileview" template="overview-tile-item"
+            data="$_P.contentList"
+            active-item="watch($_P.navigator, currentRootContent)" />
+        <imc:treeview id="imc-homescreen-treeview" template="overview-tree-item"
+            data="$_P.contentTree"
+            active-item="watch($_P.navigator, currentRootContent)" />
+        <div id="imc-homescreen-buttons">
+            <div id="imc-homescreen-buttons-center">
+               
+                <imc:tabbar id="imc-homescreen-tabbar" target="#imc-homescreen-controls">
+                    <imc:button
+                        id="imc-homescreen-close-button"
+                        class="control-button"
+                        role="action.home.hide"/>
+                    <imc:tab id="imc-homescreen-tileview-tab" class="control-button"
+                        value="tileview" />
+                </imc:tabbar>
+            </div>
+        </div>
+    </imc:panel>
+</div>

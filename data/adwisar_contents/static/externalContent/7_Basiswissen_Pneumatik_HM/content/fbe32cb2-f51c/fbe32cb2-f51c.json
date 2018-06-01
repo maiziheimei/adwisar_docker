@@ -1,0 +1,50 @@
+{
+    "entries": [
+        {
+            "id": "urn:imc:$5oqd",
+            "src": "content/fbe32cb2-f51c/entries/361a56f8-8cc3.html",
+            "title": "Cyber-physische Systeme (CPS)"
+        },
+        {
+            "id": "urn:imc:pgTeH",
+            "src": "content/fbe32cb2-f51c/entries/afce0d65-4d7d.html",
+            "title": "Internet of Everything"
+        },
+        {
+            "id": "urn:imc:klsJO",
+            "src": "content/fbe32cb2-f51c/entries/cb2d5751-72d3.html",
+            "title": "Internet der Dinge"
+        },
+        {
+            "id": "urn:imc:l3Tfu",
+            "src": "content/fbe32cb2-f51c/entries/7acf3d54-4948.html",
+            "title": "Smart Factory"
+        },
+        {
+            "id": "urn:imc:qU$2e",
+            "src": "content/fbe32cb2-f51c/entries/38828f6b-3468.html",
+            "title": "Internet der Dienste"
+        },
+        {
+            "id": "urn:imc:WQdL=",
+            "src": "content/fbe32cb2-f51c/entries/fd6f43eb-5724.html",
+            "title": "Interview mit Prof. Dr. Peter Post"
+        },
+        {
+            "id": "urn:imc:y0y7u",
+            "src": "content/fbe32cb2-f51c/entries/7a870888-e3a5.html",
+            "title": "APPsist"
+        },
+        {
+            "id": "urn:imc:b0woA",
+            "src": "content/fbe32cb2-f51c/entries/9018082c-50a1.html",
+            "title": "Application (App)"
+        },
+        {
+            "id": "urn:imc:VSjD8",
+            "src": "content/fbe32cb2-f51c/entries/21e764e7-edc4.html",
+            "title": "Metamorphose"
+        }
+    ],
+    "type": "glossary"
+}

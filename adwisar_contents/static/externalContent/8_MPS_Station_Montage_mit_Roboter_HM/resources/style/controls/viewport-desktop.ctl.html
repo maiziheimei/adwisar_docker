@@ -1,0 +1,104 @@
+<div id="imc-viewport-controls" xmlns:imc="http://im-c.de/xml/player">  
+    <!-- Load Indicator -->
+    <imc:spriteanimation
+        id="imc-load-indicator"
+        width="60"
+        height="60"
+        framerate="40"
+        running="true"
+        src="resources/style/images/loading.png"/>
+    
+    <!-- Progress Slider -->
+    <imc:timeslider id="imc-control-progress"/>
+    
+    <!-- Pause Indicator -->
+    <img id="imc-pause-indicator"
+        src="resources/style/images/animation-pause-indicator.svg"/>
+    
+    <div id="imc-content-controls">
+        <div id="imc-content-controls-center">
+           
+
+        <!-- Overview Button -->
+            <imc:button id="imc-control-overview" class="control-button"
+                role="action.home.show" />
+            
+            
+            <!-- Audio/Subtitle Controls -->
+            <imc:toggle id="imc-control-subtitles"
+                class="control-button"
+                bind="$_P.viewport.subtitlesEnabled"/>
+            <imc:toggle id="imc-control-audio"
+                class="control-button"
+                bind="$_P.audioPlayer.muted" />
+            <!-- Back Button -->
+            <imc:button id="imc-control-back" class="control-button"
+                role="navigation.back"
+                enabled="watch($_P.navigator, enableBackButton)"/>
+
+            <div id="imc-content-controls-slidewindow">
+                <!-- Play/Pause -->
+                <imc:toggle id="imc-control-pause"
+                    class="control-button"/>
+                
+                <!-- Previous Interaction -->
+                <imc:button id="imc-control-exam-back"
+                    class="control-button"
+                    role="action.exam.previnteraction"/>
+                
+                <!-- Exam Overview -->
+                <imc:button id="imc-control-exam-overview"
+                    class="control-button"
+                    role="action.exam.overview"/>
+                
+                <!-- Next Interaction -->
+                <imc:button id="imc-control-exam-forward"
+                    class="control-button"
+                    role="action.exam.nextinteraction"/>
+                
+                <!-- Hand In -->
+                <imc:button id="imc-control-exam-handin"
+                    class="control-button"
+                    role="action.exam.handin"/>
+                
+                <!-- Evaluate Button -->
+                <imc:button id="imc-control-evaluate"
+                    class="control-button"
+                    role="action.interaction.evaluate"/>
+                
+                <!-- Retry Button -->
+                <imc:button id="imc-control-retry"
+                    class="control-button"
+                    role="action.interaction.retry"/>
+                
+                <!-- Print Button -->
+                <imc:button id="imc-control-print"
+                    class="control-button"
+                    role="action.content.print"/>
+            </div>
+                            <!-- Forward Button -->
+            <imc:button id="imc-control-forward" class="control-button"
+                role="navigation.forward"
+                enabled="watch($_P.navigator, enableNextButton)"/>
+            
+
+            
+           
+        </div>
+        
+        <div id="imc-content-controls-right">
+            <!-- Exam Status -->
+            <div id="imc-control-exam-remaining-time"
+                class="exam-stat-label">0:00</div>
+            <div id="imc-control-exam-current-interaction"
+                class="exam-stat-label">0/0</div>
+            <div id="imc-control-exam-num-correct"
+                class="exam-stat-label">0</div>
+            <div id="imc-control-exam-num-incorrect"
+                class="exam-stat-label">0</div>
+
+            
+        </div>
+        </div>
+    
+</div>

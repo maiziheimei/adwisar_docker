@@ -1,0 +1,27 @@
+# Local Maven repo on filesystem
+mavenLocal:~/.m2/repository
+
+# Maven central
+maven:http://repo2.maven.org/maven2
+
+# Sonatype snapshots
+maven:https://oss.sonatype.org/content/repositories/snapshots
+
+# APPsist CeLTech
+#maven:http://michael.dietrich:AP3vBUbD5qVNfpH5ujaNLEStZbE@artifactory.celtech.de/artifactory/appsist-release-local 
+#maven:http://michael.dietrich:AP3vBUbD5qVNfpH5ujaNLEStZbE@artifactory.celtech.de/artifactory/appsist-snapshot-local
+
+# APPsist CeLTech
+maven:http://nowrite:AP5JF5C9gitVraYsTSYsFDdZdhNrb5XGYLeKXz@artifactory.celtech.de/artifactory/appsist-release-local 
+maven:http://nowrite:AP5JF5C9gitVraYsTSYsFDdZdhNrb5XGYLeKXz@artifactory.celtech.de/artifactory/appsist-snapshot-local
+
+# ALINA
+maven:http://midi:APStzhxz9H4iE6CRh5bL7CVJ22ZrJrVhBLFb1@virtuellepatienten.de:9081/artifactory/services-release-local
+maven:http://midi:APStzhxz9H4iE6CRh5bL7CVJ22ZrJrVhBLFb1@virtuellepatienten.de:9081/artifactory/services-snapshot-local
+
+# Bintray
+bintray:http://dl.bintray.com
+
+# adwisar
+maven:http://nowrite:AP5JF5C9gitVraYsTSYsFDdZdhNrb5XGYLeKXz@artifactory.celtech.de/artifactory/adwisar-release-local
+maven:http://nowrite:AP5JF5C9gitVraYsTSYsFDdZdhNrb5XGYLeKXz@artifactory.celtech.de/artifactory/adwisar-snapshot-local

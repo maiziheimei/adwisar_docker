@@ -1,0 +1,25 @@
+<div id="imc-errorscreen-container" xmlns:imc="http://im-c.de/xml/player">
+    
+  <imc:panel id="imc-errorscreen-messagebox" xmlns:imc="http://im-c.de/xml/player">
+      <h2 class="header">${error-header}</h2>
+      <p class="message">${error-message}</p>
+      <p><span class="code">${error-code}</span>
+      <span class="description">${error-description}</span></p>     
+      <div class="buttons">
+          <imc:button
+              class="retry text-button"
+              label="${label-retry}"
+              role="action.errorscreen.retry" />
+      </div>  
+           
+      <imc:spriteanimation
+      id="imc-retry-indicator"
+      width="60"
+      height="60"
+      framerate="40"
+      running="true"
+      src="resources/style/images/loading.png"/>      
+      
+  </imc:panel>
+ 
+</div>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<svg id="icons.fw-Seite%201" width="40px" viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="40px" xml:space="preserve" version="1.1" x="0px" y="0px" style="background-color:#ffffff00" preserveAspectRatio="none">
+ <g>
+  <g>
+   <path d="M 33 12 L 33 17 L 23 17 L 23 12 L 33 12 L 33 12 ZM 35 10 L 21 10 L 21 19 L 35 19 L 35 10 L 35 10 Z" fill="#0090db"/>
+  </g>
+  <g>
+   <path d="M 33 23 L 33 28 L 23 28 L 23 23 L 33 23 L 33 23 ZM 35 21 L 21 21 L 21 30 L 35 30 L 35 21 L 35 21 Z" fill="#0090db"/>
+  </g>
+  <path stroke="#0090db" d="M 28 29 L 28 26 L 28 26 " fill="none" stroke-width="2"/>
+  <path stroke="#0090db" d="M 28 18 L 28 15 L 28 15 " fill="none" stroke-width="2"/>
+  <g>
+   <path d="M 17 23 L 17 28 L 7 28 L 7 23 L 17 23 L 17 23 ZM 19 21 L 5 21 L 5 30 L 19 30 L 19 21 L 19 21 Z" fill="#0090db"/>
+  </g>
+  <g>
+   <path d="M 17 12 L 17 17 L 7 17 L 7 12 L 17 12 L 17 12 ZM 19 10 L 5 10 L 5 19 L 19 19 L 19 10 L 19 10 Z" fill="#0090db"/>
+  </g>
+  <path stroke="#0090db" d="M 12 11 L 12 14 L 12 14 " fill="none" stroke-width="2"/>
+  <path stroke="#0090db" d="M 12 22 L 12 25 L 12 25 " fill="none" stroke-width="2"/>
+ </g>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" packages="de.appsist.misc.log4j2.plugins">
+  <Appenders>
+    <Console name="console" target="SYSTEM_OUT">
+      <PatternLayout pattern="[%d{dd.MM.yy HH:mm:ss.SSS} %highlight{%level}] %logger{36}:%L - %msg%n"/>
+    </Console>
+    <NoSql name="db">
+      <MongoDb databaseName="m4demo" collectionName="logs" server="localhost" port="27017" username="" password=""/>
+    </NoSql>
+  </Appenders>
+  <Loggers>
+    <Root level="DEBUG">
+		  <!-- All information is logged in the database ... -->
+      <AppenderRef ref="db" level="DEBUG" />
+			<!-- ... but only warnings or errrors are printed to the console. -->
+			<AppenderRef ref="console" level="INFO" />
+    </Root>
+    <!-- Information from the gateway will also be logged on the console. -->
+		<Logger name="de.appsist.service.gateway" level="INFO">
+      <AppenderRef ref="console" />
+    </Logger>
+		<!-- We don't want to see debug information for system libraries. -->
+    <Logger name="io.netty" level="INFO" additivity="false">
+      <AppenderRef ref="console" />
+    </Logger>		
+    <Logger name="org.vertx" level="INFO" additivity="false">
+      <!--AppenderRef ref="db" /-->
+            <AppenderRef ref="console" />
+    </Logger>		
+  </Loggers>
+</Configuration>

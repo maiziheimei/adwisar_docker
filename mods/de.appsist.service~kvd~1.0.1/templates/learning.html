@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="css/learning.css">
+		<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+		<script type="text/javascript" src="js/learning.js"></script>
+		<script type="text/javascript" src='js/Chart.js'></script>
+		<script type="text/javascript" src="js/sockjs-0.3.4.min.js"></script>
+    	<script type="text/javascript" src="js/vertxbus-2.1.js"></script>
+		<script>
+			learning.init();
+		</script>
+	</head>
+
+	<body>
+		<img id="usernologin" src="img/learning/nologin.png" />
+		<img id="userMale" src="img/learning/background_user/User_Mann.png" />
+		<img id="userFemale" src="img/learning/background_user/User_Frau.png" />
+
+		<div id="screen_area">
+			<div id="left_area">
+				<div id="user_area">
+					<p id="user_name" />
+					<p id="user_job_description" />
+					<p>Bereich: Pneumatische Antriebe</p>
+				</div>
+				<div id="chart_area">
+					<canvas id="learningChart" width="635" height="450"></canvas>
+				</div>
+			</div>
+
+			<div id="right_area">
+				<div id="content_area">
+					<table id="content_table">
+						<tr>
+							<td>
+								<img id="Uebersicht_Roboterzelle_mH" src="img/learning/content/Uebersicht_Roboterzelle_mH.png" />
+								<img id="Uebersicht_Roboterzelle_oH" src="img/learning/content/Uebersicht_Roboterzelle_oH.png" />
+							</td>
+							<td>
+								<img id="Sicherheitshinweise_MPS_mH" src="img/learning/content/MPS_mH.png" />
+								<img id="Sicherheitshinweise_MPS_oH" src="img/learning/content/MPS_oH.png" />
+							</td>
+							<td>
+								<img id="Basiswissen_Pneumatik_mH" src="img/learning/content/Pneumatik_mH.png" />
+								<img id="Basiswissen_Pneumatik_oH" src="img/learning/content/Pneumatik_oH.png" />
+							</td>
+							<td>
+								<img id="Roboter_Ausbaustufe_mH" src="img/learning/content/Ausbaustufe_mH.png" />
+								<img id="Roboter_Ausbaustufe_oH" src="img/learning/content/Ausbaustufe_oH.png" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img id="Verkettete_Montageanalage_mH" src="img/learning/content/Montageanlage_mH.png" />
+								<img id="Verkettete_Montageanalage_oH" src="img/learning/content/Montageanlage_oH.png" />
+							</td>
+							<td>
+								<img id="Handbuch_Roboter_mH" src="img/learning/content/Handbuch_mH.png" />
+								<img id="Handbuch_Roboter_oH" src="img/learning/content/Handbuch_oH.png" />
+							</td>
+							<td>
+								<img id="Montageprozess_Roboterzelle_mH" src="img/learning/content/Montageprozess_mH.png" />
+								<img id="Montageprozess_Roboterzelle_oH" src="img/learning/content/Montageprozess_oH.png" />
+							</td>
+							<td>
+								<img id="Detail_Roboterzelle_mH" src="img/learning/content/Detail_mH.png" />
+								<img id="Detail_Roboterzelle_oH" src="img/learning/content/Detail_oH.png" />
+							</td>
+						</tr
+	>				</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

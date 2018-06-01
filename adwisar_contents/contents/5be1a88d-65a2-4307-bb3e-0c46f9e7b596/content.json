@@ -1,0 +1,8 @@
+{
+       "main" : "sensor_ausrichten.jpg",       
+       "mimeType" : "image/jpg",
+       "title" : "Sensor ausrichten",
+       "info" : "Richten Sie den Sensor korrekt aus, wie im Bild angezeigt.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

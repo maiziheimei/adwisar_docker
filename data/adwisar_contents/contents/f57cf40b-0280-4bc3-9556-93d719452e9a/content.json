@@ -1,0 +1,9 @@
+{
+       "main" : "druckluftversorgung_der_station_pruefen.png",       
+       "mimeType" : "image/png",
+       "title" : "Druckluftversorgung der Station prüfen",
+       "info" : "Überprüfen Sie, ob die Station mit Druckluft versorgt wird. Überprüfen Sie hierzu die im Bild markierte Anzeige. Hier muss ein Druckwert von ca. 2 bar angezeigt werden.",  
+		"endorsement" : "Wenn Sie den Schritt &quot;Druckluftversorgung der Station prüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob Druckluft vorhanden ist oder nicht.",       
+	   "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

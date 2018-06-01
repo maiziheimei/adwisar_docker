@@ -1,0 +1,8 @@
+{
+       "main" : "uebersichtfunktion_roboterzelle.png",       
+       "mimeType" : "image/png",
+       "title" : "Übersicht: Funktion der Roboterzelle",
+       "info" : "Über eine Rutsche führt die Vorgängerstation die Grundkörper des zu montierenden Pneumatikzylinders dem Roboter zu. Der Roboter ermittelt den Typ und die Orientierung der Grundkörper und legt sie lageorientiert in die Montageaufnahme. Er entnimmt den  passenden Kolben von der Palette und montiert diesen in den Grundkörper. Gesteuerte Magazine führen dem Roboter die Kolbenfeder und den Zylinderdeckel zu. Der fertig montierte Pneumatikzylinder wird auf einer Rutsche abgelegt.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

@@ -1,0 +1,38 @@
+<imc:scrollarea direction="vertical" class="imc-certificate-form" xmlns:imc="http://im-c.de/xml/player">
+    <div class="head">
+        <h2>${certificate-header}</h2>
+        <p>${certificate-instruction}</p>
+    </div>
+    <ul class="form">
+        <li class="formfield titlefield">
+            <label>${label-title}</label>
+            <input type="text" class="title" />
+        </li>
+        <li class="formfield firstnamefield">
+            <label>${label-firstname}</label>
+            <input type="text" class="firstname" />
+        </li>
+        <li class="formfield lastnamefield">
+            <label>${label-lastname}</label>
+            <input type="text" class="lastname" />
+        </li>
+        <li class="formfield companyfield">
+            <label>${label-company}</label>
+            <input type="text" class="company" />
+        </li>
+        <li class="formfield departmentfield">
+            <label>${label-department}</label>
+            <input type="text" class="department" />
+        </li>
+        <li class="formfield locationfield">
+            <label>${label-location}</label>
+            <input type="text" class="location" />
+        </li>
+    </ul>
+    <div class="buttons">
+        <imc:button class="ok text-button"
+            label="${label-ok}" role="action.certificate.create" />
+        <imc:button class="skip text-button"
+            label="${label-skip}" role="navigation.skip" />
+    </div>
+</imc:scrollarea>

@@ -1,0 +1,8 @@
+{
+       "main" : "bauteil_entnehmen.jpg",       
+       "mimeType" : "image/jpg",
+       "title" : "Bauteil entnehmen",
+       "info" : "Entnehmen Sie das Bauteil aus der Roboterstation.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

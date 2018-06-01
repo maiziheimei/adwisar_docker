@@ -1,0 +1,9 @@
+{
+       "main" : "tuer_pruefen.png",       
+       "mimeType" : "image/png",
+       "title" : "Tür prüfen",
+       "info" : "Überprüfen Sie, ob die Tür tatsächlich geöffnet ist (Sichtprüfung).",  
+       "endorsement" : "Wenn Sie den Schritt &quot;Tür prüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob die Tür geöffnet ist oder nicht.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

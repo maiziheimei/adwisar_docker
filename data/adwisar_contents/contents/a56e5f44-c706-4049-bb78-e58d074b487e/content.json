@@ -1,0 +1,8 @@
+{
+       "main" : "modulmagazin.png",       
+       "mimeType" : "image/png",
+       "title" : "Übersicht des Magazins",
+       "info" : "Das Magazin dient zur Lagerung runder Werkstücke. Ein Schieber verhindert beim Entnehmen des Rohres aus dem Halter, dass die Werkstücke herausfallen. Es können bis zu 8 Werkstücke gespeichert werden.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

@@ -1,0 +1,9 @@
+{
+       "main" : "sicherheitsanweisung.png",       
+       "mimeType" : "image/png",
+       "title" : "Sicherheitsanweisungen",
+       "info" : "Bitte halten Sie sich bei der Nutzung dieses Assistenzsystems zwingend an die in der Sicherheitsunterweisung vermittelten Vorgaben und Anweisungen!",  
+       "endorsement" : "<ul><li>Greifen Sie nur bei Stillstand in den Aufbau. </li><li>Berühren Sie während des Betriebs kein bewegliches Teil des Roboters.</li><li>Schalten Sie den Roboter vor jeder Arbeit in Reichweite des Roboters aus. Dies geschieht auch automatisch beim Öffnen der Tür.</li><li>Beachten Sie die Angaben des Sicherheitstechnischen Handbuchs für MELFA Industrieroboter von Mitsubishi.</li></ul><br><br>Quittieren Sie diese Anweisungen durch &quot;Bestätigen - Weiter&quot;.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

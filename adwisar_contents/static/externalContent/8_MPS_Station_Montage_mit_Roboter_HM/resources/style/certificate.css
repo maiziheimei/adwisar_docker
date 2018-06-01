@@ -1,0 +1,120 @@
+/**
+ * -----------------------------------------------------------------------------
+ * This file is part of IMC Author.
+ * (c) 2012 imc GmbH. All rights reserved.
+ * -----------------------------------------------------------------------------
+ * This stylesheet defines the visual properties of certificates exclusively.
+ * No other styles can be found or should ever be defined in here.
+ * -----------------------------------------------------------------------------
+ * ATTENTION:
+ * NEVER forget to prefix all styles with the correct content type class,
+ * otherwise styles for different content types may interfere with each other!
+ * -----------------------------------------------------------------------------
+*/
+
+@import url(certificate-phone.css);
+
+/* === General Styles === */
+
+.imc-certificate-form input {
+    outline : none;
+}
+.imc-certificate-page svg {
+    width  : 100%;
+    height : 100%;
+}
+
+.imc-certificate-form {
+    font-family        : "Source Sans Pro";
+    position           : absolute;
+    left               : 50%;
+    top                : 50%;
+    width              : 400px;
+    background-color   : #FFF;
+    margin-left        : -200px;
+    -webkit-box-shadow : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+    box-shadow         : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+    -webkit-transform  : translateY(-50%);
+    -moz-transform     : translateY(-50%);
+    -ms-transform      : translateY(-50%);
+    transform          : translateY(-50%);
+    max-height         : 100%;
+    overflow-x         : hidden;
+}
+
+.imc-certificate-form .head {
+    background-color : #666666;
+    color            : #FFF;
+    padding          : 32px 26px 20px 26px;
+}
+
+.imc-certificate-form .head h2 {
+    font-family         : "Source Sans Pro";
+    font-size           : 30px;
+    margin-bottom       : 8px;
+    background-image    : url(images/certificate-message-header.svg);
+    background-repeat   : no-repeat;
+    background-position : left 4px;
+    padding-left        : 42px;
+}
+
+.imc-certificate-form .form {
+    padding : 16px;
+    margin  : 0px;
+}
+
+.imc-certificate-form .form li {
+    list-style-type : none;
+    padding         : 4px 0px 4px 0px;
+}
+
+.imc-certificate-form .form label {
+    display   : block;
+    color     : #666666;
+    font-size : 13px;
+}
+
+.imc-certificate-form .form input {
+    width            : 356px;
+    border           : solid 2px #b6b6b6;
+    font-family      : "Source Sans Pro";
+    font-size        : 20px;
+    padding          : 4px;
+    color            : #666666;
+    background-color : #F7F7F7;
+}
+
+.imc-certificate-form .buttons {
+    text-align  : right;
+    padding     : 16px;
+    padding-top : 0px;
+}
+
+.imc-certificate-form .buttons .imc-button {
+    display     : inline-block;
+    color       : #FFF;
+    padding     : 6px;
+    margin-left : 6px;
+    min-width   : 60px;
+    text-align  : center;
+    width       : inherit !important;
+    height      : inherit !important;  
+}
+
+.imc-certificate-page {
+    width              : 21cm;
+    height             : 29.7cm;
+    background-color   : #FFF;
+    -webkit-box-shadow : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+    box-shadow         : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+}
+
+/* === Desktop Specific === */
+
+
+
+/* === Tablet Specific === */
+
+
+
+/* === Phone Specific === */

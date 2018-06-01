@@ -1,0 +1,9 @@
+{
+       "main" : "federn_ins_magazin_einlegen.png",       
+       "mimeType" : "image/png",
+       "title" : "Federn ins Magazin einlegen",
+       "info" : "Füllen Sie das Federmagazin vollständig mit Federn.",  
+	   "arid" : "festo_300",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

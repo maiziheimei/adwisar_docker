@@ -1,0 +1,9 @@
+{
+       "main" : "experten_benachrichtigen.png",       
+       "mimeType" : "image/png",
+       "title" : "Experten benachrichtigen",
+       "info" : "Stoppen Sie die Tätigkeit.<br><br>Rufen Sie einen Experten hinzu.",  
+       "endorsement" : "Drücken Sie das Feld &quot;Bestätigen - Weiter&quot;, um die Assistenz zu beenden.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

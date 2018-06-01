@@ -1,0 +1,9 @@
+{
+       "main" : "fehler.png",       
+       "mimeType" : "image/png",
+       "title" : "Fehler bei Durchführung des Schrittes",
+       "info" : "Die Maschine ist nicht im erwarteten Zustand.<br><br>Bitte überprüfen Sie, ob die Anweisungen korrekt ausgeführt wurden.<br><br>Sollte das Problem erneut auftreten, wenden Sie sich bitte an einen Experten.",  
+       "endorsement" : "Durch Drücken des Feldes &quot;Bestätigen - Weiter&quot; gelangen Sie zum vorherigen Schritt zurück.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

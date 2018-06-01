@@ -1,0 +1,305 @@
+div.imc-glossary {
+    background-color : #FFF;
+}
+
+div.imc-glossary-content {
+    font-family : "Source Sans Pro";
+    width       : 100%;
+    height      : 100%;
+    position    : relative;
+}
+
+div.imc-glossary-content .imc-glossary-entrylist {
+    float            : left;
+    width            : 210px;
+    border-right     : 1px #666666 solid; 
+    position         : absolute;
+    left             : 50px;
+    top              : 30px;
+    bottom           : 0px;
+}
+
+div.imc-glossary-content .imc-glossary-entryarea {
+    position      : absolute;
+    top           : 30px;
+    bottom        : 0px;
+    left          : 260px;
+    right         : 0px;
+    padding-left  : 50px;
+    padding-right : 50px;
+}
+
+
+/* phone specific */
+
+body.imc-devicefamily-phone
+.imc-button.toggle-entrylist {
+    position : absolute;
+    width    : 49px;
+    height   : auto;
+    top      : 0px;
+    left     : 0px;
+    bottom   : 0px;
+    z-index  : 3;
+    
+    background-image: url("images/type-glossary.svg");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: 9px 9px;
+    opacity : 1.0 !important; 
+}
+/*inside app*/
+body.imc-devicefamily-phone.imc-platform-nativeclient
+.imc-button.toggle-entrylist {
+    background-position: 9px 49px;
+}
+
+body.imc-devicefamily-phone
+.imc-glossary-entrylist {
+    top     : 0px;
+    z-index : 2;
+    background-color : #FFF;
+    width: auto;
+    max-width: 80%;
+    
+    -webkit-transform : translateX(-100%);
+    -ms-transform     : translateX(-100%);
+    -moz-transform    : translateX(-100%);
+    transform         : translateX(-100%);
+    
+    -webkit-transition : -webkit-transform .3s;
+    -ms-transition     : -ms-transform .3s;
+    -moz-transition    : -moz-transform .3s;
+    transition         : transform .3s;
+}
+
+body.imc-devicefamily-phone
+.imc-glossary.entrylist .imc-glossary-entrylist {
+    -webkit-transform : none;
+    -ms-transform     : none;
+    -moz-transform    : none;
+    transform         : none;
+}
+
+body.imc-devicefamily-phone
+div.imc-glossary-content .imc-glossary-entryarea {
+    left : 50px;
+    z-index : 1;
+}
+/* end phone specific*/
+
+div.imc-glossary-content .imc-listview-item {
+    font-family         : "Source Sans Pro";
+    color               : #666666;
+    padding-left        : 8px;
+    padding-right       : 8px;
+    list-style-type     : none;
+    font-size           : 20px;
+    cursor              : pointer;
+    -moz-transition     : all .5s;
+    -ms-transition      : all .5s;
+    -webkit-transition  : all .5s;
+    -o-transition       : all .5s;
+    transition          : all .5s;
+    opacity             : 1.0;
+    height              : 45px;
+    line-height         : 45px;
+    overflow            : hidden;
+    text-overflow       : ellipsis;
+    white-space         : nowrap;
+}
+
+div.imc-glossary-content .imc-listview-element:last-of-type {
+    margin-bottom : 35px;
+}
+
+div.imc-glossary-content
+.imc-listview:not(.touch-enabled) .imc-listview-item:hover {
+    background-color: #E5EEF1;
+}
+
+div.imc-glossary-content .imc-listview-item.selected {
+    color               : #FFF;
+    background-color    : #666666 !important;
+}
+
+div.imc-glossary-content .imc-listview-item.invisible {
+    opacity : 0.0;
+    height  : 0px;
+}
+
+div.imc-glossary-entry {
+    font-family : "Source Sans Pro";
+}
+
+/* Content Formating */
+div.imc-glossary-entry h1,
+div.imc-glossary-entry h2,
+div.imc-glossary-entry h3,
+div.imc-glossary-entry h4
+ {
+    font-weight   : normal;
+    color         : #528BA3;
+    margin-top    : 0.2em;
+    margin-bottom : 0.5em;
+    font-weight   : normal;
+}
+div.imc-glossary-entry blockquote{
+    background-color: #EEEEEE;
+    background-position: 8px 6px;
+    background-repeat: no-repeat;
+    color: #555555;
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px;
+    padding-bottom:13px;
+}
+
+div.imc-glossary-entry blockquote:before{
+  display: block;
+  float:left;
+  width:30px;
+  height:27px;
+  margin-right:10px;
+  content:"";
+  background-image: url("images/quote.svg");
+}
+/*subtle*/
+div.imc-glossary-entry i{
+  font-style:italic;
+  color:#666666;
+}
+/*intense*/
+div.imc-glossary-entry b{
+  font-weight:bold;
+  color:#333333;
+}
+/*colorful*/
+div.imc-glossary-entry u{
+  color: #B91952;
+  text-decoration: none;
+}
+
+div.imc-glossary-entry div.bulletlist:before {
+    content : url(images/bullet.svg);
+    margin-right : 0.5em;
+    position : relative;
+    top : -3px;
+}
+
+body, p, h2, h3, h4, blockquote, div:not(.numberedlist) {
+    counter-reset : numberedlist 0;
+}
+    
+div.imc-glossary-entry div.numberedlist {
+    counter-increment : numberedlist;
+}
+
+div.imc-glossary-entry div.numberedlist:before {
+    content : counter(numberedlist) ".";
+    margin-right : .5em;
+}
+
+div.bulletlist + p,
+div.numberedlist + p {
+    margin-top : 0.6em;
+}
+
+div.bulletlist + h2,
+div.numberedlist + h2{
+    margin-top : 0.6em;
+}
+
+div.bulletlist + h3,
+div.numberedlist + h3 {
+    margin-top : 0.6em;
+}
+
+div.bulletlist + h4,
+div.numberedlist + h4 {
+    margin-top : 0.6em;
+}
+
+div.bulletlist + blockquote,
+div.numberedlist + blockquote {
+    margin-top : 0.6em;
+}
+
+div.bulletlist + div.numberedlist,
+div.numberedlist + div.bulletlist {
+    margin-top : 0.6em;
+}
+
+div.imc-glossary-entry img.text-wrap-left {
+    float        : left;
+    margin-right : 15px;
+}
+
+div.imc-glossary-entry img.text-wrap-right {
+    float       : right;
+    margin-left	: 15px;
+}
+
+div.imc-glossary-entry img.text-wrap-none {
+    display : block;
+}
+
+div.imc-glossary-entry p {
+    font-size	  : 15px;
+    margin-bottom : 0.6em;
+    line-height   : 1.5em;
+}
+
+div.imc-glossary-entry a:link {
+    color           : #666666;
+    text-decoration : none;
+    background      : #E5EEF1;
+    padding         : 0 2px;
+}
+
+div.imc-glossary-entry a:hover {
+    color            : #666666;
+    background-color : #D4E2E8;
+}
+
+div.imc-glossary-entry a:active {
+    color            : #666666;
+    background-color : #C3D7DF;
+}
+
+div.imc-glossary-entry a:visited {
+    color : #666666;
+}
+
+div.imc-glossary-entry em {
+    color      : #666666;
+    font-style : italic;
+}
+
+/* Alignment for Images */
+div.imc-glossary-entry img.floatleft {
+    margin-right  : 10px;
+    margin-bottom : 10px;
+    float         : left;
+    clear         : both;
+}
+
+div.imc-glossary-entry img.floatright {
+    margin-left   : 10px;
+    margin-bottom : 10px;
+    float         : right;
+    clear         : both;
+}
+
+div.imc-glossary-entry img.floatnone {
+    display       : block;
+    margin-top    : 10px;
+    margin-bottom : 10px;
+    clear         : both;
+}
+
+body.imc-devicefamily-phone div.imc-glossary-entry img {
+    width: 100%;
+    height: auto;
+}

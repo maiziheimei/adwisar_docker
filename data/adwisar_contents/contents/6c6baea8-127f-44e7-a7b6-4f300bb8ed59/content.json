@@ -1,0 +1,9 @@
+{
+       "main" : "federn_nachfuellen.png",       
+       "mimeType" : "image/png",
+       "title" : "Federn nachfüllen",
+       "info" : "Füllen Sie die Federn nach.<br><br>Führen Sie dazu folgende Schritte durch:<br>1. Federn aus Lager holen<br>2. Federn ins Magazin einlegen",  
+	   "arid" : "festo_100",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

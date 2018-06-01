@@ -1,0 +1,24 @@
+version: '3'
+services:
+    gateway:
+            build: .
+            container_name: "gateway"
+            image: adwisar/latest
+            ports:
+              - "8080:8080"
+            links:
+              - mongo
+            depends_on:
+              - mongo
+    mongo:
+            image: mongo:latest
+            environment:
+              - MONGO_DATA_DIR=/data/db
+              - MONGODB_USER=xiwa03
+              - MONGODB_PASS=admin
+              - MONGO_INITDB_DATABASE=m4demo
+            volumes:
+              - ./data/db:/data/db
+            ports:
+              - "27030:27017"
+            command: mongod --bind_ip_all --smallfiles --logpath=/dev/null # --quiet

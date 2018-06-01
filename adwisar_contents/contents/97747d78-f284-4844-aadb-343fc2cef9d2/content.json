@@ -1,0 +1,8 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Druckluftsystem prüfen",
+       "info" : "Überprüfen Sie das Druckluftsystem der Roboterzelle.<br><br>Führen Sie dazu folgende Schritte durch:<br>1. Druckluftversorgung der Station prüfen<br>2. Hauptabsperrhahn überprüfen<br>3. Teilabsperrhahn des Stapelmagazins prüfen",  
+		"version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

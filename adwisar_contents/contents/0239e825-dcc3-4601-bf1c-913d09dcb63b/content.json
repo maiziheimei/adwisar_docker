@@ -1,0 +1,9 @@
+{
+       "main" : "snippet.html",       
+       "mimeType" : "text/html+snippet",
+       "title" : "Prozessdurchlauf kontrollieren",
+       "info" : "Kontrollieren Sie den Prozess. Dieser sollte nun so ablaufen, wie im Video gezeigt.", 
+		"endorsement" : "Wenn Sie sich den Prozess und das Video angeschaut haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob der Prozess korrekt abläuft oder nicht.",	   
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

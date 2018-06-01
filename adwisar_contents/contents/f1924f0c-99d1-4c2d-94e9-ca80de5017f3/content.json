@@ -1,0 +1,10 @@
+{
+       "main" : "sensorausrichtung_pruefen.jpg",       
+       "mimeType" : "image/jpg",
+       "title" : "Sensorausrichtung prüfen",
+       "info" : "Prüfen Sie die Ausrichtung des Sensors. Die korrekte Ausrichtung können Sie dem Bild entnehmen.",  
+	   "arid" : "festo_800",
+       "endorsement" : "Wenn Sie den Schritt &quot;Sensorausrichtung prüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob der Sensor korrekt ausgerichtet ist oder nicht.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

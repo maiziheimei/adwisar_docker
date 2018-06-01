@@ -1,0 +1,9 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Bauteilqualität prüfen",
+       "info" : "Prüfen Sie, ob das Bauteil beschädigt ist. Beachten Sie hierzu die Beispiele rechts. Verwenden Sie, wenn notwendig, den Sprout zur Prüfung oder rufen Sie bei Bedarf einen Experten zur Hilfe. ",  
+       "endorsement" : "Wenn Sie den Schritt &quot;Bauteilqualität prüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob das Bauteil in Ordnung ist oder beschädigt wurde.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

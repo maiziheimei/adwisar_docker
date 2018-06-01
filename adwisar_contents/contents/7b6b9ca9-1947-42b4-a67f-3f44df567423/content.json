@@ -1,0 +1,10 @@
+{
+       "main" : "bauteil_finden.jpg",       
+       "mimeType" : "image/jpg",
+       "title" : "Bauteil finden",
+       "info" : "Finden Sie das Bauteil. Schauen Sie hierzu sowohl in der Roboterstation als auch in der Verpackungsstation nach.", 
+		"arid" : "festo_700",	   
+       "endorsement" : "Im nächsten Schritt müssen Sie angeben, wo sich das Bauteil befindet. <br>Wenn Sie den Schritt &quot;Bauteil finden&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

@@ -1,0 +1,76 @@
+{
+    "progress-label"        :  "$1% fechado",
+    "status-not-attempted"  :  "Não iniciado",
+    "status-completed"      :  "Fechado",
+    "status-failed"         :  "Não aprovado",
+    "status-incomplete"     :  "Incompleto",
+    "status-locked"         :  "Bloqueado",
+    "status-optional"       :  "Opcional",
+    "content-paused"        :  "Conteúdo pausado",
+    "turn-device-message"   :  "Rodar aparelho para continuar!",
+    "overview"              :  "Vista geral e navegação",
+    "audio-on-off"          :  "Ligar/desligar áudio",
+    "subtitles-on-off"      :  "Ligar/desligar legendas",
+    "status"                :  "Estado",
+    "remaining-attempts"    :  "Tentativas restantes",
+    "no-attempt-limit"      :  "Sem limites",
+    "question-count"        :  "Perguntas",
+    "time-limit"            :  "Limite de tempo",
+    "no-time-limit"         :  "Sem limites",
+    "time-minutes"          :  "$1 minutos",
+    "label-ok"              :  "OK",
+    "label-result"          :  "Resultado",
+    "label-start"           :  "Iniciar",
+    "label-skip"            :  "Saltar",
+    "label-close"           :  "Fechar",
+    "label-title"           :  "Título",
+    "label-firstname"       :  "Nome próprio",
+    "label-lastname"        :  "Nome adicional",
+    "label-company"         :  "Empresa",
+    "label-department"      :  "Departamento",
+    "label-location"        :  "Localidade",
+    "message-passed"        :  "Parabéns, foi aprovado!",
+    "message-failed"        :  "Infelizmente não foi aprovado!",
+    "message-neutral"       :  "Terminou este teste",
+    "label-score"           :  "Resultado",
+    "label-grade"           :  "Nota",
+    "result-correct"        :  "certo",
+    "result-incorrect"      :  "errado",
+    "result-points"         :  "$1 de $2 pontos",
+    "handin-message"        :  "Este em condições de entregar este teste. O resultado do teste é baseado nas suas respostas atuais. Deseja continuar e entregar o teste?",
+    "lock-message-header"   :  "Conteúdo bloqueado",
+    "lock-message"          :  "Não estão reunidas as condições para mostrar este conteúdo",
+    "jump-message-header"   :  "Conteúdo avançado",
+    "exam-navigate-message" :  "Se abandonar este teste, o resultado será baseado nas suas respostas atuais. Quer mesmo abandonar o teste?",
+    "click-to-open"         :  "Clique aqui para abrir",
+    "certificate-header"    :  "Parabéns!",
+    "certificate-instruction" :  "Por favor introduza os seus dados, para que o seu certificado seja emitido.",
+    "certificate-text-pre"  :  "",
+    "certificate-text-post" :  "foi aprovado com sucesso",
+    "certificate-text-pre-neutral" :  "",
+    "certificate-text-post-neutral" :  "foi concluído com sucesso",
+    "label-retry"                   : "Retry",
+    "error-scorm-header"            : "Transfer of learning progress failed" ,
+    "error-scorm-message"           : "The learning management system reports the following error:"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+{
+       "main" : "roboterzelle_ueberpruefen.png",       
+       "mimeType" : "image/png",
+       "title" : "Roboterzelle überprüfen",
+       "info" : "Überprüfen Sie die Roboterzelle auf mögliche Ursachen, die die Fehlermeldung &quot;Druckluftversorgung unterbrochen&quot; hervorrufen können. <br><br>Führen Sie dazu folgende Schritte durch:<br>1. Prüfen, ob Deckelmagazin leer ist<br>2. Am Bedienpanel „Start“ drücken und Schubzylinder prüfen<br>3. Druckluft prüfen",  
+        "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

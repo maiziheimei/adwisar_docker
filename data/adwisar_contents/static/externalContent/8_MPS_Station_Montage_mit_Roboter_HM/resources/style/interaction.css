@@ -1,0 +1,328 @@
+/**
+ * -----------------------------------------------------------------------------
+ * This file is part of IMC Author.
+ * (c) 2012 imc GmbH. All rights reserved.
+ * -----------------------------------------------------------------------------
+ * This stylesheet defines the visual properties of interactions exclusively.
+ * No other styles can be found or should ever be defined in here.
+ * -----------------------------------------------------------------------------
+ * ATTENTION:
+ * NEVER forget to prefix all styles with the correct content type class,
+ * otherwise styles for different content types may interfere with each other!
+ * -----------------------------------------------------------------------------
+*/
+
+/* Assignment text style */
+* {
+    margin  : 0px;
+    padding : 0px;
+}
+
+html.csstransforms3d .imc-interaction {
+    perspective         : 800px;
+    -webkit-perspective : 800px;
+}
+
+.interaction .assignment {
+    font-family : "Source Sans Pro", sans-serif;
+    font-size   : 32px;
+    line-height : .9;
+}
+
+div.imc-gridchoice {
+    display : table;
+    width   : 100%;
+}
+
+div.imc-gridchoice-entry {
+    display: table-row;
+}
+
+div.imc-gridchoice-checkbox-area {
+    display  : table-cell;
+    width: 45px;
+    background: rbga(255, 0, 0, 0.5);
+}
+
+div.imc-gridchoice-text-area {
+    display: table-cell;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+div.imc-gridchoice-info-area {
+    display: table-cell;
+}
+
+div.imc-singlechoice {
+    
+}
+
+div.imc-multiplechoice {
+
+}
+
+div.imc-multiplechoice .imc-choice-entry,
+div.imc-singlechoice   .imc-choice-entry {
+    position     : relative;
+    padding      : 10px;
+    padding-left : 50px;
+    min-height:    37px;
+}
+
+div.imc-multiplechoice .imc-choice-info,
+div.imc-singlechoice   .imc-choice-info,
+div.imc-gridchoice     .imc-choice-info {
+    position : absolute;
+    right    : 1px;  
+    top      : 15px;
+    content  : url(images/info.svg) no-repeat center;    
+    width    : 25px;
+    height   : 25px;
+}
+
+div.imc-multiplechoice .imc-choice[has-info=true] > div.imc-choice-entry {
+    padding-right : 30px;
+}
+
+.imc-choice-text {
+    margin-left: 30px;
+}
+
+div.imc-multiplechoice .imc-choice-text,
+div.imc-singlechoice   .imc-choice-text,
+div.imc-gridchoice     .imc-choice-text {
+    font-family : "Source Sans Pro";
+    font-size   : 14px;
+    color       : rgb(50,50,50); /*rgb(108,109,112);*/
+    line-height : 1.25em;
+}
+
+/* For display of empty answers in interaction tool only */
+div.imc-choice-text:not(:focus).empty::before {
+    font-style : italic;
+    color      : rgba(50, 50, 50, 0.8); /*rgba(108, 109, 112, 0.8);*/
+}
+
+div.imc-multiplechoice .imc-choice-checkbox,
+div.imc-singlechoice   .imc-choice-checkbox {
+    position   : absolute;
+    top        : 13px;
+    left       : 10px;
+    width      : 50px;
+    height     : 20px;
+    background : url(images/unchecked_n.svg) no-repeat;
+}
+
+div.imc-gridchoice .imc-choice-checkbox {
+    width       : 64px;
+    height      : 20px;
+    position    : relative;
+    top         : 5px;
+    left        : 5px;
+    background  : url(images/unchecked_n.svg) no-repeat;
+}
+
+/*div.imc-multiplechoice .imc-choice-checkbox:focus {
+    outline: none;
+}*/
+
+div.imc-multiplechoice .imc-choice-checkbox:not(.disabled):hover,
+div.imc-singlechoice   .imc-choice-checkbox:not(.disabled):hover,
+div.imc-gridchoice     .imc-choice-checkbox:not(.disabled):hover {
+    background : url(images/unchecked_h.svg) no-repeat;
+}
+
+div.imc-multiplechoice .imc-choice-checkbox:not(.disabled).pressed,
+div.imc-singlechoice   .imc-choice-checkbox:not(.disabled).pressed,
+div.imc-gridchoice     .imc-choice-checkbox:not(.disabled).pressed {
+    background : url(images/unchecked_a.svg) no-repeat;
+}
+
+div.imc-multiplechoice .imc-choice-checkbox.checked,
+div.imc-singlechoice   .imc-choice-checkbox.checked,
+div.imc-gridchoice     .imc-choice-checkbox.checked {
+    background : url(images/checked_n.svg) no-repeat;
+}
+
+div.imc-multiplechoice .imc-choice-checkbox:not(.disabled).checked:hover,
+div.imc-singlechoice   .imc-choice-checkbox:not(.disabled).checked:hover,
+div.imc-gridchoice     .imc-choice-checkbox:not(.disabled).checked:hover {
+    background : url(images/checked_h.svg) no-repeat;
+}
+
+div.imc-multiplechoice .imc-choice-checkbox:not(.disabled).checked.pressed,
+div.imc-singlechoice   .imc-choice-checkbox:not(.disabled).checked.pressed,
+div.imc-gridchoice     .imc-choice-checkbox:not(.disabled).checked.pressed {
+    background : url(images/checked_a.svg) no-repeat;
+}
+/* Evaluation - only relevant for player */
+div.imc-multiplechoice .imc-choice-checkbox.correct,
+div.imc-singlechoice   .imc-choice-checkbox.correct,
+div.imc-gridchoice     .imc-choice-checkbox.correct {
+    background : url(images/unchecked-correct.svg) no-repeat;
+}
+
+div.imc-multiplechoice .imc-choice-checkbox.incorrect,
+div.imc-singlechoice   .imc-choice-checkbox.incorrect,
+div.imc-gridchoice     .imc-choice-checkbox.incorrect {
+    background : url(images/unchecked-incorrect.svg) no-repeat;
+}
+
+div.imc-multiplechoice .imc-choice-checkbox.checked.correct,
+div.imc-singlechoice   .imc-choice-checkbox.checked.correct,
+div.imc-gridchoice     .imc-choice-checkbox.checked.correct {
+    background : url(images/checked-correct.svg) no-repeat;
+}
+
+div.imc-multiplechoice .imc-choice-checkbox.checked.incorrect,
+div.imc-singlechoice   .imc-choice-checkbox.checked.incorrect,
+div.imc-gridchoice     .imc-choice-checkbox.checked.incorrect {
+    background : url(images/checked-incorrect.svg) no-repeat;
+}
+
+div.imc-dropgap,
+div.imc-listgap,
+div.imc-textgap,
+ul.imc-list-dropdown {
+    font-family : "Source Sans Pro";
+    font-size   : 24px;
+    padding     : 5px;
+}
+
+/* For display of empty gapinteraction in interaction tool only */
+div.imc-dropgap:not(:focus).empty::before,
+div.imc-listgap:not(:focus).empty::before,
+div.imc-textgap:not(:focus).empty::before {
+    font-style : italic;
+    color      : rgba(108, 109, 112, 0.8);
+}
+
+input.imc-textgapbox {
+    display          : inline-block;
+    white-space      : nowrap;
+    font-family      : inherit;
+    font-size        : inherit;
+    border           : none;
+    outline          : none;
+    background-color : rgba(82, 139, 163, 0.2);
+    text-align       : left;
+    color            : #47788D;
+    border-radius    : 0px;
+    padding-left     : 5px;
+    padding-right    : 5px;
+    min-width        : 20px;
+}
+
+input.textgapbox:disabled {
+    color                   : #47788D;
+    -webkit-text-fill-color : #47788D;
+}
+
+input.imc-listgapbox {
+    font-family   : inherit;
+    font-size     : inherit;
+    outline       : none;
+    display       : inline-block;
+    border        : solid 2px #97B9C8;
+    padding-left  : 5px;
+    padding-right : 20px;
+    min-width     : 20px;
+    background    : url(images/dropdown-extender-n.svg) no-repeat right center;
+    cursor        : pointer;
+}
+
+input.imc-listgapbox:not(.disabled):hover,
+input.imc-listgapbox.selected,
+input.imc-listgapbox.open {
+    border-color      : #6396AC;
+    background-image  : url(images/dropdown-extender-h.svg);
+    background-color: rgba(99, 150, 172, 0.3);
+}
+
+input.imc-listgapbox.disabled {
+    cursor : default;
+}
+
+ul.imc-list-dropdown {
+    top              : 34px;
+    border           : solid 2px #6396AC;
+    background-color : #FFF;
+    padding-left     : 5px;
+    padding-right    : 20px;
+    min-width        : 20px;
+}
+/*ul.imc-list-dropdown li:hover:not(.active) {
+  background-color:rgba(99,150,172,0.3)
+}
+ul.imc-list-dropdown li.active {
+  background-color:rgba(99,150,172,1)
+}*/
+
+
+input.imc-dropgapbox {
+    display       : inline-block;
+    border        : solid 2px #6396AC;
+    padding       : 2px;
+    padding-right : 20px;
+    min-width     : 20px;
+    line-height   : 33px;   
+}
+
+input.imc-textgapbox.selected,
+input.imc-textgapbox:focus {
+    background-color : rgba(82, 139, 163, 0.05);
+    outline          : 2px rgba(82, 139, 163, 0.9) solid;
+}
+
+input.imc-textgapbox.correct {
+    outline          : 2px #008D3F solid;
+    background-color : #F2F6ED;
+}
+
+input.imc-listgapbox.correct {
+    border           : 2px #008D3F solid;
+    background-color : #F2F6ED;
+    background-image : url(images/gap-feedback-correct.svg);
+}
+
+input.imc-textgapbox.incorrect {
+    outline          : 2px #D41217 solid;
+    background-color : #FDF5F2;
+}
+
+input.imc-listgapbox.incorrect {
+    border           : 2px #D41217 solid;
+    background-color : #FDF5F2;
+}
+
+div.imc-droptarget.correct {
+    background-color: #008D3F; /*  #7DA352;*/
+}
+div.imc-droptarget.correct:before {  
+    content:" ";
+    background-color:#008D3F; /*  #7DA352;*/
+    width:20px;
+    height:20px;
+    margin-left:-20px;
+    z-index:100000;
+    display:block;
+    overflow:hidden;
+    background-image : url(images/droptarget-correct.svg);
+}
+
+div.imc-droptarget.incorrect {
+    background-color: #D41217; /*  #E44D26;*/
+}
+div.imc-droptarget.incorrect:before {  
+    content:" ";
+    background-color: #D41217; /*  #E44D26;*/
+    width:20px;
+    height:20px;
+    margin-left:-20px;
+    z-index:100000;
+    display:block;
+    overflow:hidden;
+    background-image : url(images/droptarget-incorrect.svg);
+}
+

@@ -1,0 +1,102 @@
+<div id="imc-viewport-controls" xmlns:imc="http://im-c.de/xml/player">  
+    <!-- Load Indicator -->
+    <imc:spriteanimation
+        id="imc-load-indicator"
+        width="60"
+        height="60"
+        framerate="40"
+        running="true"
+        src="resources/style/images/loading.png"/>
+    
+    <!-- Background Panel -->
+    <imc:panel id="imc-controls-background"></imc:panel>
+    
+    <!-- Fixed Control Block -->
+    
+    <!-- Back Button -->
+    <imc:button id="imc-control-back" class="control-button left-aligned fixed"
+        role="navigation.back"
+        enabled="watch($_P.navigator, enableBackButton)"/>
+    
+    <!-- Overview Button -->
+    <imc:button id="imc-control-overview"
+        class="control-button bottom-aligned fixed" role="action.home.show" />
+    
+    <!-- Forward Button -->
+    <imc:button id="imc-control-forward"
+        class="control-button right-aligned fixed" role="navigation.forward"
+        enabled="watch($_P.navigator, enableNextButton)"/>
+    
+    <!-- Progress Slider -->
+    <imc:timeslider id="imc-control-progress"/>
+    
+    <!-- Pause Indicator -->
+    <img id="imc-pause-indicator"
+        src="resources/style/images/animation-pause-indicator.svg"/>
+    
+    <!-- Play/Pause -->
+    <imc:toggle id="imc-control-pause"
+        class="control-button bottom-aligned"/>
+    
+    <!-- Previous Interaction -->
+    <imc:button id="imc-control-exam-back"
+        class="control-button left-aligned"
+        role="action.exam.previnteraction"/>
+    
+    <!-- Exam Overview -->
+    <imc:button id="imc-control-exam-overview"
+        class="control-button right-aligned"
+        role="action.exam.overview"/>
+    
+    <!-- Next Interaction -->
+    <imc:button id="imc-control-exam-forward"
+        class="control-button right-aligned"
+        role="action.exam.nextinteraction"/>
+    
+    <!-- Hand In -->
+    <imc:button id="imc-control-exam-handin"
+        class="control-button right-aligned"
+        role="action.exam.handin"/>
+    
+    <!-- Evaluate Button -->
+    <imc:button id="imc-control-evaluate"
+        class="control-button right-aligned"
+        role="action.interaction.evaluate"/>
+    
+    <!-- Retry Button -->
+    <imc:button id="imc-control-retry"
+        class="control-button right-aligned"
+        role="action.interaction.retry"/>
+    
+    <!-- Print Button -->
+    <imc:button id="imc-control-print"
+        class="control-button right-aligned"
+        role="action.content.print"/>
+    
+    <!-- Exam Status -->
+    <div id ="imc-exam-statusbar">
+        <div id="imc-control-exam-remaining-time"
+            class="exam-stat-label">0:00</div>
+        <div id="imc-control-exam-current-interaction"
+            class="exam-stat-label">0/0</div>
+        <div id="imc-control-exam-num-correct"
+            class="exam-stat-label">0</div>
+        <div id="imc-control-exam-num-incorrect"
+            class="exam-stat-label">0</div>
+    </div>
+    
+    <!-- Audio/Subtitle Controls -->
+    <imc:toggle id="imc-control-audio"
+        class="control-button bottom-aligned"
+        bind="$_P.audioPlayer.muted" />
+    <imc:toggle id="imc-control-subtitles"
+        class="control-button bottom-aligned"
+        bind="$_P.viewport.subtitlesEnabled"/>
+    
+    <imc:currentobjectlabel id="imc-currentobject"></imc:currentobjectlabel>
+    
+     <img id="imc-endofswipe-left"
+        src="resources/style/images/endofswipe-left.svg"/>
+    <img id="imc-endofswipe-right"
+        src="resources/style/images/endofswipe-right.svg"/>
+</div>

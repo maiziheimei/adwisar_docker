@@ -1,0 +1,8 @@
+{
+       "main" : "stationen_ausrichten.jpg",       
+       "mimeType" : "image/jpg",
+       "title" : "Stationen ausrichten",
+       "info" : "Richten Sie die Roboter- und Verpackungsstation zueinander aus. Die Bauteilrutsche der Roboterstation muss exakt zum Fließband auf der Verpackungsstation ausgerichtet sein.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

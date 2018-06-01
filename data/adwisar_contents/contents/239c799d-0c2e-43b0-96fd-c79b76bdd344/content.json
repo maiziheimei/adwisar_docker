@@ -1,0 +1,8 @@
+{
+       "main" : "federmagazin.png",       
+       "mimeType" : "image/png",
+       "title" : "Funktionsbeschreibung des Federmagazins",
+       "info" : "Durch das Modul <b>Federmagazin</b> werden die Rückstellfedern für den zu montierenden einfachwirkenden Pneumatikzylinder bereitgestellt.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

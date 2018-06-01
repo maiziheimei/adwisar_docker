@@ -1,0 +1,8 @@
+{
+       "main" : "sensor_verbinden.jpg",       
+       "mimeType" : "image/jpg",
+       "title" : "Sensor verbinden",
+       "info" : "Verbinden Sie den Sensor über die Steckverbindung mit der Station. <br/>Falls erforderlich, nutzen Sie die AR-Unterstützung.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

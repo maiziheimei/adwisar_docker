@@ -1,0 +1,8 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Tür entriegeln und öffnen",
+       "info" : "<ul><li>Entriegeln Sie die Tür.</li><li>Beachten Sie die Drehrichtung.</li><li>Öffnen Sie dann die Tür.</li></ul>",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

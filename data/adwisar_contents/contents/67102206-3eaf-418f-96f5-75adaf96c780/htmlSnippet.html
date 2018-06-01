@@ -1,0 +1,203 @@
+
+
+<div id="hua" style="width: 710px;">
+
+        <script type="text/javascript">
+
+
+            function isWindow( obj ) {
+                return obj != null && obj === obj.window;
+            }
+            function getWindow( elem ) {
+                return isWindow( elem ) ? elem : elem.nodeType === 9 && elem.defaultView;
+            }
+            function offset( elem ) {
+
+                var docElem, win,
+                        box = { top: 0, left: 0 },
+                        doc = elem && elem.ownerDocument;
+
+                docElem = doc.documentElement;
+
+                if ( typeof elem.getBoundingClientRect !== typeof undefined ) {
+                    box = elem.getBoundingClientRect();
+                }
+                win = getWindow( doc );
+                return {
+                    top: box.top + win.pageYOffset - docElem.clientTop,
+                    left: box.left + win.pageXOffset - docElem.clientLeft
+                };
+            };
+
+            function drawCommentLine( commentContainer, imgContainer, xPercent, yPercent, commentId ) {
+
+                var ay = offset( commentContainer ).top + 30;
+                // var ax = commentContainer.offset().left - 20;
+                var ax = 300 + 503;
+
+                var imgTop = offset( imgContainer ).top;
+                var imgBottom = imgTop + 400;
+
+                // var imgLeft = imgContainer.offset().left;
+                var imgLeft = 310;
+
+                // var imgWidth = imgContainer.innerWidth();
+                var imgWidth = 503;
+
+
+
+                var bx= ( xPercent * ( imgWidth ) + imgLeft );
+                var by= ( ( yPercent ) * ( imgBottom - imgTop ) ) + imgTop;
+
+                var commentLineId = "commentLineId-"+commentId;
+
+                var huaDiv = document.getElementById( 'hua' );
+
+                huaDiv.appendChild(
+                        createLine(
+                                ax -295  ,
+                                ay -70  +70,
+                                bx -310, // place for arrow.
+                                by -65,
+                                commentId,
+                                commentLineId
+                        )
+                );
+
+            }
+
+            function createLine(x1, y1, x2, y2, ii, commentLineId ) {
+                var a = x1 - x2,
+                        b = y1 - y2,
+                        c = Math.sqrt(a * a + b * b);
+
+                var sx = (x1 + x2) / 2,
+                        sy = (y1 + y2) / 2;
+
+                var x = sx - c / 2,
+                        y = sy;
+
+                var alpha = Math.PI - Math.atan2(-b, a);
+
+                console.log( "drawing for comment: " + ii );
+
+                return createLineElement(x, y, c, alpha, commentLineId );
+            }
+
+            function createLineElement(x, y, length, angle, commentLineId ) {
+                var line = document.createElement("div");
+                line.id = commentLineId;
+                var styles = 'border: 2px dotted red; '
+                        + 'width: ' + length + 'px; '
+                        + 'height: 0px; '
+                        + '-moz-transform: rotate(' + angle + 'rad); '
+                        + '-webkit-transform: rotate(' + angle + 'rad); '
+                        + '-o-transform: rotate(' + angle + 'rad); '
+                        + '-ms-transform: rotate(' + angle + 'rad); '
+                        + 'position: absolute; '
+                        + 'opacity: 0.5 ; '
+                        + 'z-index: 100000 ; '
+                        + 'top: ' + y + 'px; '
+                        + 'left: ' + x + 'px; ';
+                line.setAttribute('style', styles);
+                return line;
+            }
+
+        
+</script>
+
+
+        <canvas id="movableCanvas-323"
+                width=500 height=380 class="thumbNailWithShadow"
+                style="padding: 1px; margin: 3px;  float: left;">
+
+        </canvas>
+
+        <script type="text/javascript">
+
+            var comments = [];
+            
+                var localComment = [];
+                localComment[ "x" ] = "40.0";
+                localComment[ "y" ] = "43.0";
+                comments.push( localComment );
+            
+
+            var canvasX = document.getElementById("movableCanvas-" + 323);
+            var context = canvasX.getContext("2d");
+            var imageObj = new Image();
+
+            imageObj.src = "ff7e2485-43c1-4a6e-a1a2-1a89abe0d20f.png";
+
+            imageObj.onload = function () {
+                context.drawImage(imageObj, 0, 0, canvasX.width, canvasX.height);
+
+                //context.drawImage(imageObj, 0, 0, canvasX.width, canvasX.height);
+
+                var arrayLength = comments.length;
+                var PI2=Math.PI*2;
+                for (var i = 0; i < arrayLength; i++) {
+                    context.beginPath();
+                    context.moveTo( 30+ comments[ i ].x/100*500,        30+comments[ i ].y/100*380);
+                    context.lineTo( 30+ comments[ i ].x/100*500-30,     30+comments[ i ].y/100*380-30);
+                    context.moveTo( 30+ comments[ i ].x/100*500-30,     30+comments[ i ].y/100*380-30);
+                    context.lineTo( 30+ comments[ i ].x/100*500-30+10,  30+comments[ i ].y/100*380-30+3);
+                    context.moveTo( 30+ comments[ i ].x/100*500-30,     30+comments[ i ].y/100*380-30);
+                    context.lineTo( 30+ comments[ i ].x/100*500-30+3,   30+comments[ i ].y/100*380-30+10);
+                    context.lineWidth = 2;
+                    // set line color
+                    context.strokeStyle = '#ff0000';
+                    context.stroke();
+                    context.moveTo( 30+ comments[ i ].x/100*500, 30+comments[ i ].y/100*380);
+
+                    context.arc( 30+ comments[ i ].x/100*500,30+comments[ i ].y/100*380,5,0,PI2);
+                    /* ctx.closePath();*/
+                    context.fillStyle="red";
+                    context.fill();
+                    context.closePath();
+                    context.lineWidth = 3;
+                    context.strokeStyle = 'red';
+                    context.stroke();
+                }
+
+            }
+
+        
+</script>
+
+
+        <div id="commentsDiv" style="float: right;">
+
+            
+                <div id="comment-458" style="width: 200px;">
+
+                    <div name="commentTextField"
+                         id="commentTA-458"
+                         style="background-color: whitesmoke; padding: 5px; margin: 5px; border: none; border-radius: 4px;">
+                        Look here
+                    </div>
+
+                    <script type="text/javascript">
+
+
+                        var commentLineId = "comment-458";
+                        var movCan        = "movableCanvas-323";
+
+                        drawCommentLine(
+                            document.getElementById( commentLineId ),
+                            document.getElementById( movCan ),
+                            0.48000000000000004,
+                            0.6142105263,
+                            458
+                        );
+
+                    
+</script>
+
+                </div>
+
+            
+
+        </div>
+
+</div>

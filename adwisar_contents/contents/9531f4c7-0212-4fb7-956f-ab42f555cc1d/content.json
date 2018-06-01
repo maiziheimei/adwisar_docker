@@ -1,0 +1,9 @@
+{
+       "main" : "ausrichtung_der_stationen_pruefen.jpg",       
+       "mimeType" : "image/jpg",
+       "title" : "Ausrichtung der Stationen prüfen",
+       "info" : "Prüfen Sie die Ausrichtung der Roboter- und Verpackungsstation zueinander. Die Bauteilrutsche der Roboterstation muss exakt zum Fließband auf der Verpackungsstation ausgerichtet sein.",  
+       "endorsement" : "Wenn Sie den Schritt &quot;Ausrichtung der Stationen prüfen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob die Stationen korrekt ausgerichtet sind oder nicht.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

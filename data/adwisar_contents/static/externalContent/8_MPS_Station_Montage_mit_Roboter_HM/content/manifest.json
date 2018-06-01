@@ -1,0 +1,122 @@
+{
+    "csapiversion": "1.0",
+    "library": [
+        {
+            "id": "urn:imc:SQVtv",
+            "language": "de",
+            "successrequirements": [
+                {
+                    "progress_measure_threshold": 0.90000000000000002,
+                    "type": "globalprogress"
+                },
+                {
+                    "items": [
+                    ],
+                    "success_status": "passed",
+                    "type": "examsuccess"
+                }
+            ],
+            "title": "8_MPS Station Montage mit Roboter",
+            "type": "root"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:ZvR54",
+            "relevancy": "mandatory",
+            "src": "content/4ca34dec-787f/4ca34dec-787f.json",
+            "thumbnail": "content/thumbs/4ca34dec-787f.png",
+            "title": "30_Was ist die Station überhaupt?",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:6FART",
+            "relevancy": "mandatory",
+            "src": "content/ca3989e2-4122/ca3989e2-4122.json",
+            "thumbnail": "content/thumbs/ca3989e2-4122.png",
+            "title": "30_Aufbau der Station Roboter mit MPS Modulen",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:Jlpl$",
+            "relevancy": "mandatory",
+            "src": "content/c5e4a97d-09d7/c5e4a97d-09d7.json",
+            "thumbnail": "content/thumbs/c5e4a97d-09d7.png",
+            "title": "30_Aufgabe der Robotorzelle",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:gpzst",
+            "relevancy": "mandatory",
+            "src": "content/b839c9f4-a15c/b839c9f4-a15c.json",
+            "thumbnail": "content/thumbs/b839c9f4-a15c.png",
+            "title": "30_Ablaufbeschreibung",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:yBzLf",
+            "relevancy": "mandatory",
+            "src": "content/ea4c5795-5314/ea4c5795-5314.json",
+            "thumbnail": "content/thumbs/ea4c5795-5314.png",
+            "title": "50_Ansprechpartner und Quellen",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:Rc3Cq",
+            "relevancy": "mandatory",
+            "src": "content/272d5113-860a/272d5113-860a.json",
+            "thumbnail": "content/thumbs/272d5113-860a.png",
+            "title": "10_Inhaltsübersicht",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:1bYwq",
+            "relevancy": "mandatory",
+            "src": "content/15278e5b-c96a/15278e5b-c96a.json",
+            "thumbnail": "content/thumbs/15278e5b-c96a.png",
+            "title": "20_Bedienungshilfe",
+            "type": "animation"
+        }
+    ],
+    "manifestversion": "1.0",
+    "playerversion": "1.1.0",
+    "structure": {
+        "children": [
+            {
+                "id": "urn:imc:ZvR54"
+            },
+            {
+                "id": "urn:imc:6FART"
+            },
+            {
+                "id": "urn:imc:Jlpl$"
+            },
+            {
+                "id": "urn:imc:gpzst"
+            },
+            {
+                "id": "urn:imc:yBzLf"
+            }
+        ],
+        "id": "urn:imc:SQVtv"
+    }
+}

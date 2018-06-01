@@ -1,0 +1,126 @@
+/* Safari iOS6: prevent overlaping of fullscreen overlay-buttons*/
+@media screen and (orientation:landscape) {
+  body.imc-devicefamily-phone.imc-platform-ios:not(.imc-platform-nativeclient)
+  div#imc-homescreen-buttons {
+    left  : 45px;
+    right : 40px;
+  }
+  body.imc-devicefamily-phone.imc-platform-ios:not(.imc-platform-nativeclient)
+  #imc-homescreen-tabbar {
+    left     : 90px;
+  }
+}
+
+
+/*adjust height of titlebar and tree and thumb views*/
+body.imc-devicefamily-phone
+#imc-homescreen-treeview,
+body.imc-devicefamily-phone
+div#imc-homescreen .imc-tileview{
+    top        : 55px;
+    bottom     : 40px;
+}
+
+/*adjust vertical alignment of titlebar elements */
+body.imc-devicefamily-phone
+h1#imc-homescreen-title{
+  top:8px;
+}
+body.imc-devicefamily-phone
+#imc-homescreen-progress{
+ top: 8px;  
+}
+body.imc-devicefamily-phone
+#imc-homescreen-progress-label{
+  top:15px;
+}
+
+
+/*adjust buttonbar and buttons*/
+body.imc-devicefamily-phone
+div#imc-homescreen-buttons{
+  height:40px;
+}
+
+body.imc-devicefamily-phone #imc-homescreen-buttons .imc-button,
+body.imc-devicefamily-phone #imc-homescreen-tabbar .imc-tabbar-tab,
+body.imc-devicefamily-phone #imc-homescreen-buttons .imc-toggle {
+    height: 40px;
+    width:  40px;
+}  
+
+body.imc-devicefamily-phone 
+#imc-homescreen-tabbar{
+  left: 40px;
+}
+
+body.imc-devicefamily-phone 
+#toggle-subtitles-homescreen{
+   right: 5px;
+}
+
+body.imc-devicefamily-phone #imc-homescreen-buttons img{
+    position:relative;
+    left: -5px;
+    top:  -5px;
+} 
+
+/* ***************** */
+/* tile-view specific */
+body.imc-devicefamily-phone
+  div#imc-homescreen .imc-tileview-item {
+  margin-right:8px;
+}
+
+body.imc-devicefamily-phone
+div#imc-homescreen .tile-label{
+    width:128px;
+    bottom:5px;
+    line-height:15px;
+    height:32px;
+  }
+/* Landscape */
+
+@media screen and (orientation:landscape) {
+  body.imc-devicefamily-phone
+  div#imc-homescreen .imc-tileview-item {
+    width: 172px;
+    height: 165px;
+  }
+  body.imc-devicefamily-phone
+  div#imc-homescreen .imc-tileview-item img {
+    max-width: 156px;
+    max-height: 118px; 
+  }  
+}
+/*iPhone < 5*/
+@media screen and (orientation:landscape) and (max-width: 480px) {
+  body.imc-devicefamily-phone
+  div#imc-homescreen .imc-tileview-item {
+    width: 143px;
+    height: 143px;
+  }body.imc-devicefamily-phone
+  div#imc-homescreen .imc-tileview-item img {
+    max-width: 127px;
+    max-height: 96px; 
+  }  
+}
+
+/* portrait */
+body.imc-devicefamily-phone
+div#imc-homescreen .imc-tileview{
+  padding-right:5px !important;
+  
+}
+ 
+@media screen and (orientation:portrait) {
+  body.imc-devicefamily-phone
+  div#imc-homescreen .imc-tileview-item {
+    width: 140px;
+    height: 140px;
+  }body.imc-devicefamily-phone
+  div#imc-homescreen .imc-tileview-item img {
+    max-width: 124px;
+    max-height: 93px;
+  }
+}

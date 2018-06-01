@@ -1,0 +1,49 @@
+/*
+ * Central stylestheet
+ */
+
+/* Device family detection */
+@import url(devicesupport.css);
+
+/* Base definitions */
+@import url(basedefs.css);
+
+/* Global properties */
+@import url(style/global.css);
+
+/* Control properties */
+@import url(style/controls.css);
+ 
+/* Load screen properties */
+@import url(style/loadscreen.css);
+ 
+/* Info screen properties */
+@import url(style/infoscreen.css);
+
+/* Home screen properties */
+@import url(style/homescreen.css);
+
+/* Inline glossary screen */
+@import url(style/glossaryscreen.css);
+ 
+/* Viewport properties */
+@import url(style/viewport.css);
+
+/* Overlay Viewport properties */
+@import url(style/overlayviewport.css);
+
+/* Video screen properties */
+@import url(style/videoscreen.css);
+
+/* error screen properties */
+@import url(style/errorscreen.css);
+
+/* Content */
+@import url(style/animation.css);
+@import url(style/interaction.css);
+@import url(style/glossary.css);
+@import url(style/external.css);
+@import url(style/certificate.css);
+@import url(style/exam.css);
+@import url(style/messages.css);
+@import url(style/video.css);

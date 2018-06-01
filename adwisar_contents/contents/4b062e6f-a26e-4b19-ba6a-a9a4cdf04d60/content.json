@@ -1,0 +1,8 @@
+{
+       "main" : "tuerschluessel_holen.png",       
+       "mimeType" : "image/png",
+       "title" : "Türschlüssel holen",
+       "info" : "Holen Sie sich den Türschlüssel. Dieser befindet sich an dem im Bild markierten Ort.",  
+        "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

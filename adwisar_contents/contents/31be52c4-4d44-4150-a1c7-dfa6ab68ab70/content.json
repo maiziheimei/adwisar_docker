@@ -1,0 +1,8 @@
+{
+       "main" : "deckelmagazin.png",       
+       "mimeType" : "image/png",
+       "title" : "Funktionsbeschreibung des Deckelmagazins",
+       "info" : "Das Modul <b>Deckelmagazin</b> vereinzelt Deckel für den zu montierenden Pneumatikzylinder aus einem Fallmagazin. Bis zu 15 Deckel können im Magazinrohr gestapelt werden.",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

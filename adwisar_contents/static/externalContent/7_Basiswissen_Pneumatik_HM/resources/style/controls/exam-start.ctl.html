@@ -1,0 +1,32 @@
+<div class="imc-exam-start"  xmlns:imc="http://im-c.de/xml/player">
+    <h2 class="title"></h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>${status}</td>
+                <td class="status"></td>
+            </tr>
+            <tr>
+                <td>${remaining-attempts}</td>
+                <td class="attempts"></td>
+            </tr>
+            <tr>
+                <td>${question-count}</td>
+                <td class="question-count"></td>
+            </tr>
+            <tr>
+                <td>${time-limit}</td>
+                <td class="time-limit"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <imc:button class="result text-button"
+            label="${label-result}" role="action.exam.showresult" />
+        <imc:button class="start text-button"
+            label="${label-start}" role="action.exam.start"/>
+        <imc:button class="skip text-button" label="${label-skip}"
+            enabled="watch($_P.navigator, canSkipForward)"
+            role="navigation.skip"/>
+    </div>
+</div>

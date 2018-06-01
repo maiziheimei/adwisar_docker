@@ -1,0 +1,8 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Fehlerursache in Roboterstation beheben",
+       "info" : "Beheben Sie die Fehlerursache. <br><br>Führen Sie dazu folgende Schritte durch: <br>1. Ausrichtung der Stationen prüfen <br>2.  Ggf. Stationen ausrichten <br>3.  Blockierungen identifizieren <br>4.  Ggf. Blockierungen entfernen",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

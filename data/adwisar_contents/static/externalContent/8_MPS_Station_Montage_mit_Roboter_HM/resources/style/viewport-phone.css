@@ -1,0 +1,386 @@
+/* === Viewport Controls :: Tablet === */
+
+/* --- Viewport Container --- */
+body.imc-devicefamily-phone
+div#imc-viewport-container {
+    position : absolute;
+    left     : 0px;
+    top      : 0px;
+    right    : 0px;
+    bottom   : 0px;
+}
+
+body.imc-devicefamily-phone
+.control-button.left-aligned {
+    position          : absolute;
+    top               : 50%;
+    left              : 0px;
+    margin-top        : -25px;
+    -webkit-transform : translateX(-40px);
+    -moz-transform    : translateX(-40px);
+    -ms-transform     : translateX(-40px);
+    transform         : translateX(-40px);
+    z-index           : 100;
+}
+
+body.imc-devicefamily-phone
+.control-button.right-aligned {
+    position          : absolute;
+    top               : 50%;
+    right             : 0px;
+    margin-top        : -25px;
+    -webkit-transform : translateX(40px);
+    -moz-transform    : translateX(40px);
+    -ms-transform     : translateX(40px);
+    transform         : translateX(40px);
+    z-index           : 100;
+}
+
+body.imc-devicefamily-phone
+.control-button.bottom-aligned {
+    position          : absolute;
+    bottom            : 0px;
+    -webkit-transform : translateY(40px);
+    -moz-transform    : translateY(40px);
+    -ms-transform     : translateY(40px);
+    transform         : translateY(40px);
+    z-index           : 100;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.controls
+.control-button.fixed {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+/* --- Overview Button --- */
+body.imc-devicefamily-phone
+#imc-control-overview {
+    left : 40px;
+}
+
+/* --- Play/Pause Toggle --- */
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-control-pause.control-enabled {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+/* --- Audio Toggle --- */
+/* Disabled since it does not work on many mobile platforms */
+body.imc-devicefamily-phone
+#imc-control-audio {
+    display : none;
+}
+
+/* --- Print Button --- */
+/* Does not work on most mobile platforms */
+body.imc-devicefamily-phone
+#imc-control-print {
+    display : none;
+}
+
+/* --- Subtitles Toggle --- */
+body.imc-devicefamily-phone
+#imc-control-subtitles {
+    right : 0px;
+}
+
+/* --- Exam Overview --- */
+body.imc-devicefamily-phone
+#imc-control-exam-overview {
+    top        : 30px;
+    margin-top : 0px;
+}
+
+/* --- Exam Status Bar --- */
+body.imc-devicefamily-phone
+#imc-exam-statusbar {
+    position           : absolute;
+    bottom             : 0px;
+    left               : 100px;
+    right              : 100px;
+    text-align         : center;
+    z-index            : 100;
+    -webkit-transform  : translateY(30px);
+    -moz-transform     : translateY(30px);
+    -ms-transform      : translateY(30px);
+    transform          : translateY(30px);
+    -webkit-transition : -webkit-transform .2s;
+    -moz-transition    : -moz-transform .2s;
+    transition         : transform .2s;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.exam-running
+#imc-exam-statusbar {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+/* --- Common properties for optional controls --- */
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-control-subtitles.control-enabled,
+body.imc-devicefamily-phone
+#imc-control-evaluate.control-enabled,
+body.imc-devicefamily-phone
+#imc-control-retry.control-enabled,
+body.imc-devicefamily-phone
+#imc-control-exam-handin.control-enabled,
+body.imc-devicefamily-phone
+#imc-control-exam-overview.control-enabled,
+body.imc-devicefamily-phone
+#imc-control-exam-forward.control-enabled {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-control-evaluate,
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-control-retry {
+    margin-top : -80px;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.exam-linear
+#imc-control-evaluate,
+body.imc-devicefamily-phone
+#imc-viewport.exam-linear
+#imc-control-retry,
+body.imc-devicefamily-phone
+#imc-viewport.exam-linear
+#imc-control-exam-handin {
+    margin-top : -25px;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport[data-content-state="finished"]
+#imc-control-forward {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+/* --- Current Object Label --- */
+body.imc-devicefamily-phone
+#imc-currentobject {
+    position           : absolute;
+    top                : 0px;
+    left               : 0px;
+    right              : 0px;
+    height             : 22px;
+    line-height        : 22px;
+    color              : #A5A5A5;
+    text-align         : center;
+    opacity            : .8;
+    background-color   : white;
+    border-bottom      : solid 1px rgba(0, 0, 0, .1);
+    -webkit-transform  : translateY(-24px);
+    -moz-transform     : translateY(-24px);
+    -ms-transform      : translateY(-24px);
+    transform          : translateY(-24px);
+    -webkit-transition : -webkit-transform .2s;
+    -moz-transition    : -moz-transform .2s;
+    transition         : transform .2s;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-currentobject {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+/* --- Progress Bar --- */
+body.imc-devicefamily-phone
+#imc-control-progress {
+    position           : absolute;
+    bottom             : 0px;
+    left               : 120px;
+    right              : 120px;
+    height             : 40px;
+    -webkit-transform  : translateY(44px);
+    -moz-transform     : translateY(44px);
+    -ms-transform      : translateY(44px);
+    transform          : translateY(44px);
+    -webkit-transition : -webkit-transform .2s;
+    -moz-transition    : -moz-transform .2s;
+    transition         : transform .2s;
+}
+
+body.imc-devicefamily-phone
+#imc-control-progress.control-enabled {
+    -webkit-transform  : none;
+    -moz-transform     : none;
+    -ms-transform      : none;
+    transform          : none;
+}
+
+body.imc-devicefamily-phone
+#imc-control-progress .imc-timeslider-panel {
+    height             : 13px;
+    position           : absolute;
+    left               : 0px;
+    right              : 0px;
+    top                : 10px;
+    -webkit-transform  : translateY(24px);
+    -moz-transform     : translateY(24px);
+    transform          : translateY(24px);
+    -webkit-transition : -webkit-transform .2s;
+    -moz-transition    : -moz-transform .2s;
+    transition         : transform .2s;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-control-progress .imc-timeslider-panel {
+    -webkit-transform  : none;
+    -moz-transform     : none;
+    -ms-transform      : none;
+    transform          : none;
+}
+
+body.imc-devicefamily-phone
+#imc-control-progress.control-enabled .imc-timeslider-handle {
+    width              : 29px;
+    height             : 29px;
+    background         : url(images/timeslider-handle-large.svg) no-repeat;
+    opacity            : 0.0;
+    margin-right       : -8px;
+    margin-top         : -8px;
+    -webkit-transform  : scale(.02);
+    -moz-transform     : scale(.02);
+    -ms-transform      : scale(.02);
+    transform          : scale(.02);
+    -webkit-transition : opacity .2s, -webkit-transform .2s;
+    -moz-transition    : opacity .2s, -moz-transform .2s;
+    transition         : opacity .2s, transform .2s;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-control-progress.control-enabled .imc-timeslider-handle {
+    opacity            : 1.0;
+    -webkit-transform  : none;
+    -moz-transform     : none;
+    -ms-transform      : none;
+    transform          : none;
+}
+
+body.imc-devicefamily-phone
+#imc-controls-background {
+    height             : 40px;
+    background-color   : white;
+    border-top         : solid 2px rgba(0, 0, 0, .1);
+    position           : absolute;
+    bottom             : 0px;
+    left               : 0px;
+    right              : 0px;
+    -webkit-transform  : translateY(40px);
+    -moz-transform     : translateY(40px);
+    -ms-transform      : translateY(40px);
+    transform          : translateY(40px);
+    -webkit-transition : -webkit-transform .2s;
+    -moz-transition    : -moz-transform .2s;
+    transition         : transform .2s;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.controls.control-progress
+#imc-controls-background {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+/* === Content Specific === */
+
+/* --- Animation/Video --- */
+body.imc-devicefamily-phone
+#imc-viewport[data-content-state="paused"]
+#imc-control-pause.control-enabled {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+/* --- Exam - Nonlinear --- */
+body.imc-devicefamily-phone
+#imc-viewport.exam-nonlinear
+#imc-control-exam-back,
+body.imc-devicefamily-phone
+#imc-viewport.exam-nonlinear
+#imc-control-exam-handin {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.exam-nonlinear
+#imc-control-exam-handin {
+    margin-top : -80px;
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.exam-running
+#imc-control-forward {
+    -webkit-transform : translateX(40px);
+    -moz-transform    : translateX(40px);
+    -ms-transform     : translateX(40px);
+    transform         : translateX(40px);
+}
+
+body.imc-devicefamily-phone
+#imc-viewport.exam-running
+#imc-control-back {
+    -webkit-transform : translateX(-40px);
+    -moz-transform    : translateX(-40px);
+    -ms-transform     : translateX(-40px);
+    transform         : translateX(-40px);
+}
+
+/* --- Additional Buttons --- */
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-add-button-download,
+body.imc-devicefamily-phone
+#imc-viewport.controls
+#imc-add-button-glossary {
+    -webkit-transform : none;
+    -moz-transform    : none;
+    -ms-transform     : none;
+    transform         : none;
+}
+
+body.imc-devicefamily-phone
+#imc-add-button-download {
+    margin-top : 0px;
+    top        : 30px;
+}
+
+body.imc-devicefamily-phone
+#imc-add-button-glossary {
+    margin-top : 0px;
+    top        : 75px;
+}

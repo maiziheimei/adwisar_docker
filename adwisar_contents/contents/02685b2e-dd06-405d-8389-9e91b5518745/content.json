@@ -1,0 +1,9 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Blockierungen identifizieren",
+       "info" : "Prüfen Sie, ob die Bauteilrutsche ggf. blockiert ist.",  
+       "endorsement" : "Wenn Sie den Schritt &quot;Blockierungen identifizieren&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob Blockierungen vorhanden sind oder nicht.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

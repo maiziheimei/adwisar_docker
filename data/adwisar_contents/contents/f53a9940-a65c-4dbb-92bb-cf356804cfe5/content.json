@@ -1,0 +1,9 @@
+{
+       "main" : "federn_aus_lager_entnehmen.png",       
+       "mimeType" : "image/png",
+       "title" : "Federn aus Lager entnehmen",
+       "info" : "Entnehmen Sie die Federn aus dem Lager.",  
+	   "arid" : "festo_500",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

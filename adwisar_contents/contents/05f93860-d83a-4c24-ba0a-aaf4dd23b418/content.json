@@ -1,0 +1,9 @@
+{
+       "main" : "robotermotoren_einschalten.png",       
+       "mimeType" : "image/png",
+       "title" : "Robotermotoren einschalten",
+       "info" : "Schalten Sie die Robotermotoren ein. Betätigen Sie hierzu die im Bild markierte Taste &quot;SVO ON&quot;. Warten Sie bis die LED grün leuchtet.",  
+	   "endorsement" : "Wenn Sie den Schritt &quot;Robotermotoren einschalten&quot; ausgeführt haben und die LED grün leuchtet, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;.",
+		"version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

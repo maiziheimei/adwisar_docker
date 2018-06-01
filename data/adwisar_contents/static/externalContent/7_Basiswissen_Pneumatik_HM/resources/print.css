@@ -1,0 +1,28 @@
+@page {
+    size   : auto;
+    margin : 0mm 0mm 0mm 0mm;
+}
+
+body {
+    margin   : 0px;
+    padding  : 0px;
+    display  : static;
+}
+
+body>* {
+    display : none !important;
+}
+
+body>#imc-print-support {
+    display : block !important;
+    width   : 210mm;
+    height  : 297mm;
+    overflow : hidden;
+}
+
+body>#imc-print-support>svg {
+    width  : 100%;
+    height : 100%;
+}
+
+@import url(style/print.css);

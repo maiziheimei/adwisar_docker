@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/hammer.min.js"></script>
+		<script src="js/slideshow.min.js"></script>
+		<script>
+		window.onload = function() {
+			makeBSS('.slides', {
+				auto : false,
+				fullScreen : false,
+				swipe : true
+			});
+		};
+		</script>
+	</head>
+	<body>
+		<div class="bss-slides slides" tabindex="1" autofocus="autofocus">
+			<figure>
+			  <img src="img/blockierungen_identifizieren_1.jpg"  />
+			 </figure>
+			<figure>
+			  <img src="img/blockierungen_identifizieren_2.jpg"  />
+			 </figure>
+			
+		</div>
+	</body>
+</html>

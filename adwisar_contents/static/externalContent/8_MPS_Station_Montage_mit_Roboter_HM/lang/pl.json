@@ -1,0 +1,64 @@
+{
+    "progress-label"        :  "$1% zakończone",
+    "status-not-attempted"  :  "Nie rozpoczęto",
+    "status-completed"      :  "Zakończono",
+    "status-failed"         :  "Nie zaliczono",
+    "status-incomplete"     :  "Niekompletne",
+    "status-locked"         :  "Zablokowane",
+    "status-optional"       :  "Opcjonalnie",
+    "content-paused"        :  "Zatrzymano zawartość",
+    "turn-device-message"   :  "Włącz urządzenie, aby kontynuować!",
+    "overview"              :  "Przegląd i nawigacja",
+    "audio-on-off"          :  "Włącz/wyłącz dźwięk",
+    "subtitles-on-off"      :  "Włącz/wyłącz napisy",
+    "status"                :  "Status",
+    "remaining-attempts"    :  "Pozostałe próby",
+    "no-attempt-limit"      :  "Nieograniczone",
+    "question-count"        :  "Pytania",
+    "time-limit"            :  "Limit czasu",
+    "no-time-limit"         :  "Nieograniczony",
+    "time-minutes"          :  "$1 minut(-y)",
+    "label-ok"              :  "OK",
+    "label-result"          :  "Rezultat",
+    "label-start"           :  "Rozpocznij",
+    "label-skip"            :  "Pomiń",
+    "label-close"           :  "Zamknij",
+    "label-title"           :  "Tytuł",
+    "label-firstname"       :  "Imię",
+    "label-lastname"        :  "Nazwisko",
+    "label-company"         :  "Przedsiębiorstwo",
+    "label-department"      :  "Dział",
+    "label-location"        :  "Miejscowość",
+    "message-passed"        :  "Gratulacje, zaliczyli Państwo test!",
+    "message-failed"        :  "Niestety nie zaliczyli Państwo tego testu!",
+    "message-neutral"       :  "Zaliczyli Państwo ten test",
+    "label-score"           :  "Wynik",
+    "label-grade"           :  "Ocena",
+    "result-correct"        :  "prawidłowo",
+    "result-incorrect"      :  "nieprawidłowo",
+    "result-points"         :  "$1 z $2 punktów",
+    "handin-message"        :  "Mają Państwo zamiar oddać niniejszy test. Wynik testu zostanie przekazany na podstawie Państwa aktualnych odpowiedzi. Chcą Państwo kontynuować i oddać test?",
+    "lock-message-header"   :  "Zablokowano treść",
+    "lock-message"          :  "Nie spełniono warunków do wyświetlenia niniejszej treści",
+    "jump-message-header"   :  "Pominięto treść",
+    "exam-navigate-message" :  "Jeśli opuszczą Państwo teraz ten test, wynik testu zostanie podany na podstawie aktualnych odpowiedzi. Na pewno chcą Państwo opuścić test?",
+    "click-to-open"         :  "Aby otworzyć, kliknij tutaj",
+    "certificate-header"    :  "Gratulacje!",
+    "certificate-instruction" :  "Prosimy podać swoje dane, aby umożliwić wydanie certyfikatu.",
+    "certificate-text-pre"  :  "zdał(-a) pomyślnie",
+    "certificate-text-post" :  "",
+    "certificate-text-pre-neutral" :  "zakończył(-a) pomyślnie",
+    "certificate-text-post-neutral" :  "",
+    "label-retry"                   : "Retry",
+    "error-scorm-header"            : "Transfer of learning progress failed" ,
+    "error-scorm-message"           : "The learning management system reports the following error:"
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+body.imc-devicefamily-phone
+.imc-certificate-form {
+    margin             : 0;
+    position           : absolute;
+    left               : 40px;
+    right              : 0px;
+    padding-right      : 40px;
+    top                : 50%;
+    width              : auto;
+    background-color   : transparent;
+    -webkit-box-shadow : none;
+    box-shadow         : none;
+    -webkit-transform  : translateY(-50%);
+    -moz-transform     : translateY(-50%);
+    -ms-transform      : translateY(-50%);
+    transform          : translateY(-50%);
+    max-height         : 100%;
+}
+
+body.imc-devicefamily-phone
+.imc-certificate-form ul.form{
+    background-color:#fff;
+}
+
+body.imc-devicefamily-phone
+.imc-certificate-form .buttons{
+    background-color:#fff;

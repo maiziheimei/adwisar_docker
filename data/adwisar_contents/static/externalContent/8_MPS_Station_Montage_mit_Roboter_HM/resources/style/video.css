@@ -1,0 +1,41 @@
+.imc-video {
+    background : none;
+    width: 50px;
+}
+
+.imc-video video{
+    position : absolute;
+    left     : 50%;
+    top      : 50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%); /* IE 9 */
+    -webkit-transform:translate(-50%, -50%); /* Safari and Chrome */
+}
+
+.imc-video .imc-video-buffering {
+    position : absolute;
+    left     : 50%;
+    top      : 50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%); /* IE 9 */
+    -webkit-transform:translate(-50%, -50%); /* Safari and Chrome */
+}
+
+.imc-video .imc-video-playbutton {
+    position: absolute;
+    left     : 50%;
+    top      : 50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%); /* IE 9 */
+    -webkit-transform:translate(-50%, -50%); /* Safari and Chrome */
+    width: 200px;
+    height: 200px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:url('images/tap-to-play_n.svg');
+    z-index : 100;
+}
+
+.imc-video .imc-video-playbutton:hover {
+    background-image:url('images/tap-to-play_h.svg');
+}

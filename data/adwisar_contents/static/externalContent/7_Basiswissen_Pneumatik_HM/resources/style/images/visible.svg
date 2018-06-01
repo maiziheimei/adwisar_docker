@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="visibility-visible" viewBox="0 0 28 28" style="background-color:#ffffff" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="28px" height="28px"
+>
+	<g id="Ebene%201">
+		<g>
+			<path d="M 20.8828 15.0262 C 20.8828 11.175 17.8815 8.0529 14.1792 8.0529 C 10.4768 8.0529 7.4755 11.175 7.4755 15.0262 C 7.4755 18.8771 10.4768 22 14.1792 22 C 17.8815 22 20.8828 18.8771 20.8828 15.0262 Z" fill="#dadada"/>
+			<g>
+				<g>
+					<path d="M 2 15.0799 C 2 15.0799 7.1686 8 13.8721 8 C 20.5756 8 26 14.8668 26 14.8668 C 26 14.8668 20.8316 21.9467 14.1279 21.9467 C 7.4244 21.9467 2 15.0799 2 15.0799 Z" stroke="#dadada" stroke-width="2" fill="none"/>
+				</g>
+				<g>
+					<path d="M 14.1792 12.0989 C 13.9186 12.0989 13.6674 12.1384 13.428 12.2075 C 13.3843 13.4263 12.5215 14.4256 11.394 14.6269 C 11.3766 14.7578 11.3647 14.8904 11.3647 15.0262 C 11.3647 16.6432 12.6248 17.9543 14.1792 17.9543 C 15.7336 17.9543 16.9937 16.6432 16.9937 15.0262 C 16.9937 13.4093 15.7336 12.0989 14.1792 12.0989 Z" fill="#666666"/>
+				</g>
+			</g>
+			<path id="Ellipse" opacity="0.6" d="M 11 13 C 11 12.4477 11.4477 12 12 12 C 12.5523 12 13 12.4477 13 13 C 13 13.5523 12.5523 14 12 14 C 11.4477 14 11 13.5523 11 13 Z" fill="#ffffff"/>
+		</g>
+	</g>
+</svg>

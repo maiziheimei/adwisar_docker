@@ -1,0 +1,8 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Tür schließen und verriegeln",
+       "info" : "<ul><li>Schließen Sie die Tür</li><li>Verriegeln Sie die Schließzylinder mit dem Schlüssel.</li><li>Beachten Sie die Drehrichtung.</li></ul>",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

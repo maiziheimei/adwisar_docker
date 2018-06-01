@@ -1,0 +1,40 @@
+<div id="imc-infoscreen-controls" xmlns:imc="http://im-c.de/xml/player">
+
+<div id="imc-infoscreen-top">
+    <imc:breadcrumb/>
+    <div id="imc-infoscreen-progress">
+        <imc:progress value="watch($_P, progress)" size="48" strokewidth="1" strokecolor="#555555" fillcolor="#555555"/>
+        <imc:progresslabel value="watch($_P, progress)"/>
+    </div>
+    
+    <div id="imc-infoscreen-defaultinfo" class="imc-infoscreen-contentinfo">
+        <p>${content-paused}</p>
+    </div>
+</div>
+
+<div id="imc-infoscreen-bottom">
+    <div id="imc-infoscreen-rotateinfo">
+        <img src="resources/style/images/rotate.svg" alt="Rotate"/>
+        <p>${turn-device-message}</p>
+    </div>
+    
+    <!-- Buttons -->
+    <imc:button
+        id="imc-infoscreen-overview"
+        class="control-button"
+        role="action.home.show"/>
+    
+    <imc:toggle
+        id="toggle-subtitles-infoscreen"
+        bind="$_P.viewport.subtitlesEnabled"
+        class="control-button"/>
+
+    <!-- Visual Hints -->
+    <span class="label" id="overview-hint">${overview}</span>
+    <span class="label" id="subtitles-hint">${subtitles-on-off}</span>
+    
+    <img id="overview-hint-arrow" src="resources/style/images/hint-overview.svg" alt="Hint"/>
+    <img id="subtitles-hint-arrow" src="resources/style/images/hint-subtitles.svg" alt="Hint"/>
+</div>
+
+</div>

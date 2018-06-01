@@ -1,0 +1,8 @@
+{
+       "main" : "tuer_oeffnen.png",       
+       "mimeType" : "image/png",
+       "title" : "Tür öffnen",
+       "info" : "Schließen Sie die Tür.<br><br>Führen Sie dazu folgende Schritte durch:<br>1. Türschlüssel holen<br>2. Tür aufschließen",  
+        "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

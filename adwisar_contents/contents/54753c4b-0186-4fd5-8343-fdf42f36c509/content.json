@@ -1,0 +1,8 @@
+{
+       "main" : "roboterprogramm_starten.png",       
+       "mimeType" : "image/png",
+       "title" : "Roboterprogramm starten",
+       "info" : "Starten Sie das Roboterprogramm an der Robotersteuerung. Betätigen Sie hierzu die im Bild markierte Taste &quot;START&quot;.",  
+		"version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

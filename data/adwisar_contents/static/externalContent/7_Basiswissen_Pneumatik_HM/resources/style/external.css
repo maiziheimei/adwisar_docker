@@ -1,0 +1,33 @@
+.imc-external {
+    background : none;
+}
+
+.imc-external-content {
+    position           : absolute;
+    top                : 50px;
+    left               : 50px;
+    right              : 50px;
+    bottom             : 50px;
+    -webkit-box-shadow : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+    box-shadow         : 0px 0px 6px 2px rgba(0, 0, 0, .2);
+}
+
+.imc-external .imc-external-open {
+    width       : 400px;
+    height      : 30px;
+    line-height : 30px;
+    font-family : "Source Sans Pro";
+    font-size   : 30px;
+    color       : #666;
+    position    : absolute;
+    top         : 50%;
+    left        : 50%;
+    margin-top  : -15px;
+    margin-left : -200px;
+    text-align  : center;
+}
+
+.imc-devicefamily-desktop
+.imc-external .imc-external-open:hover {
+    text-decoration : underline;
+}

@@ -1,0 +1,8 @@
+{
+       "main" : "imdetail_funktionroboterzelle.png",       
+       "mimeType" : "image/png",
+       "title" : "Im Detail: Funktion der Roboterzelle",
+       "info" : "Diese Station ist eine Kombination der zwei Module<ul><li>Modul Roboterhandling und</li><li>Modul Robotermontage.</li></ul><br>Die Station <b>Roboter</b> wird vollständig durch die Robotersteuerung gesteuert. Die Aufgabe besteht darin, Zylinder aus folgenden Komponenten zu montieren:<ul><li>Grundkörper (Zylindergehäuse)</li><li>Zylinderkolben</li><li>Feder (Kolben-Rückstellfeder)</li><li>Zylinderdeckel</li></ul><br>Durch den Einsatz unterschiedlicher Grundkörper (rot, schwarz, silbern) ist die Montage verschiedener Kurzhubzylinder mit verschiedenen Kolbendurchmessern möglich (gekennzeichnet durch: schwarz und silbern). Die silbernen Kolben passen nur in die schwarzen Grundkörper.<br>Das Modul <b>Robotermontage</b> liefert für den Montagevorgang folgende Einzelteile:<ul><li>Ein doppelwirkender Zylinder schiebt die Zylinderdeckel aus dem Deckelmagazin.</li><li>Die Kolben werden in einer Palette vorgehalten</li><li>Ein doppelwirkender Zylinder schiebt die Kolben-Rückstellfeder aus einem Federmagazin</li></ul>",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

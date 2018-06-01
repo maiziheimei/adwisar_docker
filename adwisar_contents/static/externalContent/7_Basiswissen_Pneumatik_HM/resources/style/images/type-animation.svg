@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="doctype-icons-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="32px" height="32px" viewBox="11.5 23.5 32 32" enable-background="new 11.5 23.5 32 32"
+	 xml:space="preserve">
+<path fill="none" d="z"/>
+<g id="Ebene_x25_201">
+	<g>
+		<g>
+			<path fill="#929292" d="M14.5,47.5h14l-0.073-4.727l-5.547,2.08L19.457,40.5L14.5,44.085V47.5z"/>
+			<g>
+				<path fill="#929292" d="M29.5,34.5v14h-16v-14H29.5 M30.5,33.5h-18v16h18V33.5L30.5,33.5z"/>
+			</g>
+			<rect x="32.5" y="40.5" fill="#929292" width="11" height="2"/>
+			<rect x="32.5" y="35.5" fill="#929292" width="9" height="2"/>
+			<rect x="32.5" y="45.5" fill="#929292" width="8" height="2"/>
+		</g>
+		<path id="Ellipse" fill="#929292" d="M23.5,39.5c0-1.104,0.896-2,2-2s2,0.896,2,2s-0.896,2-2,2S23.5,40.604,23.5,39.5z"/>
+	</g>
+	<rect x="12.5" y="29.5" fill="#929292" width="26" height="2"/>
+</g>
+<path fill="none" d="z"/>
+</svg>

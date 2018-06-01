@@ -1,0 +1,451 @@
+/* === Viewport Controls :: Desktop === */
+
+/* --- Viewport Container --- */
+body.imc-devicefamily-desktop
+div#imc-viewport-container {
+    position : absolute;
+    left     : 0px;
+    top      : 0px;
+    right    : 0px;
+    bottom   : 80px;
+}
+
+/* --- Control Property Override --- */
+/*body.imc-devicefamily-desktop
+.control-button:hover:not(.disabled) {
+    background-color : #EEE;
+}*/
+
+/* --- Control Container Properties --- */
+body.imc-devicefamily-desktop
+#imc-content-controls {
+    position         : absolute;
+    left             : 0px;
+    bottom           : 0px;
+    right            : 0px;
+    height           : 80px;
+    background-color : white;
+    z-index          : 10;
+}
+
+/*body.imc-devicefamily-desktop
+#imc-viewport:not(.control-progress)
+#imc-content-controls {
+    border-top : solid 2px rgba(0, 0, 0, .1);
+}*/
+
+body.imc-devicefamily-desktop
+#imc-content-controls-left {
+    height    : 80px;
+    font-size : 0;
+    float     : left;
+}
+
+body.imc-devicefamily-desktop
+#imc-content-controls-left > * {
+    display : inline-block;
+}
+
+
+/* --- Controls centered--- */
+body.imc-devicefamily-desktop
+#imc-content-controls-center {
+    height    : 40px;
+    font-size : 0;
+/*    float     : left;*/
+    margin    : 0 auto;
+    width     : 350px;
+    margin-top: 20px;
+}
+
+body.imc-devicefamily-desktop
+#imc-content-controls-center > * {
+    display : inline-block;
+}
+
+
+
+body.imc-devicefamily-desktop
+#imc-content-controls-slidewindow {
+    height             : 40px;
+    width              : 0px;
+    overflow           : hidden;
+    -webkit-transition : width .3s;
+    -moz-transition    : width .3s;
+    transition         : width .3s;
+}
+
+body.imc-devicefamily-desktop
+#imc-content-controls-slidewindow > * {
+    position           : absolute;
+    display            : block;
+/*    top                : 0px;
+    left               : 0px;*/
+    z-index            : 1;
+    opacity            : 0;
+    -webkit-transition : opacity .3s;
+    -moz-transition    : opacity .3s;
+    transition         : opacity .3s;
+}
+
+/* --- Progress Bar --- */
+body.imc-devicefamily-desktop
+#imc-control-progress {
+    position : absolute;
+    bottom   : 0px;
+    left     : 0px;
+    right    : 0px;
+    height   : 10px;
+    z-index  : 100;
+    display  : none;
+}
+
+body.imc-devicefamily-desktop
+#imc-control-progress.control-enabled {
+    display : block;
+}
+
+body.imc-devicefamily-desktop
+#imc-control-progress .imc-timeslider-panel {
+    height   : 4px;
+    position : absolute;
+    left     : 0px;
+    right    : 0px;
+    bottom   : 0px;
+}
+
+body.imc-devicefamily-desktop
+#imc-control-progress .imc-timeslider-handle {
+    opacity            : 0.0;
+    width              : 17px;
+    height             : 17px;
+    top                : -4px;
+    background         : url(images/timeslider-handle.svg) no-repeat;
+    -webkit-transform  : translate(6px, -2px) scale(.1);
+    -moz-transform     : translate(6px, -2px) scale(.1);
+    -ms-transform      : translate(6px, -2px) scale(.1);
+    transform          : translate(6px, -2px) scale(.1);
+    -webkit-transition : opacity .2s, -webkit-transform .2s;
+    -moz-transition    : opacity .2s, -moz-transform .2s;
+    transition         : opacity .2s, transform .2s;
+}
+
+body.imc-devicefamily-desktop
+#imc-control-progress:hover .imc-timeslider-handle {
+    opacity           : 1.0;
+    -webkit-transform : translate(6px, -2px);
+    -moz-transform    : translate(6px, -2px);
+    -ms-transform     : translate(6px, -2px);
+    transform         : translate(6px, -2px);
+}
+
+/* --- Controls right --- */
+body.imc-devicefamily-desktop
+#imc-content-controls-right {
+    float      : right;
+    font-size  : 0;
+    text-align : right;
+}
+
+body.imc-devicefamily-desktop
+#imc-content-controls-right > .control-button {
+    display : inline-block;
+}
+
+/* --- Audio Toggle --- */
+body.imc-devicefamily-desktop
+#imc-control-audio .icon-on {
+    background-image : url(images/audio-off.svg);
+}
+body.imc-devicefamily-desktop
+#imc-control-audio .icon-on:hover {
+    background-image : url(images/audio-off_a.svg);
+}
+
+body.imc-devicefamily-desktop
+#imc-control-audio .icon-off {
+    background-image : url(images/audio-on.svg);
+}
+body.imc-devicefamily-desktop
+#imc-control-audio .icon-off:hover {
+    background-image : url(images/audio-on_a.svg);
+}
+
+/* --- Subtitle Box --- */
+body.imc-devicefamily-desktop
+#imc-subtitlebox {
+    bottom : 80px; /*52px; */   
+}
+
+body.imc-devicefamily-desktop
+#imc-subtitlebox-disable {
+    position : absolute;
+    top      : 10px;
+    right    : 10px;
+    opacity  : 0.8;
+    width    : 26px;
+    height   : 26px;
+}
+
+body.imc-devicefamily-desktop
+#imc-subtitlebox-disable .icon {
+    background-image : url(images/subtitlebox-close.png);
+}
+
+body.imc-devicefamily-desktop
+#imc-subtitlebox .disable:hover {
+    opacity          : 1;
+    background-color : rgba(255, 255, 255, 0.15);
+}
+
+/* --- Exam Status Bar --- */
+body.imc-devicefamily-desktop
+.exam-stat-label.control-enabled {
+    display : inline-block;
+}
+
+/* --- Current Object Label --- */
+body.imc-devicefamily-desktop
+#imc-currentobject {
+    height         : 40px;
+    font-size      : 16px;
+    line-height    : 40px;
+    vertical-align : top;
+    color          : #A5A5A5;
+    overflow       : hidden;
+    text-overflow  : ellipsis;
+    white-space    : nowrap;
+    display        : block;
+    padding-left   : 10px;
+}
+
+body.imc-devicefamily-desktop
+#imc-currentobject .imc-breadcrumb-entry {
+    display : inline-block;
+}
+
+body.imc-devicefamily-desktop
+#imc-currentobject .imc-breadcrumb-entry:not(:last-child)::after {
+    content      : '>';
+    margin-left  : 10px;
+    margin-right : 10px;
+}
+
+/* --- Exam Status Bar --- */
+body.imc-devicefamily-desktop
+.exam-stat-label {
+    display : none;
+}
+
+body.imc-devicefamily-desktop
+.exam-stat-label.control-enabled {
+    display : inline-block;
+}
+
+/* === Type Specific === */
+
+/* --- Animation --- */
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="animation"]
+#imc-content-controls-slidewindow {
+    width : 40px;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="animation"]
+#imc-control-pause {
+    z-index : 2;
+    opacity : 1;
+}
+
+/* --- Video --- */
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="video"]
+#imc-content-controls-slidewindow {
+    width : 40px;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="video"]
+#imc-control-pause {
+    z-index : 2;
+    opacity : 1;
+}
+
+/* --- Interaction --- */
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="interaction"]
+#imc-content-controls-slidewindow {
+    width : 40px;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="interaction"]
+#imc-control-evaluate {
+    z-index : 2;
+    opacity : 1;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="interaction"]
+#imc-control-retry.control-enabled {
+    z-index : 3;
+    opacity : 1;
+}
+
+/* --- Certificate --- */
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="certificate"]
+#imc-content-controls-slidewindow {
+    width : 40px;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="certificate"]
+#imc-control-print {
+    z-index : 2;
+    opacity : 1;
+}
+
+/* --- Exam - Non-Linear --- */
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear
+#imc-content-controls-slidewindow {
+    width : 120px;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear
+#imc-control-exam-back {
+    z-index : 2;
+    opacity : 1;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear
+#imc-control-exam-forward {
+    left    : 40px;
+    z-index : 2;
+    opacity : 1;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear
+#imc-control-exam-handin {
+    left    : 80px;
+    z-index : 2;
+    opacity : 1;
+}
+
+/* --- Exam - Non-Linear with Overview --- */
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear.control-exam-overview
+#imc-content-controls-slidewindow {
+    width : 160px;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear.control-exam-overview
+#imc-control-exam-overview {
+    left    : 40px;
+    z-index : 2;
+    opacity : 1;
+}
+
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear.control-exam-overview
+#imc-control-exam-forward {
+    left    : 80px;
+    z-index : 2;
+    opacity : 1;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-nonlinear.control-exam-overview
+#imc-control-exam-handin {
+    left    : 120px;
+    z-index : 2;
+    opacity : 1;
+}
+
+/* --- Exam - Linear --- */
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-linear
+#imc-content-controls-slidewindow {
+    width : 40px;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-linear
+#imc-control-evaluate {
+    z-index : 2;
+    opacity : 1;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-linear
+#imc-control-retry.control-enabled {
+    z-index : 3;
+    opacity : 1;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-linear
+#imc-control-exam-forward.control-enabled {
+    z-index : 4;
+    opacity : 1;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="exam"].exam-linear
+#imc-control-exam-handin.control-enabled {
+    z-index : 5;
+    opacity : 1;
+}
+
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="external"]
+#imc-content-controls-slidewindow {
+    width : 0px !important;
+    visibility: hidden;
+}
+
+body.imc-devicefamily-desktop
+#imc-viewport[data-content-type="external"]
+#imc-control-pause {
+    z-index : 2;
+    opacity : 1;
+}
+
+
+body.imc-devicefamily-desktop
+#imc-breadcrumb-top {
+    position : absolute;
+    top      : 0px;
+    left     : 0px;
+    height   : 30px;
+    background-color : red;
+    width: 0px;
+    overflow: hidden;
+}
+
+/* menu buttons spacing */
+#imc-control-overview{
+    margin-right: 39px;
+}
+
+ #imc-control-audio {
+    margin-right: 34px;
+ }
+
+/* menu buttons spacing */
+#imc-control-back, #imc-control-forward, #imc-content-controls-slidewindow {
+    margin-right: 2px;
+}
+
+#imc-control-subtitles {
+      margin-right: 15px;
+ }
+ 

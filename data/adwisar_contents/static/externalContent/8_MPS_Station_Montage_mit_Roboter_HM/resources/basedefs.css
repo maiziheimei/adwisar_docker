@@ -1,0 +1,413 @@
+
+/**
+ * This file exclusively contains base definitions relevant to core player
+ * functionality.
+*/
+
+/* Set viewport size in IE10 - equivalent to viewport meta tag in other
+ * mobile browsers
+ */
+@-ms-viewport {
+    width : device-width;
+}
+
+/* Reset all margins and paddings */
+* {
+    margin  : 0;
+    padding : 0;
+    -webkit-touch-callout       : none;
+    -webkit-user-select         : none;
+    -moz-user-select            : -moz-none;
+    -ms-user-select             : none;
+    user-select                 : none;
+    -webkit-tap-highlight-color : transparent;
+    -ms-content-zooming         : none;
+}
+
+noscript p {
+    margin           : 10px;
+    padding          : 20px;
+    text-align       : center;
+    font-family      : Arial, Helvetica, sans-serif;
+    font-size        : 20px;
+    background-color : #900;
+    color            : #FFF;
+}
+
+/* --- Print Support --- */
+#imc-print-support {
+    display : none;
+}
+
+/* --- Audio Enabler for iOS --- */
+#imc-audio-enabler {
+    position         : absolute;
+    top              : 0px;
+    left             : 0px;
+    width            : 100%;
+    height           : 100%;
+    background-color : rgba(255, 255, 255, .8);
+}
+
+iframe {
+    border              : none;
+    -ms-content-zooming : zoom;
+}
+
+.imc-external {
+    background-color : #FFF;
+}
+
+/* Re-enable user selection in input elements */
+input {
+    -webkit-user-select : text;
+    -moz-user-select    : text;
+    -ms-user-select     : text;
+    -o-user-select      : text;
+    user-select         : text;
+}
+
+/* Reset headline text formatting */
+h1, h2, h3, h4, h5, h6{
+    font-weight : normal;
+}
+
+/* Prevent the window from showing scrollbars */
+html {
+    overflow         : hidden;
+    /* Disable default touch behavior in IE 10 */
+    -ms-touch-action : none;
+}
+
+body {
+    background-color : #555;
+    overflow         : hidden;
+    position         : absolute;
+    top              : 0px;
+    left             : 0px;
+    bottom           : 0px;
+    right            : 0px;
+}
+
+div.imc-screen {
+    position : absolute;
+    top      : 0px;
+    left     : 0px;
+    display  : none;
+    overflow : hidden;
+}
+
+/* --- Clickable controls --- */
+.link:not(.disabled),
+.imc-button:not(.disabled),
+.imc-toggle:not(.disabled),
+.imc-tabbar-tab:not(.disabled) {
+    cursor : pointer;
+}
+
+.imc-button,
+.imc-toggle,
+.imc-tabbar-tab {
+    position : relative;
+}
+
+.imc-tabbar-tab {
+    display         : inline-block;
+    list-style-type : none;
+    overflow        : hidden;
+}
+
+.imc-toggle img,
+.imc-button .icon,
+.imc-toggle .icon-on,
+.imc-toggle .icon-off,
+.imc-tabbar-tab .icon-on,
+.imc-tabbar-tab .icon-off {
+    position            : absolute;
+    top                 : 0px;
+    left                : 0px;
+    width               : 100%;
+    height              : 100%;
+    background-repeat   : no-repeat;
+    background-position : center center;
+}
+
+/* Reset a bit for a "1.0" design/player */
+.imc-button img.icon {
+	left: initial;
+}
+
+/* --- Toggle --- */
+.imc-toggle.on .icon-off {
+    display : none;
+}
+
+.imc-toggle:not(.on) .icon-on {
+    display : none;
+}
+
+/* -- Scrollable -- */
+.imc-scrollable-both {
+    overflow : auto;
+}
+
+.imc-scrollable-vertical {
+    overflow-y : auto;
+    overflow-x : hidden;
+}
+
+.imc-scrollable-horizontal {
+    overflow-x : auto;
+    overflow-y : hidden;
+}
+
+.touch-enabled.imc-scrollable-vertical,
+.touch-enabled.imc-scrollable-horizontal {
+    overflow : hidden;
+}
+
+/* --- List View --- */
+li.imc-listview-item {
+    list-style-type : none;
+}
+
+.imc-scrollindicator-vertical {
+    position : absolute;
+    top      : 0px;
+    right    : 0px;
+    width    : 10px;
+    height   : 100%;
+    overflow : hidden;
+}
+
+.imc-scrollindicator-vertical .handle {
+    position : relative;
+}
+
+.imc-scrollindicator-horizontal {
+    position : absolute;
+    left     : 0px;
+    bottom   : 0px;
+    height   : 10px;
+    width    : 100%;
+    overflow : hidden;
+}
+
+.imc-scrollindicator-horizontal .handle {
+    height   : 10px;
+    position : relative;
+}
+
+/* --- Time Slider --- */
+.imc-timeslider .imc-timeslider-panel {
+    height : 100%;
+}
+
+.imc-timeslider .imc-timeslider-bar {
+    width    : 0%;
+    height   : 100%;
+    position : relative !important;
+}
+
+.imc-timeslider .imc-timeslider-handle {
+    width            : 10px;
+    height           : 10px;
+    position         : absolute;
+    right            : 0px;
+    top              : 0px;
+}
+
+/* --- List View --- */
+.imc-listview-element {
+    list-style-type : none;
+}
+
+/* --- Tile View --- */
+.imc-tileview {
+    font-size : 0; /* For correct tiling */
+}
+
+.imc-tileview .imc-tileview-element {
+    display        : inline-block;
+     /* A sensible default value to override the font size of the view */
+    font-size      : 16px;
+    cursor         : pointer;
+    vertical-align : top;
+}
+
+.imc-tileview .imc-tileview-element.locked {
+    cursor : default;
+}
+
+/* --- Tree View --- */
+.imc-treeview-element.collapsed>ul {
+    display : none;
+}
+
+.imc-treeview .imc-treeview-element.locked {
+    cursor : default;
+}
+
+/* --- Text items --- */
+.imc-text {
+    word-wrap: break-word;
+}
+
+.imc-text li {
+    margin-left     : 2em;
+}
+
+.imc-text ul li {
+    list-style-type : disc;
+}
+
+.imc-text ol li {
+    list-style-type : decimal; 
+}
+
+/* --- Subtitle box --- */
+div#imc-subtitlebox.empty {
+    display : none !important;
+}
+
+/* --- List interaction --- */
+.imc-list {
+    display     : inline-block;
+    font-family : inherit;
+    font-size   : inherit;
+    line-height : 1;
+    white-space : nowrap;    
+}
+
+.imc-list-container {
+    font-family : inherit;
+    font-size   : inherit;
+    line-height : 1;
+}
+
+.imc-list-dropdown {
+    position : absolute;
+    top      : 20px;
+    left     : 0px;
+    z-index  : 1000;
+    display  : none;
+}
+
+.imc-list-dropdown.open {
+    display : block;
+}
+
+.imc-list-dropdown li {
+    list-style-type : none;
+    white-space     : nowrap
+}
+
+.imc-list-container .imc-list-dropdown {
+    display : none;
+    z-index : 1;
+}
+
+.imc-list-container.open .imc-list-dropdown {
+    display : block;
+}
+
+/* --- Default animations --- */
+@-webkit-keyframes fade-out {
+    from {
+        opacity : 1.0;
+    }
+    to {
+        opacity : 0.0;
+    }
+}
+
+@-moz-keyframes fade-out {
+    from {
+        opacity : 1.0;
+    }
+    to {
+        opacity : 0.0;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity : 1.0;
+    }
+    to {
+        opacity : 0.0;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity : 0.0;
+    }
+    to {
+        opacity : 1.0;
+    }
+}
+
+@-moz-keyframes fade-in {
+    from {
+        opacity : 0.0;
+    }
+    to {
+        opacity : 1.0;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity : 0.0;
+    }
+    to {
+        opacity : 1.0;
+    }
+}
+
+@-webkit-keyframes slide-left {
+    to {
+        -webkit-transform : translateX(-105%);
+    }
+}
+
+@-moz-keyframes slide-left {
+    to {
+        -moz-transform : translateX(-105%);
+    }
+}
+
+@keyframes slide-left {
+    to {
+        transform : translateX(-105%);
+    }
+}
+
+@-webkit-keyframes slide-right {
+    to {
+        -webkit-transform : translateX(105%);
+    }
+}
+
+@-moz-keyframes slide-right {
+    to {
+        -moz-transform : translateX(105%);
+    }
+}
+
+@keyframes slide-right {
+    to {
+        transform : translateX(105%);
+    }
+}
+
+/* --- Webkit-Specific --- */
+input:disabled {
+    -webkit-text-fill-color : currentcolor;
+    opacity                 : 1.0;
+}
+
+input {
+    border-radius : 0px;
+}

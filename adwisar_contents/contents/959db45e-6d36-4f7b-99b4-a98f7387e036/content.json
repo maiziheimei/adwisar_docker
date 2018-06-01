@@ -1,0 +1,9 @@
+{
+       "main" : "reset_durchfuehren.png",       
+       "mimeType" : "image/png",
+       "title" : "Reset durchführen",
+       "info" : "Führen Sie einen Reset durch.<br>Betätigen Sie hierzu die im Bild markierte Taste &quot;Reset&quot;.",  
+       "endorsement" : "Wenn Sie den Schritt &quot;Reset durchführen&quot; ausgeführt haben, drücken Sie bitte das Feld &quot;Bestätigen - Weiter&quot;. Im nächsten Schritt müssen Sie angeben, ob der Fehler behoben wurde oder nicht.",
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

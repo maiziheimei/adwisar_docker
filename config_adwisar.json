@@ -1,0 +1,375 @@
+{
+  "version":"2017-01-09-1947",
+  "webserver":{
+    "port":8080,
+    "statics":"www"
+  },
+  "eventBusBridge":{
+    "inbound":[
+      	{
+        "address":"appsist:service:iid:server"
+      },
+      {
+        "address_re":"appsist:.+"
+      }
+    ],
+    "outbound":[
+       {
+        "address":"appsist:event:machinestateChangedEvent"
+      },
+      {
+        "address":"appsist:event:userOffline"
+      },
+      {
+        "address":"appsist:services:kvdconnection:knowledgeestimation"
+      },
+      {
+        "address":"appsist:services:kvdconnection:stepid"
+      },
+      {
+        "address":"appsist:event:processEvent:processCancelled"
+      },
+      {
+        "address":"appsist:event:processEvent:processComplete"
+      },
+      {
+        "address":"appsist:event:processEvent:processTerminated"
+      },
+      {
+        "address_re":"appsist:service:iid:client:.+"
+      }
+    ]
+  },
+    "commonConfig":{
+   		"statusSignal" : {
+        	"groupId":"de.appsist.service",
+            "interval":60000,
+            "channel":"appsist:service:status"
+        }
+	},
+  "deploys":[
+    {
+      "id":"io.vertx~mod-mongo-persistor~2.1.0",
+      "config":{
+        "address":"vertx.mongopersistor",
+        "host":"mongo",
+        "port":27017,
+        "pool_size":10,
+        "db_name":"m4demo"
+      }
+    }
+  ],
+  "services":{
+    "auth":{
+      "version":"1.4.0",
+      "config":{
+        "webserver":{
+          "port":8081,
+          "statics":"webroot",
+          "basePath":"/services/auth"
+        },
+        "debugMode":true,
+        "mongoPersistorAddress":"vertx.mongopersistor",
+        "hoursUntilSessionPurge":24
+      }
+    },
+    "sparql-connector":{
+      "version":"2.0.5",
+      "config":{
+        "webserver":{
+          "port":8082,
+          "statics":"www",
+          "basePath":"/services/sparqlconnector"
+        },
+        "sparql":{
+          "reqBaseUrl":"iwb.appsist.de",
+          "reqPath":"/sparql",
+          "reqBasePort":"443"
+        }
+      }
+    },
+    
+    "kvd":{
+        "version":"1.0.1",
+        "config":{
+            "webserver": {
+                "basePath" : "/services/kvd",
+                "port" : 8098
+            }
+        }
+    },
+
+    "lrs-connector": {
+    	"version":"1.0.8",
+    	"config":{
+    	"homepage":"http://dev.appsist.de",
+    		"webserver" : {
+    			"port" : 8094,
+    			"basePath": "/services/lrsconnect"
+  			},
+  			"lrs":{
+  				"endpoint": "http://lrs.celtech.de/learninglocker/data/xAPI/",
+				"username": "f78fbb63c7894ff669f16ccfdf8348e3a81f6348",
+				"password": "40fd321314261e8bcd160cc3823719e13a981d44"
+ 			 }
+		}
+    },
+    "cds":{
+      "version":"1.2.3",
+      "config":{
+        "webserver":{
+          "port":8083,
+          "basePath":"/services/cds"
+        },
+        "staticContentPath":"/usr/local/verticles/adwisar_contents/static",
+        "contentPath":"/usr/local/verticles/adwisar_contents/contents"
+      }
+    },
+    "iid-server":{
+      "version":"2.0.2",
+      "config":{
+        "webserver":{
+          "port":8086,
+          "basePath":"/services/iid-server"
+        },
+        "services":{
+          "cds":{
+            "http":{
+              "host":"localhost",
+              "port":8080,
+              "secure":false,
+              "path":"/services/cds"
+            }
+          },
+          "auth":{
+            "eb":"appsist:service:auth"
+          }
+        },
+        "locations":[
+          {
+            "id":"demoLager",
+            "type":"fix",
+            "displayName":"Demonstrator: Station Lager",
+            "building":"Halle 1",
+            "raw":{
+
+            }
+          },
+          {
+            "id":"demoMontage",
+            "type":"fix",
+            "displayName":"DNC_DNCB_DSBC: Station 20",
+            "building":"Halle 1",
+            "raw":{
+
+            }
+          },
+          {
+            "id":"demoVerpackung",
+            "type":"fix",
+            "displayName":"Demonstrator: Station Verpackung",
+            "building":"Halle 1",
+            "raw":{
+
+            }
+          }
+        ],
+        "debugMode":true
+      }
+    },
+    "iid-client":{
+      "version":"2.1.0",
+      "config":{
+        "webserver":{
+          "port":8097,
+          "basePath":"/services/iid"
+        }
+      }
+    },
+    "pki":{
+      "version":"1.5.1",
+      "config":{
+        "webserver":{
+          "port":8087,
+          "statics":"www",
+          "basePath":"/services/pki"
+        },
+        "services":{
+          "host":"localhost",
+          "port":8080,
+          "secure":false,
+          "baseUrl":"/services"
+        },
+        "processEngine":"simple",
+        "processDefinitionPath":"/usr/local/verticles/adwisar_contents/processes"
+      }
+    },
+    "measures-service":{
+      "version":"2.2.13-SNAPSHOT",
+      "config":{
+        "webserver":{
+          "port":8088,
+          "statics":"www",
+          "basePath":"/services/measureservice"
+        },
+        "services":{
+        "proxy": false,
+          "host":"localhost",
+          "port":8080,
+          "secure":false,
+                    "paths":{
+          	"psd":"/services/psd"
+          }
+        },
+  "demosettings":{
+  "active":true,
+  	"demousers":
+  	[{"username":"alice.tester@example.com", "machinestate":"<http://www.appsist.de/ontology/festo/LoctiteLeer>"},
+  	 {"username":"bob.tester@example.com", "machinestate":"<http://www.appsist.de/ontology/mbb/FehlendesBauteil>"},
+  	  {"username":"fritz.tonker@festo.de", "machinestate":"<http://www.appsist.de/ontology/festo/LoctiteLeer>"},
+  	  {"username":"fenja.storm@festo.de", "machinestate":"<http://www.appsist.de/ontology/festo/LoctiteLeer>"},
+  	  {"username":"lena.paulus@lps.de", "machinestate":"<http://www.appsist.de/ontology/lps/APPsistLPSFehlerG200Massnahme/SchiebehaubeBitteSchliessen>"},
+  	  {"username":"bastian.lohnert@bul.de", "machinestate":"<http://www.appsist.de/ontology/FunktionsfaehigerZustand>"},
+  	  {"username":"matthias.baber@mbb.de", "machinestate":"<http://www.appsist.de/ontology/FunktionsfaehigerZustand>"},
+  	  {"username":"david.harig@mbb.com", "machinestate":"<http://www.appsist.de/ontology/mbb/FehlendesBauteil>"},
+  	    	  {"username":"doro.thee@festo.de", "machinestate":"<http://www.appsist.de/ontology/festo/LoctiteLeer>"},
+  	  {"username":"doro.thee@lps.de", "machinestate":"<http://www.appsist.de/ontology/FunktionsfaehigerZustand>"},
+  	  {"username":"monte1@lps.de", "machinestate":"<http://www.appsist.de/ontology/FunktionsfaehigerZustand>"},
+  	  {"username":"doro.thee@bul.de", "machinestate":"<http://www.appsist.de/ontology/FunktionsfaehigerZustand>"},
+  	  {"username":"doro.thee@mbb.de", "machinestate":"<http://www.appsist.de/ontology/mbb/FehlendesBauteil>"},
+  	  {"username":"daniel.novize@appsist.de", "machinestate":"<http://www.appsist.de/ontology/demonstrator/TuerOffen>"},
+  	  {"username":"daniel.demo@appsist.de", "machinestate":"<http://www.appsist.de/ontology/FunktionsfaehigerZustand>"},
+  	  {"username":"dana.experte@appsist.de", "machinestate":"<http://www.appsist.de/ontology/demonstrator/Bauteilverlust>"},
+  	 {"username":"felix.novize@festo.de", "machinestate":"<http://www.appsist.de/ontology/festo/LoctiteLeer>"},
+  	  {"username":"fiona.experte@festo.de", "machinestate":"<http://www.appsist.de/ontology/festo/FettLeer>"}
+
+
+  	  ]
+
+
+  }
+      }
+    },
+    "usermodel-service":{
+      "version":"2.0.18",
+      "config":{
+        "webserver":{
+          "port":8089,
+          "statics":"www",
+          "basePath":"/services/usermodel"
+        },
+        "importantcontents":["b2280e82-2d6f-4888-9edc-6cf5ccc8bd08","c4bc9f83-aeea-4680-8c79-488b0e7c6e49","file:///static/externalContent/7_Basiswissen_Pneumatik_HM/index.html?skipcheck","59fc26ff-6339-4f6b-85c3-dfe5914b0f83", "file:///static/externalContent/WissenselementZelleGesamtExperte.pdf", "file:///static/externalContent/MPSStationRoboterHandbuch.pdf", "file:///static/externalContent/8_MPS_Station_Montage_mit_Roboter_HM/index.html?skipcheck", "file:///static/externalContent/MPSStationRoboterSicherheitshinweise.pdf"],
+        "importantprocesses":["b55be936-8192-42bc-b7f3-cef947b6f4ce","ba66718d-607c-4c81-82d7-f1a55fbbef3f"],
+        "test":false,
+        "mongoPersistorAddress":"vertx.mongopersistor"
+      }
+    },
+    "lel":{
+      "version":"1.0.9",
+      "config":{
+      "demousers":["felix.novize@festo.de", "fritz.tonker@festo.de", "doro.thee@festo.de", "fenja.storm@festo.de", "daniel.nolte@appsist.de", "dana.exter@appsist.de"],
+        "webserver":{
+          "port":8090,
+          "statics":"www",
+          "basePath":"/services/lel"
+        }
+      }
+    },
+    "ihs":{
+      "version":"1.1.9",
+      "config":{
+        "webserver":{
+          "port":8091,
+          "statics":"www",
+          "basePath":"/services/ihs"
+        }
+      }
+    },
+    "lbd":{
+      "version":"1.2.8",
+      "config":{
+        "webserver":{
+          "port":8092,
+          "statics":"www",
+          "basePath":"/services/lbd"
+        }
+      }
+    },
+    "content-navigation-service":{
+      "version":"1.0.7",
+      "config":{
+
+      }
+    }
+    ,"mid":{
+      "version":"1.6.5",
+      "config": {
+      "webserver":{
+          "port":8085,
+          "statics":"static",
+          "basePath":"/services/mid"
+        },
+        "configPath" : "/usr/local/verticles/mods/de.appsist.service~mid~1.6.5/",
+        "RESTport":8095,
+        "useHeartbeat":false
+      }
+    }
+    ,
+    "msd":{
+        "version":"1.6.1",
+        "config":{
+            "webserver": {
+                "port": 8096,
+                "basePath" : "/services/msd",
+                "secure" : false
+            },
+            "mid" : {
+                "port" : 8095,
+                "basePath" : "/services/mid",
+                "useForMIDGUI" : false
+            },
+            "machine" : {
+                "vendorId" : "Anlage1",
+                "machineID" : "Maschine20",
+                "serialNumber" : "Machine XYZ"
+            },
+                "station" : {
+                "stationId" : "Maschine20",
+                "siteId" : "Anlage1"
+            },
+            "processes" : {
+                "loctite-wechseln" : {
+                    "processId" : "0b4e2ad2-09dc-11e5-a6c0-1697f925ec7b",
+                    "propertyName" : "Loctite"
+                },
+                "fett-wechseln" : {
+                    "processId" : "0b4e5e9e-09dc-11e5-a6c0-1697f925ec7b",
+                    "propertyName" : "Fett"
+                }
+            }
+       }
+    },
+    "performance-support":{
+      "version":"1.8.3-SNAPSHOT",
+      "config":{
+        "webserver":{
+          "port":8093,
+          "statics":"static",
+          "basePath":"/services/psd"
+        },
+        "db":"vertx.mongopersistor",
+        "auth":"vertx.basicauthmanager",
+        "services":{
+          "host":"localhost",
+          "port":8080,
+          "secure":false,
+          "paths":{
+            "pki":"/services/pki",
+            "ihs":"/services/ihs"
+          }
+        },
+        "debugMode":true
+      }
+    }
+  }
+ }

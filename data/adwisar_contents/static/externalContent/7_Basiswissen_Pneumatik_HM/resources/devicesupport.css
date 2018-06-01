@@ -1,0 +1,19 @@
+/*
+ * Stylesheet for device family detection - do not modify!
+*/
+
+div#device-family-indicator {
+    width    : 0px;
+    height   : 0px;
+    position : absolute;
+}
+    
+@media screen and (max-width: 17cm) {
+    div#device-family-indicator {
+        /*
+         * This value will be queried from JavaScript to detect the device
+         * family of the client device
+        */
+        z-index: 1; 
+    }
+}

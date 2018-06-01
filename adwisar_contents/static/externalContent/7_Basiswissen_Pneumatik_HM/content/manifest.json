@@ -1,0 +1,496 @@
+{
+    "csapiversion": "1.0",
+    "library": [
+        {
+            "id": "urn:imc:aqDJu",
+            "language": "de",
+            "successrequirements": [
+                {
+                    "progress_measure_threshold": 0.90000000000000002,
+                    "type": "globalprogress"
+                }
+            ],
+            "title": "7_Basiswissen Pneumatik 1",
+            "type": "root"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:FDk$k",
+            "relevancy": "mandatory",
+            "src": "content/725e354b-55e6/725e354b-55e6.json",
+            "thumbnail": "content/thumbs/725e354b-55e6.png",
+            "title": "Was ist Pneumatik überhaupt?",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:MsC3Z",
+            "relevancy": "mandatory",
+            "src": "content/a3f99acc-88a5/a3f99acc-88a5.json",
+            "thumbnail": "content/thumbs/a3f99acc-88a5.png",
+            "title": "Linearbewegungen",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:MV1$V",
+            "relevancy": "mandatory",
+            "src": "content/eecbf046-37ac/eecbf046-37ac.json",
+            "thumbnail": "content/thumbs/eecbf046-37ac.png",
+            "title": "Rotationsbewegungen",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:zXZOD",
+            "relevancy": "mandatory",
+            "src": "content/8ad3f645-b35f/8ad3f645-b35f.json",
+            "thumbnail": "content/thumbs/8ad3f645-b35f.png",
+            "title": "Anwendungsbeispiele",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:E2fK5",
+            "relevancy": "mandatory",
+            "src": "content/027f967d-fb08/027f967d-fb08.json",
+            "thumbnail": "content/thumbs/027f967d-fb08.png",
+            "title": "Anwendungsbeispiele bei Kunden",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:Up7Vo",
+            "relevancy": "mandatory",
+            "src": "content/f94367a0-f5cb/f94367a0-f5cb.json",
+            "thumbnail": "content/thumbs/f94367a0-f5cb.png",
+            "title": "Pneumatische Anwendungsbeispiele Greifer",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:vFda0",
+            "relevancy": "mandatory",
+            "src": "content/375d71fd-34f7/375d71fd-34f7.json",
+            "thumbnail": "content/thumbs/375d71fd-34f7.png",
+            "title": "Anwendungsbeispiele Tripod",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:0jK=f",
+            "relevancy": "mandatory",
+            "src": "content/17aaa624-b9d6/17aaa624-b9d6.json",
+            "thumbnail": "content/thumbs/17aaa624-b9d6.png",
+            "title": "Ansprechpartner und Quellen",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:WmxeT",
+            "relevancy": "mandatory",
+            "src": "content/5748bb2f-02a1/5748bb2f-02a1.json",
+            "thumbnail": "content/thumbs/5748bb2f-02a1.png",
+            "title": "DSBC Produktbeschreibung",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:rAYs7",
+            "relevancy": "mandatory",
+            "src": "content/f74e6091-f1e0/f74e6091-f1e0.json",
+            "thumbnail": "content/thumbs/f74e6091-f1e0.png",
+            "title": "Vielen Dank",
+            "type": "animation"
+        },
+        {
+            "id": "urn:imc:0eHvi",
+            "title": "Statements",
+            "type": "folder"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5,
+                "launch_data": {
+                    "progressbar": false
+                }
+            },
+            "id": "urn:imc:4lPT1",
+            "relevancy": "mandatory",
+            "src": "content/0bc14b0a-927e/0bc14b0a-927e.json",
+            "thumbnail": "content/thumbs/0bc14b0a-927e.png",
+            "title": "DSBC Statement Paul Herzog",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5,
+                "launch_data": {
+                    "progressbar": false
+                }
+            },
+            "id": "urn:imc:un=ln",
+            "relevancy": "mandatory",
+            "src": "content/dd652576-8ca3/dd652576-8ca3.json",
+            "thumbnail": "content/thumbs/dd652576-8ca3.png",
+            "title": "DSBC Statement Klaus Rupp",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5,
+                "launch_data": {
+                    "progressbar": false
+                }
+            },
+            "id": "urn:imc:zvAuA",
+            "relevancy": "mandatory",
+            "src": "content/bb38ab40-9579/bb38ab40-9579.json",
+            "thumbnail": "content/thumbs/bb38ab40-9579.png",
+            "title": "DSBC Statement Eric Angue",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5,
+                "launch_data": {
+                    "progressbar": false
+                }
+            },
+            "id": "urn:imc:uFJMP",
+            "relevancy": "mandatory",
+            "src": "content/d53314ff-3517/d53314ff-3517.json",
+            "thumbnail": "content/thumbs/d53314ff-3517.png",
+            "title": "DSBC Statement Bernd Müller",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5,
+                "launch_data": {
+                    "progressbar": false
+                }
+            },
+            "id": "urn:imc:pXO5u",
+            "relevancy": "mandatory",
+            "src": "content/b28ec8b1-6efa/b28ec8b1-6efa.json",
+            "thumbnail": "content/thumbs/b28ec8b1-6efa.png",
+            "title": "DSBC Statement Holger Buisson",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:XYalj",
+            "relevancy": "mandatory",
+            "src": "content/3d515cef-2aae/3d515cef-2aae.json",
+            "thumbnail": "content/thumbs/3d515cef-2aae.png",
+            "title": "30_Inhaltsfolie_Bild und Textllinks",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:mik1M",
+            "relevancy": "mandatory",
+            "src": "content/db744fe2-c468/db744fe2-c468.json",
+            "thumbnail": "content/thumbs/db744fe2-c468.png",
+            "title": "Überblick: Webdefinition Industrie 4.0",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:iQWo9",
+            "relevancy": "mandatory",
+            "src": "content/84677ad4-6f8a/84677ad4-6f8a.json",
+            "thumbnail": "content/thumbs/84677ad4-6f8a.png",
+            "title": "100_Zertifikat",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:LCrgr",
+            "relevancy": "mandatory",
+            "src": "content/f2d5da89-5a71/f2d5da89-5a71.json",
+            "thumbnail": "content/thumbs/f2d5da89-5a71.png",
+            "title": "90_Test",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:lRhZF",
+            "relevancy": "mandatory",
+            "src": "content/cd894da0-8ab3/cd894da0-8ab3.json",
+            "thumbnail": "content/thumbs/cd894da0-8ab3.png",
+            "title": "80_Memospiel",
+            "type": "animation"
+        },
+        {
+            "id": "urn:imc:IyPz$",
+            "relevancy": "mandatory",
+            "src": "content/fbe32cb2-f51c/fbe32cb2-f51c.json",
+            "title": "Glossar Allgemein",
+            "type": "glossary"
+        },
+        {
+            "description": "",
+            "id": "urn:imc:XRmOu",
+            "relevancy": "mandatory",
+            "src": "content/79b255ef-0b6f/79b255ef-0b6f.json",
+            "title": "Glossar Index",
+            "type": "glossary"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5,
+                "launch_data": {
+                    "autonavigate": true
+                }
+            },
+            "id": "urn:imc:u7xJC",
+            "navigation_options": {
+                "disable_forward": true
+            },
+            "relevancy": "mandatory",
+            "src": "content/5b10dd63-217c/5b10dd63-217c.json",
+            "thumbnail": "content/thumbs/5b10dd63-217c.png",
+            "title": "30_Inhaltsfolie_Standard_grauer Rand oben unten",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:BW7UN",
+            "relevancy": "mandatory",
+            "src": "content/f88c13dc-62dc/f88c13dc-62dc.json",
+            "thumbnail": "content/thumbs/f88c13dc-62dc.png",
+            "title": "30_Inhaltsfolie_Video",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:3hjHQ",
+            "relevancy": "mandatory",
+            "src": "content/ef672b1e-2dda/ef672b1e-2dda.json",
+            "thumbnail": "content/thumbs/ef672b1e-2dda.png",
+            "title": "30_Inhaltsfolie_Einspaltig Text und Grafik",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:v0uTO",
+            "relevancy": "mandatory",
+            "src": "content/e4115c7c-e4a1/e4115c7c-e4a1.json",
+            "thumbnail": "content/thumbs/e4115c7c-e4a1.png",
+            "title": "30_Inhaltsfolie_Dreispaltiger Text",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:28ykC",
+            "relevancy": "mandatory",
+            "src": "content/949ba636-7cf3/949ba636-7cf3.json",
+            "thumbnail": "content/thumbs/949ba636-7cf3.png",
+            "title": "30_Inhaltsfolie_Zweispaltig Text",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:h4n2Y",
+            "relevancy": "mandatory",
+            "src": "content/a8fee8da-c7f2/a8fee8da-c7f2.json",
+            "thumbnail": "content/thumbs/a8fee8da-c7f2.png",
+            "title": "Backup_30_Welche Bewegungen sind möglich?",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:Jg7dS",
+            "relevancy": "mandatory",
+            "src": "content/94fec070-87fb/94fec070-87fb.json",
+            "thumbnail": "content/thumbs/94fec070-87fb.png",
+            "title": "30_Einfach und doppeltwirkende Zylinder",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:gSMoY",
+            "relevancy": "mandatory",
+            "src": "content/1f3db69f-6d0e/1f3db69f-6d0e.json",
+            "thumbnail": "content/thumbs/1f3db69f-6d0e.png",
+            "title": "30_Pneumatikventile",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:2FfqA",
+            "relevancy": "mandatory",
+            "src": "content/cd98908b-f90e/cd98908b-f90e.json",
+            "thumbnail": "content/thumbs/cd98908b-f90e.png",
+            "title": "Backup:30_Welche Bewegungen sind möglich?",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:fpeig",
+            "relevancy": "mandatory",
+            "src": "content/d5c7dc75-5fef/d5c7dc75-5fef.json",
+            "thumbnail": "content/thumbs/d5c7dc75-5fef.png",
+            "title": "10_Basiswissen Pneumatik 1",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:DH$0S",
+            "relevancy": "mandatory",
+            "src": "content/5a3399d2-d2e0/5a3399d2-d2e0.json",
+            "thumbnail": "content/thumbs/5a3399d2-d2e0.png",
+            "title": "20_Bedienungshilfe",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:MrBI2",
+            "relevancy": "mandatory",
+            "src": "content/7b5088b7-1064/7b5088b7-1064.json",
+            "thumbnail": "content/thumbs/7b5088b7-1064.png",
+            "title": "30_Die Pneumatikstars von Festo",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:fMPSY",
+            "relevancy": "mandatory",
+            "src": "content/ce19dde3-5c23/ce19dde3-5c23.json",
+            "thumbnail": "content/thumbs/ce19dde3-5c23.png",
+            "title": "40_Zusammenfassung",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:aGn6i",
+            "relevancy": "mandatory",
+            "src": "content/64ec73c7-9e8f/64ec73c7-9e8f.json",
+            "thumbnail": "content/thumbs/64ec73c7-9e8f.png",
+            "title": "30_Struktur pneumatischer Systeme",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:CRIPG",
+            "relevancy": "mandatory",
+            "src": "content/2bba1a24-4e7f/2bba1a24-4e7f.json",
+            "thumbnail": "content/thumbs/2bba1a24-4e7f.png",
+            "title": "30_Der Weg der Druckluft zum Verbracher ",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:eJtdP",
+            "relevancy": "mandatory",
+            "src": "content/1349ea50-aec1/1349ea50-aec1.json",
+            "thumbnail": "content/thumbs/1349ea50-aec1.png",
+            "title": "30_Vorteile Pneumatik",
+            "type": "animation"
+        },
+        {
+            "cmi": {
+                "completion_threshold": 0.5
+            },
+            "id": "urn:imc:hWos6",
+            "relevancy": "mandatory",
+            "src": "content/83a48329-36f6/83a48329-36f6.json",
+            "thumbnail": "content/thumbs/83a48329-36f6.png",
+            "title": "30_Nachteile Pneumatik",
+            "type": "animation"
+        }
+    ],
+    "manifestversion": "1.0",
+    "playerversion": "1.1.0",
+    "structure": {
+        "children": [
+            {
+                "id": "urn:imc:FDk$k"
+            },
+            {
+                "id": "urn:imc:MsC3Z"
+            },
+            {
+                "id": "urn:imc:MV1$V"
+            },
+            {
+                "id": "urn:imc:zXZOD"
+            },
+            {
+                "id": "urn:imc:E2fK5"
+            },
+            {
+                "id": "urn:imc:Up7Vo"
+            },
+            {
+                "id": "urn:imc:vFda0"
+            },
+            {
+                "id": "urn:imc:0jK=f"
+            }
+        ],
+        "id": "urn:imc:aqDJu"
+    }
+}

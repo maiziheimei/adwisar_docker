@@ -1,0 +1,8 @@
+{
+       "main" : "index.html",       
+       "mimeType" : "text/html",
+       "title" : "Anlagenstart durchführen",
+       "info" : "Starten Sie die Anlage.<br><br>Führen Sie dazu folgende Schritte durch:<br>1. Robotermotoren einschalten<br>2. Roboterprogramm starten<br>3. Prozessdurchlauf starten",  
+       "version" : "1.0",                
+       "lastUpdate" : "2015-08-03T14:26:56+02:00" 
+}

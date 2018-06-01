@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="tap-to-play-tap-to-play_n" viewBox="0 0 79 79" style="background-color:#ffffff00" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="79px" height="79px"
+>
+	<g id="Ebene%201">
+		<path id="Ellipse" opacity="0.349" d="M 2 39.5 C 2 18.789 18.789 2 39.5 2 C 60.2109 2 77 18.789 77 39.5 C 77 60.211 60.2109 77 39.5 77 C 18.789 77 2 60.211 2 39.5 Z" fill="#000000"/>
+		<path d="M 31 23 L 56 39.5 L 31 56 L 31 23 Z" fill="#ffffff"/>
+		<path id="Ellipse2" opacity="0.8" d="M 1 39.5 C 1 18.2367 18.2367 1 39.5 1 C 60.7632 1 78 18.2367 78 39.5 C 78 60.7633 60.7632 78 39.5 78 C 18.2367 78 1 60.7633 1 39.5 Z" stroke="#ffffff" stroke-width="2" fill="none"/>
+	</g>
+</svg>
